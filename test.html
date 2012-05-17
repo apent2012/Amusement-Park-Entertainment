@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<script type="text/javascript" src="libs/jquery/jquery.debug.js"></script>
+<script type="text/javascript" src="libs/loader/jquery.loader3.js"></script>
+<!--
+<script type="text/javascript" src="libs/svg/jquery.svg.js"></script>
+-->
+
+<script type="text/javascript">
+
+/* 
+bgColor: the background color of the overlay (Default: #000000);
+
+bgOpacity: the opacity of the overlay (Default: 0.85);
+
+message: the message shown when loading. Has the following arguments: %f = the file being loaded, %p = percentage loaded, %c = files loaded, %t = total files (Default: (Portuguese) Aguarde! Carregando o site: %f (%p% | %c de %t));
+
+ending_message: the message shown when loading is complete (Default: (Portuguese) Uma vez carregado o site não irá mais ser carregado.);
+
+fadeOutSpeed: the speed the overlay will fade out once it finishes loading (Default: fast);
+*/
+
+
+$(document).ready(function() {
+	/*
+//	$('#svgbasics').svg({onLoad: drawInitial});
+	 $("#svgbasics").svg({  
+	    loadURL: 'images/svg/svgblock_0.svg',  
+	    onLoad: drawInitial,  
+	    settings: {}  
+  } );
+*/
+
+	/*
+		$(function (){
+		    $.preLoadGUI({
+		    	message: 'Loading: %f (%p%, %c, %t)',
+		    	ending_message: 'Complete!',
+		    	bgOpacity: 0.25,
+		    	load: [
+		        ['http://www.yngest.com/ape-theme/images/about-block.jpg', 'img'],
+		        ['http://www.yngest.com/ape-theme/images/home-block.jpg', 'img'],
+		        ['http://www.yngest.com/ape-theme/images/team-block.jpg', 'img'],
+		        ['http://www.yngest.com/ape-theme/images/contact-block.jpg', 'img'],
+		        ['http://www.yngest.com/ape-theme/images/contact1.jpg', 'img'],
+		        ['http://www.yngest.com/ape-theme/images/contactmap.jpg', 'img'],
+		        ['http://www.yngest.com/ape-theme/images/contactmapbg.jpg', 'img'],
+		        ['http://www.yngest.com/ape-theme/images/video10.jpg', 'img'],
+		        ['http://www.yngest.com/ape-theme/images/video3.jpg', 'img'],
+		        ['http://www.yngest.com/ape-theme/images/video8.jpg', 'img'],
+		        ['http://www.yngest.com/ape-theme/images/video9.jpg', 'img'],
+		        ['http://www.yngest.com/ape-theme/images/video2.jpg', 'img'],
+		        ['http://www.yngest.com/ape-theme/images/video.screenshot.jpg', 'img'],
+		        ['http://www.yngest.com/ape-theme/images/video4.jpg', 'img']
+		    ]});
+		});    
+*/
+});
+
+function drawInitial(svg) {
+
+	/* Add an embedded SVG element.
+	   Specify all of vx, vy, vwidth, vheight or none of them.
+	   @param  parent    (element or jQuery) the parent node for the new node (optional)
+	   @param  x         (number) the x-coordinate for the left edge of the node
+	   @param  y         (number) the y-coordinate for the top edge of the node
+	   @param  width     (number) the width of the node
+	   @param  height    (number) the height of the node
+	   @param  vx        (number) the minimum x-coordinate for view box (optional)
+	   @param  vy        (number) the minimum y-coordinate for the view box (optional)
+	   @param  vwidth    (number) the width of the view box (optional)
+	   @param  vheight   (number) the height of the view box (optional)
+	   @param  settings  (object) additional settings for the node (optional)
+	   @return  (element) the new node */
+
+//	svg.describe('This graphic links to an external image'); 
+//	var img = svg.svg(100, 50, 200, 200, 'images/svg/svgblock_0.svg'); 
+//	svg.title(img, 'My image'); 
+//	svg.image(130, 100, 20, 20, 'img/sun.png'); 
+
+
+//	svg.circle(75, 75, 50, {fill: 'none', stroke: 'red', 'stroke-width': 3});
+//	var g = svg.group({stroke: 'black', 'stroke-width': 2});
+//	svg.line(g, 15, 75, 135, 75);
+//	svg.line(g, 75, 15, 75, 135);
+}
+
+
+</script>
+
+<style type="text/css">
+
+#preloader {
+	1background: url(http://www.yngest.com/ape-theme/images/about-block.jpg) 0 0 no-repeat;
+	width:1635px;
+	height:654px;
+}
+
+#svgbasics {
+	height:300px;
+	background-color:red;
+	text-align:center;
+}
+
+img {
+	padding:18px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+<div id="svgbasics">
+
+<!--
+<object data="images/svg/Soccer_ball_animated.svg" type="image/svg+xml" width="333" height="333"></object>
+-->
+<img src="images/loader.gif" />
+
+</div>
+
+
+
+</body>
+
+
+</html>
