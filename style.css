@@ -953,19 +953,23 @@ a:hover {
 }
 
 .about-body-text {
-    width:554px;
+    width:534px;
     min-height:856px;
     float:left;
     display:inline-block;
     color:#474542;
     white-space:normal;
     font-family: 'Helvetica', Arial, sans-serif;
-    font-size:14px;
+    font-size:12px;
     text-align:left;
     padding-top:70px;
     padding-left:50px;
     padding-right:50px;
-    line-height: 1.4em;
+    line-height: 1.3em;
+	opacity: 0.8;
+    -moz-opacity: 0.8;
+    filter:alpha(opacity=80);
+	letter-spacing: -.08em
 }
 
 .about-body-text h2 {
@@ -976,6 +980,10 @@ a:hover {
     display:inline-block;
     font-family: 'FuturaStdBookBold', Arial, sans-serif;
 	letter-spacing:-.025em;
+	opacity: 0.8;
+    -moz-opacity: 0.8;
+    filter:alpha(opacity=80);
+	color:#black;
 }
 
 .about-body-text p {
