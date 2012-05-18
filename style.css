@@ -51,7 +51,7 @@ body {
 }
 
 #preLoadGUIBeta3 {
-    display:block !important;
+    1display:block !important;
     top:50% !important;
     margin-top:-50px !important;
     height:100px !important;
@@ -203,6 +203,13 @@ a:hover {
     width:60px;
     height:60px;
     background: url(images/work.jpg) 0 0 no-repeat;
+    display:inline-block;
+}
+
+.blog-tab {
+    width:56px;
+    height:60px;
+    background: url(images/blog.jpg) 0 0 no-repeat;
     display:inline-block;
 }
 

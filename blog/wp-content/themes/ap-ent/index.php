@@ -9,20 +9,28 @@
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
  */
-get_header(); ?>
+?>
 
-		<div id="container">
-			<div id="content" role="main">
+<?php get_header(); ?>
+    
+<div id="main">
+  <div id="content">
+    <h1>Main Area</h1>
+    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+    <h1><?php the_title(); ?></h1>
+    <h4>Posted on <?php the_time('F jS, Y') ?></h4>
+    <p><?php the_content(__('(more...)')); ?></p>
+    <hr>
+    <?php endwhile; else: ?>
+    <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+    <?php endif; ?>
+  </div>
 
-			<?php
-			// Run the loop to output the posts.
-			 // If you want to overload this in a child theme then include a file
-			// called loop-index.php and that will be used instead.
-			 //
-			 get_template_part( 'loop', 'index' );
-			?>
-			</div><!-- #content -->
-		</div><!-- #container -->
+  <?php get_sidebar(); ?>
 
-<?php get_sidebar(); ?>
+  </div>
+
+<div id="delimiter"></div>
+
 <?php get_footer(); ?>
+

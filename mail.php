@@ -1,10 +1,13 @@
 <?php // send email
 
-header( "refresh:5;url=http://www.amusementparkent.com/" );
+$debug = true;
+
+if (!$debug)
+    header( "refresh:5;url=http://www.amusementparkent.com/" );
 
 
-//$to = "info@amusementparkent.com";
-$to = "azaeres@gmail.com";
+if (!$debug)
+    $to = "info@amusementparkent.com";
 
 
 $name = $_POST['contact-name'];
@@ -14,7 +17,8 @@ $message = $_POST['contact-message'];
 $subject = "Message received from www.amusementparkent.com";
 
 $headers = "From:" . $from;
-$success = mail($to, $subject, $message, $headers);
+if (!$debug)
+    $success = mail($to, $subject, $message, $headers);
 
 $outputMsg = "Your message could not be sent at this time.";
 
@@ -116,6 +120,7 @@ h1 {
                 <a href="index.html#page2" title="About"><span class="about-tab"></span></a>
                 <a href="index.html#page3" title="Team"><div class="team-tab"></div></a>
                 <a href="index.html#page4" title="Work"><div class="work-tab"></div></a>
+                <a href="blog" title="Blog"><div class="blog-tab"></div></a>
                 <a href="index.html#page5" title="Contact"><div class="contact-tab"></div></a>
             </div>
             <div class="clear"></div>
