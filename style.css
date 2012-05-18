@@ -22,8 +22,7 @@ body {
     -webkit-transform-origin: 0 0;
     -moz-transform-origin: 0 0;
     -o-transform-origin: 0 0;
-
-    */
+*/
 }
 
 #description {
@@ -52,6 +51,7 @@ body {
 }
 
 #preLoadGUIBeta3 {
+    display:block !important;
     top:50% !important;
     margin-top:-50px !important;
     height:100px !important;
@@ -61,7 +61,7 @@ body {
     margin-left:auto !important;
     margin-right:auto !important;
     position:fixed !important;
-    background: url(images/wheelframe.gif) 0 0 no-repeat !important;
+    background: url(images/loader.gif) 0 0 no-repeat !important;
 }
 
 #preLoadGUIBeta3loader {

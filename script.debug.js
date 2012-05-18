@@ -1,12 +1,12 @@
 // Preload priority images here
-//var pimg=new Image();
-//pimg.src='images/wheelframe.gif';
+var pimg=new Image();
+pimg.src='images/loader.gif';
 
 $(document).ready(function(){
     $(function() {
         var gapWidth = 0;
       
-      /*
+      
         $.preLoadGUI({
           message: '',
           ending_message: '',
@@ -22,7 +22,7 @@ $(document).ready(function(){
             ['http://www.yngest.com/ape-theme/images/bigpark_a.png', 'img'],
             ['http://www.yngest.com/ape-theme/images/asqp-im5.gif', 'img']
         ]});
-*/
+
 
 
 
