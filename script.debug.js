@@ -24,6 +24,62 @@ $(document).ready(function(){
         ]});
 
 
+        $(".JMyCarousel").smoothDivScroll({
+            mousewheelScrolling: false
+            ,manualContinuousScrolling: true
+            ,visibleHotSpotBackgrounds: "always"
+            ,easingAfterHotSpotScrolling: true
+            ,'windowResized': function() {
+            //    var scrollLeft = $('#content').scrollLeft();
+            //    console.log(scrollLeft);
+                var hash = window.location.hash;
+                var hashSelectors = {
+                    '#page1': 'a.home-tab-link'
+                    ,'#page2': 'a.about-tab-link'
+                    ,'#page3': 'a.team-tab-link'
+                    ,'#page4': 'a.work-tab-link'
+                    ,'#page5': 'a.contact-tab-link'
+                };
+
+            //    console.log(hash);
+                $(hashSelectors[hash]).click();
+            }
+        //  ,easingAfterHotSpotScrollingDistance: 327
+        //  ,autoScrollingStep: 327
+        //  ,autoScrollingMode: "onstart"
+        });
+
+
+   /*
+        $(".JMyCarousel").jMyCarousel({
+           visible: '100%',
+           eltByElt: true,
+           speed: 600,
+           btnPrev: '.prev',
+           btnNext: '.next',
+           start: -327
+       });
+*/
+    /*
+    // Creating hoverscroll with fixed arrows
+    $('.JMyCarousel ul').hoverscroll({
+        arrows: false,
+        fixedArrows: true,
+        width:      1635, //981,        // Width of the list
+        height:     327         // Height of the list
+    });
+    // Starting the movement automatically at loading
+    // @param direction: right/bottom = 1, left/top = -1
+    // @param speed: Speed of the animation (scrollPosition += direction * speed)
+    var direction = -1,
+        speed = 3;
+    $('.JMyCarousel ul')[0].startMoving(direction, speed);
+*/
+
+
+
+    $('.team-body-people-slider-person').click(PeopleSliderMouseoutHandler);
+
 
 
 
@@ -237,6 +293,8 @@ $(document).ready(function(){
         UpdateHeaderAndFooter();
         $(window).scroll(UpdateHeaderAndFooter);
 
+
+
         $('.header-content a').bind('click', function(event) {
             var $anchor = $(this);
             /*
@@ -406,17 +464,64 @@ $(document).ready(function(){
             nextText:''
         });
 */
+/*
         $('#people-slider').easySlider({
             auto: false, 
             continuous: true,
             prevId:'peoplePrevBtn',
             nextId:'peopleNextBtn',
-            pageWidth:981,
+            pageWidth:327*5,
             pageHeight:327,
             prevText:'',
             nextText:''
         });
+*/
+/*
+        // Handles clicks of team names.
+        $('.team-body-people-slider-person-redsq').bind('click', function(event) {
+            var searchIn = $(this).parent().parent().children();
+            var searchFor = $(this).parent();
+            var indexOf = searchIn.index(searchFor);
 
+            console.log(searchIn); // 'div :not(:first-child)'
+            console.log(searchFor); // 'div :not(:first-child)'
+            console.log(indexOf); // 'div :not(:first-child)'
+
+
+
+        //    $('.team-body-people-slider-person').css('margin-left', '0');
+
+            // Make the bio visible.        
+            $(searchIn[indexOf]).children('.team-body-people-slider-person-text').css('display', 'block');
+            if (indexOf == 0) {
+                $(searchIn[indexOf+1]).stop().animate({
+                    'margin-left': '654px'
+                }, 1000, 'easeInOutExpo');
+            }
+            else if (indexOf == 1) {
+                $(searchIn[indexOf]).stop().animate({
+                    'margin-left': '-327px'
+                }, 1000, 'easeInOutExpo');
+
+                $(searchIn[indexOf+1]).stop().animate({
+                    'margin-left': '654px'
+                }, 1000, 'easeInOutExpo');
+            }
+            
+        });
+
+        $('.team-body-people-slider-container').mousemove(event, function() {
+
+            var windowWidth = $(window).width();
+            var horizPos = event.x;
+            var scrollVel = horizPos - (windowWidth / 2);
+            console.log(scrollVel);
+
+            var deadZoneWidth = 200;
+            
+
+        });
+*/
 
     /*
         var EmbedVideo = function(fromVideoNum, toVideoNum) {
@@ -530,11 +635,20 @@ $(document).ready(function(){
 */
 /*
         var curVideoNum = 1;   // Starts with first video.
+*/
 
         HandleSliderState = function(sliderState) {
            // Possible values are:
            // previous (0), next (1)
 
+           /*
+            $('.team-body-people-slider-person').stop().animate({
+                'margin-left': '-654px'
+            }, 1000, 'easeInOutExpo');
+
+*/
+
+        /*
            switch(sliderState) {
             case 0: // prev
                 var newVideoNum = curVideoNum - 1;
@@ -553,9 +667,9 @@ $(document).ready(function(){
                 curVideoNum = newVideoNum;
                 break;
            }
-
+        */
         };
-*/
+
         HandleVideoClose = function() {
 
          //   document.getElementById('ytplayer').stopVideo();
@@ -609,16 +723,189 @@ function onytplayerStateChange(newState) {
 */
 function onSliderNextBtn() {
 //    alert('onSliderNextBtn');
- //   HandleSliderState(1);
+    HandleSliderState(1);
 }
 
 function onSliderPrevBtn() {
 //    alert('onSliderPrevBtn');
-//    HandleSliderState(0);
+    HandleSliderState(0);
 }
 
 
 function onVideoClose() {
     HandleVideoClose();
+}
+
+function PeopleSliderMouseoutHandler(event) {
+    if ($(this).hasClass('person-gap'))
+        return;
+
+    var searchIn = $(this).parent().children();
+    var searchFor = $(this);
+    var indexOf = searchIn.index(searchFor);
+
+//    console.log(indexOf); // 'div :not(:first-child)'
+
+// Build the bio panel.
+/*
+    $('.bio-display .leading-bios').append($(searchIn[indexOf-3]).clone().css({
+        'margin-left': '-1143px', // $(searchIn[indexOf-3]).offset().left+'px', 
+        'position': 'absolute',
+        'width': '981px'
+    }));
+    $('.bio-display .leading-bios').append($(searchIn[indexOf-2]).clone().css({
+        'margin-left': '-816px', // $(searchIn[indexOf-2]).offset().left+'px', 
+        'position': 'absolute',
+        'width': '981px'
+    }));
+    $('.bio-display .leading-bios').append($(searchIn[indexOf-1]).clone().css({
+        'margin-left': '-489px', // $(searchIn[indexOf-1]).offset().left+'px', 
+        'position': 'absolute',
+        'width': '981px'
+    }));
+*/
+    var clonedThis = $(this).clone();
+    var thisOffset = $(this).offset().left;
+    var thisPosition = $(this).position();
+
+    var trailingStartOffset = $(searchIn[indexOf+1]).position().left;
+ //   console.log(trailingStartOffset);
+
+ //   var squareIndex = thisOffset / 327;
+//  console.log('thisOffset: '+thisOffset+', thisPosition: '+thisPosition);
+//  console.log(thisPosition);
+
+//    var leadingBiosAnimOffset = thisOffset;
+ //   var trailingBiosOffset = thisOffset + 327;
+  //  var trailingBiosAnimOffset = trailingBiosOffset + 654;
+  //  var startPositions = [-162];
+
+//  console.log('trailingBiosOffset: '+trailingBiosOffset+', trailingBiosAnimOffset: '+trailingBiosAnimOffset+', thisOffset: '+thisOffset);
+
+    var leadingSlice = searchIn.slice(0, indexOf+1);
+    leadingSlice.wrapAll('<div class="leading-slice"></div>');
+
+    var trailingSlice = searchIn.slice(indexOf+1)
+    trailingSlice.wrapAll('<div class="trailing-slice"></div>');
+    $('.trailing-slice').css('margin-left', trailingStartOffset+'px');
+
+    $(this).children('.team-body-people-slider-person-text').css('display', 'block');
+    $('.JMyCarousel').append('<div class="bio-panel-close-button" onclick="javascript:CloseBioPanel();"></div>');
+
+    $('.scrollingHotSpotLeft').css('display', 'none');
+    $('.scrollingHotSpotRight').css('display', 'none');
+
+    $('.team-body-people-slider-person-redsq').css('cursor', 'default');
+
+    var events = $('.team-body-people-slider-person').data("events");
+    var eventHandler = events.click[0].handler;
+    $('.team-body-people-slider-person').unbind('click');
+
+
+//    $('.bio-display').html(searchIn);
+
+//    $('.bio-display .leading-bios').append(clonedThis.css({
+//        'margin-left': thisPosition.left, //'-162px',
+//        'position': 'absolute',
+//        'width': '981px'
+//    }));
+
+    /*
+    $('.bio-display .trailing-bios').css('margin-left', trailingBiosOffset+'px');
+
+    $('.bio-display .trailing-bios').append($(searchIn[indexOf+1]).clone().css({
+        'margin-left': '0',
+        'position': 'absolute'
+    }));
+    $('.bio-display .trailing-bios').append($(searchIn[indexOf+2]).clone().css({
+        'margin-left': '327px',
+        'position': 'absolute'
+    }));
+    $('.bio-display .trailing-bios').append($(searchIn[indexOf+3]).clone().css({
+        'margin-left': '654px',
+        'position': 'absolute'
+    }));
+    $('.bio-display .trailing-bios').append($(searchIn[indexOf+4]).clone().css({
+        'margin-left': '981px',
+        'position': 'absolute'
+    }));
+*/
+    // Display the bio panel.
+//      $('.bio-display').css('display', 'block');
+
+    var pos = $(this).position(); 
+    var scrollLeft = $(this).parent().parent().parent().scrollLeft();
+    var leadingLeftAnim = scrollLeft - pos.left + 327; //327 - pos.left;
+
+    var trailingPos = $('.trailing-slice');
+    var trailingLeftAnim = 1308 + scrollLeft;
+ //   console.log(trailingLeftAnim);
+
+    // Animate the opening bio panel.
+    $('.leading-slice').stop().animate({
+        'margin-left': leadingLeftAnim+'px'
+    }, 1000, 'easeInOutExpo');
+
+    $('.trailing-slice').stop().animate({
+        'margin-left': trailingLeftAnim+'px'
+    }, 1000, 'easeInOutExpo', function() {
+        $('.bio-panel-close-button').fadeIn('slow');
+    });
+
+
+/*
+    $('.bio-display .trailing-bios').stop().animate({
+        'margin-left': trailingBiosOffset+650+'px'
+    }, 1000, 'easeInOutExpo', function() {
+        $('.bio-panel-close-button').fadeIn('slow');
+    });
+*/        
+//  console.log('leadingBiosAnimOffset: '+leadingBiosAnimOffset);
+
+    CloseBioPanel = function() {
+        // Animate the closing bio panel.
+        $('.bio-panel-close-button').fadeOut('fast', function() {
+            $(this).remove();
+        });
+
+        $('.leading-slice').stop().animate({
+            'margin-left': '0'
+        }, 1000, 'easeInOutExpo', function() {
+            $(this).children().unwrap();
+        });
+
+        $('.trailing-slice').stop().animate({
+            'margin-left': trailingStartOffset+'px'
+        }, 1000, 'easeInOutExpo', function() {
+            $('.team-body-people-slider-person-text')
+                .css('display', 'none');
+
+            $(this).children().unwrap();
+
+            $('.scrollingHotSpotLeft').css('display', 'block');
+            $('.scrollingHotSpotRight').css('display', 'block');
+
+            $('.team-body-people-slider-person-redsq').css('cursor', 'pointer');
+            $('.person-gap .team-body-people-slider-person-redsq').css('cursor', 'default');
+            $('.team-body-people-slider-person').click(eventHandler);
+        });
+
+
+        /*
+        $('.bio-panel-close-button').fadeOut('slow');
+        
+        $('.bio-display .leading-bios').stop().animate({
+            'margin-left': '0'
+        }, 1000, 'easeInOutExpo');
+        
+        $('.bio-display .trailing-bios').stop().animate({
+            'margin-left': trailingBiosOffset-4+'px'
+        }, 1000, 'easeInOutExpo', function() {
+            $('.leading-bios').html('');
+            $('.trailing-bios').html('');
+            $('.bio-display').css('display', 'none');
+        });
+        */
+    };
 }
 

@@ -258,6 +258,10 @@ a:hover {
     min-height:636px;
 }
 
+.JMyCarousel {
+    height:327px;
+}
+
 .team-body-people-slider-container {
     height:327px;
     position:relative;
@@ -268,20 +272,24 @@ a:hover {
 }
 
 .team-body-people-slider {
-    width:981px;
+    width:1635px;
     height:327px;
     float:left;
 }
 
 .team-body-people-slider-person {
-    width:981px;
+    width:327px;    /*981px;*/
     height:327px;
     background-color:#eee8dd;
+    1margin-left: -654px;
+    float:left;
 }
 
 .team-body-people-slider-person-redsq {
     float:left;
     position:relative;
+    text-align:center;
+    cursor:pointer;
 }
 
 .team-body-people-slider-person-redsq-tri {
@@ -307,6 +315,7 @@ a:hover {
     width:539px;
     padding-top:71px;
     line-height:1.1em;
+    display:none;
 }
 
 .team-body-people-slider-person-text h3 {
@@ -330,9 +339,36 @@ a:hover {
     float:left;
 }
 
+.carousel-container {
+    1border:1px solid red;
+    position:relative;
+}
+
+.next, 
+.prev {
+    width:327px;
+    height:327px;
+    display:inline-block;
+    1border:1px solid green;
+    position:absolute;
+    top:0;
+    z-index:2;
+}
+
+.next {
+    right:0;
+    border:1px solid gold;
+}
+
+.prev {
+    left:0;
+    border:1px solid green;
+}
+
 #peoplePrevBtn {
     background: url(images/teamarrow-left.png) 0 0 no-repeat;
     display:inline-block;
+    1display:none;
     position:absolute;
     left:327px;
     float:left;
@@ -346,6 +382,7 @@ a:hover {
 #peopleNextBtn {
     background: url(images/teamarrow-right.png) 0 0 no-repeat;
     display:inline-block;
+    1display:none;
     position:absolute;
     float:left;
     right:327px;
@@ -356,11 +393,84 @@ a:hover {
     margin-right:9px;
 }
 
+.bio-display {
+    position:absolute;
+    background-color:blue;
+    width:100%;
+    height:327px;
+    top:0;
+    z-index:2;
+    display:none;
+    overflow:hidden;
+}
+
+.scrollableArea {
+    text-align:left;
+}
+
+.leading-slice {
+    height:327px;
+    1border:1px solid gold;
+    display:inline-block;
+    position:absolute;
+    1left:0;
+    1top:0;
+    1right:-654px;
+    float:left;
+}
+
+.trailing-slice {
+    height:327px;
+    1border:1px solid green;
+    display:inline-block;
+    float:left;
+    position:absolute;
+    1left:-327px;
+    1top:0;
+    1right:-654px;
+}
+
+/*
+.leading-bios {
+    1border:1px solid gold;
+    height:327px;
+    display:inline-block;
+    z-index:4;
+    margin-left:-977px;
+}
+
+.trailing-bios {
+    1border:1px solid gold;
+    height:327px;
+    display:inline-block;
+    z-index:4;
+    margin-left:654px;
+}
+*/
+.bio-panel-close-button {
+    1border:1px solid blue;
+    background: url(images/work-video-close.png) 0 0 no-repeat;
+    width:32px;
+    height:32px;
+    1right:140px;
+    1top:10px;
+    position:absolute;
+    display:none;
+    cursor:pointer;
+    top: 10px;
+    right: 337px;
+}
+
+.person-gap .team-body-people-slider-person-redsq {
+    cursor:default;
+}
+
 .darkredsq {
     width:327px;
     height:327px;
     display:inline-block;
-    background: url(images/darkredsq.png) 0 0 no-repeat;
+    background-color:#5e0008;
+    1background: url(images/darkredsq.png) 0 0 no-repeat;
 }
 
 .contact-body {
@@ -885,7 +995,8 @@ a:hover {
 }
 
 .about-body-margin-redsq {
-    background: url(images/redsq.gif) 0 0 no-repeat;
+    1background: url(images/redsq.gif) 0 0 no-repeat;
+    background-color:#e51c20;
     width:327px;
     height:327px;
     position:absolute;
@@ -976,7 +1087,7 @@ a:hover {
 	opacity: 0.8;
     -moz-opacity: 0.8;
     filter:alpha(opacity=80);
-	letter-spacing: -.08em
+	1letter-spacing: -.08em
 }
 
 .about-body-text h2 {
@@ -1016,7 +1127,8 @@ strong {
 }
 
 .redsq {
-    background: url(images/redsq.gif) 0 0 no-repeat;
+    background-color:#e51c20;
+    1background: url(images/redsq.gif) 0 0 no-repeat;
     width:327px;
     height:327px;
 }
