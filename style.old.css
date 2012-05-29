@@ -856,14 +856,14 @@ a:hover {
 }
 
 .home-body-news {
-	height: 180px;
+    height:140px;
 }
 
 .home-body-news-content {
-	border-bottom: 1px solid #bebab1;
-	width: 980px;
-	height: 180px;
-	text-align: left;
+    border-bottom:1px solid #bebab1;
+    width:980px;
+    height:140px;
+    text-align:left;
 }
 
 .home-body-news-content-title {
@@ -875,28 +875,28 @@ a:hover {
     opacity: 0.7;
     -moz-opacity: 0.7;
     filter:alpha(opacity=70);
-    padding-top:25px;
+    padding-top:47px;
 	font-weight: normal;
 }
 
 .home-body-news-content-body {
     float:left;
     color:black;
-    padding-top:25px;
+    padding-top:47px;
 }
 
 .home-body-news-content-body2 {
 	 font-family: 'Helvetica', Arial, sans-serif;
     float:right;
     color:black;
-    padding-top:25px;
+    padding-top:47px;
 }
 
 .home-body-news-content-circleDown {
     background: url(images/circledown.png) 0 0 no-repeat;
     width:50px;
     height:48px;
-    margin-top:25px;
+    margin-top:47px;
     position:absolute;
     cursor:pointer;
 }
@@ -945,7 +945,7 @@ a:hover {
     opacity: 0.7;
     -moz-opacity: 0.7;
     filter:alpha(opacity=70);
-    padding-top:25px;
+    padding-top:47px;
 }
 
 .home-body-ape {
@@ -963,12 +963,12 @@ a:hover {
 }
 
 .home-body-ape-title {
-	width: 981px;
-	display: inline-block;
-	text-align: center;
-	padding-top: 25px;
-	font-size: 48px;
-	letter-spacing: -.04em;
+    width:981px;
+    display:inline-block;
+    text-align:center;
+    padding-top: 0;
+	font-size:48px;
+	letter-spacing:-.04em;
 }
 
 .home-body-ape-subtitle {

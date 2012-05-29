@@ -8,17 +8,17 @@
 <link rel="stylesheet" href="reset.css" type="text/css" media="screen"/>
 <link rel="stylesheet" href="style.css" type="text/css" media="screen"/>
 <link rel="stylesheet" href="fonts/futurastd.css" type="text/css" media="screen"/>
+<link rel="stylesheet" href="libs/smoothscroll/css/smoothDivScroll.css" type="text/css" media="screen"/>
 
-<script type="text/javascript" src="libs/jquery/jquery.js" ></script>
-<script type="text/javascript" src="libs/easing/jquery.easing.1.3.js"></script>
-<script type="text/javascript" src="libs/easyslider/easySlider1.7.js"></script>
-<!--
-<script type="text/javascript" src="libs/scrolling-parallax/jquery.scrolling-parallax.js" ></script>
-<script type="text/javascript" src="libs/swfobject/src.debug/swfobject.js"></script>
-<script type="text/javascript" src="libs/loader/jquery.loader3.debug.js"></script>
--->
-<script type="text/javascript" src="script.debug.js"></script>
 
+<style type="text/css">
+    .JMyCarousel li {
+        width: 327px;
+        height: 327px;
+        background: #fff;
+        border: #000 solid 1px;
+    }
+    </style>
 
 </head>
 
@@ -26,15 +26,16 @@
 
     <div class="header">
         <div class="header-content">
-                <a href="#page1" title="Home" id="logo-tab">
+                <a href="#page1" title="Home" id="logo-tab" class="home-tab-link">
                 <div class="logo"></div>
                 <div class="ape-name"></div>
             </a>
             <div class="nav">
-                <a href="#page2" title="About"><span class="about-tab"></span></a>
-                <a href="#page3" title="Team"><div class="team-tab"></div></a>
-                <a href="#page4" title="Work"><div class="work-tab"></div></a>
-                <a href="#page5" title="Contact"><div class="contact-tab"></div></a>
+                <a href="#page2" title="About" class="about-tab-link"><span class="about-tab"></span></a>
+                <a href="#page3" title="Team" class="team-tab-link"><div class="team-tab"></div></a>
+                <a href="#page4" title="Work" class="work-tab-link"><div class="work-tab"></div></a>
+                <a href="blog" title="Blog" class="blog-tab-link"><div class="blog-tab"></div></a>
+                <a href="#page5" title="Contact" class="contact-tab-link"><div class="contact-tab"></div></a>
             </div>
         </div>
     </div>
@@ -81,14 +82,14 @@
                         </div>
                         <div class="home-body-ape futurastd">
                             <p class="home-body-ape-title">
-                                                AMUSEMENT PARK ENTERTAINMENT<br />
-                                                IS A STUDIO THAT SPECIALIZES IN<br />
-                                               INVENTIVE TRANSMEDIA STORYTELLING,
-                                            </p>
+                                AMUSEMENT PARK ENTERTAINMENT<br />
+                                IS A STUDIO THAT SPECIALIZES IN<br />
+                               INVENTIVE TRANSMEDIA STORYTELLING.
+                            </p>
                             <p class="home-body-ape-subtitle">
-                            FORMED AS A COLLABORATIVE EFFORT BETWEEN GLOBAL HOLDING COMPANY IPG AND AN EXTREMELY<br />
+                            AMUSEMENT PARK ENTERTAINMENT WAS FORMED AS A COLLABORATIVE EFFORT BETWEEN GLOBAL HOLDING COMPANY IPG<br /> AND AN EXTREMELY
                             TALENTED GROUP OF ARTISTS, WRITERS, PRODUCERS AND TECH HEADS LEAD BY JIMMY SMITH.
-                                            </p>
+                            </p>
                         </div>
 
 
@@ -118,12 +119,11 @@
                     <div class="about-body-text futurastd">
                         <div>
                             <h2>WE ARE NOT AN ADVERTISING AGENCY.</h2>
-                            <p>
-Amusement Park Entertainment is a <strong>transmedia</strong> studio, formed as a collaborative effort between global holding company IPG and advertising giant CEO Jimmy Smith. We&rsquo;re not an advertising agency. Think of us as a manufacturer of creative content, business models and branded relationships across multiple platforms. 
-                            </p>
-                            <p>
-The collective experience of our team is heavily rooted in sports, art, entertainment and emerging culture. From 20+ years of working with dominant brands like Nike, Pepsi and Gatorade to cultivating partnerships with the most influential celebrities, Amusement Park is uniquely positioned to pioneer new territory in an ever-changing industry.
-                       </p></div>
+                            <p>Think of us as a manufacturer of creative content, business models and branded relationships across multiple platforms.</p>
+                            <p>The collective experience of our team is heavily rooted in sports, art, entertainment and emerging culture. From 20+ years of working with dominant brands like Nike, Pepsi and Gatorade to cultivating partnerships with the most influential celebrities, Amusement Park is uniquely positioned to pioneer new territory in an ever-changing industry.</p>
+                            <p>Amusement Park Entertainment is in the business of creating 360&ordm; brand experiences through <br>
+                            storytelling and compelling interactive technology.</p>
+                        </div>
                     </div>
                     <div class="about-body-right-margin">
                         <div class="about-body-right-margin-redsq redsq"></div>
@@ -142,313 +142,302 @@ The collective experience of our team is heavily rooted in sports, art, entertai
                 <div class="team-body page-body">
 
 
-                 <div class="team-body-people-slider-container">
-                        <div class="team-body-people-slider-redsq darkredsq"></div>
-                        <div id="people-slider" class="team-body-people-slider">
-            <ul>
+                <div class="team-body-people-slider-container">
+
+            <!--    <div id="people-slider" class="team-body-people-slider"> -->
+<div class="carousel-container">
+    <div class="JMyCarousel">
 
 
-               <li>
-                <div class="team-body-people-slider-person">
-                    <div class="team-body-people-slider-person-redsq redsq futurastd">
-                        <h2>JIMMY SMITH</h2>
-                        <div class="team-body-people-slider-person-redsq-tri"></div>
-                    </div>
-                    <div class="team-body-people-slider-person-text">
-                        <h3>Chairman, CEO/CCO</h3>
-                        <p>
-                        Jimmy has earned countless awards for his work as a Writer and Creative Director for Nike at Wieden + Kennedy, Executive Creative Director at BBDO and most recently, Gatorade&rsquo;s Group Creative Director at TBWA\Chiat\Day LA. As GCD at TBWA\Chiat\Day, Jimmy oversaw the creation of Gatorade Replay, which gave decades-old, high school sports teams a chance to relive their glory days. Jimmy also spearheaded the transformation of the Gatorade brand to &ldquo;G,&rdquo; and was voted as <em>Fast Company&rsquo;s</em> 100 most creative people in business in 2012. 
-                        </p>
-                        <p class="team-body-people-slider-person-text-email">
+        <div class="team-body-people-slider-person person-gap">
+            <div class="team-body-people-slider-person-redsq darkredsq futurastd">
+                <h2></h2>
+                <div class="team-body-people-slider-person-redsq-tri"></div>
+            </div>
+            <div class="team-body-people-slider-person-text">
+                <h3></h3>
+                <p></p>
+                <p class="team-body-people-slider-person-text-email"></p>                            
+            </div>
+        </div>
+
+          <div class="team-body-people-slider-person">
+              <div class="team-body-people-slider-person-redsq redsq futurastd">
+                  <h2>JIMMY SMITH</h2>
+                  <div class="team-body-people-slider-person-redsq-tri"></div>
+              </div>
+              <div class="team-body-people-slider-person-text">
+                  <h3>Chairman, CEO/CCO</h3>
+                  <p>
+Jimmy has earned countless awards for his work as a Writer and Creative Director for Nike at Wieden + Kennedy, Executive Creative Director at BBDO and most recently, Gatorade&rsquo;s Group Creative Director at TBWA\Chiat\Day LA. As GCD at TBWA\Chiat\Day, Jimmy oversaw the creation of Gatorade Replay, which gave decades-old, high school sports teams a chance to relive their glory days. Jimmy also spearheaded the transformation of the Gatorade brand to &ldquo;G,&rdquo; and was voted as <em>Fast Company&rsquo;s</em> 100 most creative people in business in 2012. 
+                  </p>
+                  <p class="team-body-people-slider-person-text-email">
 Say hello at <a href="mailto:jimmy@amusementparkent.com">
 jimmy@amusementparkent.com</a>
-                        </p>                            
-                    </div>
-                </div></li>
+                  </p>                            
+              </div>
+          </div>
 
 
-                <li>
-                <div class="team-body-people-slider-person">
-                    <div class="team-body-people-slider-person-redsq redsq futurastd">
-                        <h2>DONNA LAMAR</h2>
-                        <div class="team-body-people-slider-person-redsq-tri"></div>
-                    </div>
-                    <div class="team-body-people-slider-person-text">
-                        <h3>Partner and Director of Creative + Development</h3>
-                        <p>
-                        Donna was the former Head of Production at Nike&rsquo;s creative agency, Wieden + Kennedy in Amsterdam before transitioning to creative. She earned the award for ADColor Creative Woman of the Year in 2011, and previously served as Gatorade&rsquo;s Creative Director at TBWA\Chiat\Day LA. Donna is recognized as an essential component to the creation and success of Gatorade Replay and the rebranding of Gatorade to &ldquo;G&rdquo;.
-                        
-                        </p>
-                        <p class="team-body-people-slider-person-text-email">
+          <div class="team-body-people-slider-person">
+              <div class="team-body-people-slider-person-redsq darkredsq futurastd">
+                  <h2>DONNA LAMAR</h2>
+                  <div class="team-body-people-slider-person-redsq-tri"></div>
+              </div>
+              <div class="team-body-people-slider-person-text">
+                  <h3>Partner and Director of Creative + Development</h3>
+                  <p>
+Donna was the former Head of Production at Nike&rsquo;s creative agency, Wieden + Kennedy in Amsterdam before transitioning to creative. She earned the award for ADColor Creative Woman of the Year in 2011, and previously served as Gatorade&rsquo;s Creative Director at TBWA\Chiat\Day LA. Donna is recognized as an essential component to the creation and success of Gatorade Replay and the rebranding of Gatorade to &ldquo;G&rdquo;.                  
+                  </p>
+                  <p class="team-body-people-slider-person-text-email">
 Say hello at <a href="mailto:donna@amusementparkent.com">donna@amusementparkent.com</a>
-                        </p>                            
-                    </div>
-                </div></li>
+                  </p>                            
+              </div>
+          </div>
 
 
-               <li>
-                <div class="team-body-people-slider-person">
-                    <div class="team-body-people-slider-person-redsq redsq futurastd">
-                        <h2>BOBBY WARE</h2>
-                        <div class="team-body-people-slider-person-redsq-tri"></div>
-                    </div>
-                    <div class="team-body-people-slider-person-text">
-                        <h3>Partner and CFO</h3>
-                        <p>
-                        Bobby is the former Commissioner of Transportation for the City of Chicago where he had oversight responsibility for a budget in excess of 750 million dollars. Prior to his tenure with the Chicago Department of Transportation, he served as a partner at Jones, Ware & Grenard, one of the largest minority owned law firms in the country.  Bobby is also the executive producer for the graphic novel, <em>The Truth. </em>
- 
-                        </p>
-                        <p class="team-body-people-slider-person-text-email">
+          <div class="team-body-people-slider-person">
+              <div class="team-body-people-slider-person-redsq redsq futurastd">
+                  <h2>BOBBY WARE</h2>
+                  <div class="team-body-people-slider-person-redsq-tri"></div>
+              </div>
+              <div class="team-body-people-slider-person-text">
+                  <h3>Partner and CFO</h3>
+                  <p>
+Bobby is the former Commissioner of Transportation for the City of Chicago where he had oversight responsibility for a budget and programming in excess of 750 million dollars. Prior to his tenure with the Chicago Department of Transportation, he served as a partner at Jones, Ware & Grenard, one of the largest minority owned law firms in the country. Bobby is also the executive producer for the graphic novel, <em>The Truth.</em>
+                  </p>
+                  <p class="team-body-people-slider-person-text-email">
 Say hello at <a href="mailto:bobby@amusementparkent.com">
 bobby@amusementparkent.com</a>
-                        </p>                            
-                    </div>
-                </div></li>
-                
+                  </p>                            
+              </div>
+          </div>
 
 
-               <li>
-                <div class="team-body-people-slider-person">
-                    <div class="team-body-people-slider-person-redsq redsq futurastd">
-                        <h2>ROBERTO GRANDE</h2>
-                        <div class="team-body-people-slider-person-redsq-tri"></div>
-                    </div>
-                    <div class="team-body-people-slider-person-text">
-                        <h3>Partner and Director of Account Management</h3>
-                        <p>
-Roberto has more than 10 years of experience in technology transactions, digital distribution and mobile entertainment. As a former New York Partner of Law Firm Sonnenschein Nath & Rosenthal&rsquo;s Global Tech Transactions Practice, Roberto has experience working across all digital platforms with specific expertise in rights acquisition and monetizing mobile and digital formats.
-                        </p>
-                        <p class="team-body-people-slider-person-text-email">
+          <div class="team-body-people-slider-person">
+              <div class="team-body-people-slider-person-redsq darkredsq futurastd">
+                  <h2>ROBERTO GRANDE</h2>
+                  <div class="team-body-people-slider-person-redsq-tri"></div>
+              </div>
+              <div class="team-body-people-slider-person-text">
+                  <h3>Partner and Director of Account Management</h3>
+                  <p>
+Roberto has more than 10 years of experience in technology transactions, digital distribution and mobile entertainment. As a former New York Partner of Law Firm Sonnenschein Nath & Rosenthal&rsquo;s Global Tech Transactions Practice, Roberto has experience working across all digital platforms with specific expertise in rights acquisition and monetizing mobile and digital formats.
+                  </p>
+                  <p class="team-body-people-slider-person-text-email">
 Say hello at <a href="mailto:roberto@amusementparkent.com">
 roberto@amusementparkent.com</a>
-                        </p>                            
-                    </div>
-                </div></li>
+                  </p>                            
+              </div>
+          </div>
 
-                
-           
-                  <li>
-                <div class="team-body-people-slider-person">
-                    <div class="team-body-people-slider-person-redsq redsq futurastd">
-                        <h2>SMOKE</h2>
-                        <div class="team-body-people-slider-person-redsq-tri"></div>
-                    </div>
-                    <div class="team-body-people-slider-person-text">
-                        <h3>Manager Creative Services</h3>
-                        <p>
+
+        <div class="team-body-people-slider-person">
+            <div class="team-body-people-slider-person-redsq redsq futurastd">
+                <h2>SMOKE</h2>
+                <div class="team-body-people-slider-person-redsq-tri"></div>
+            </div>
+            <div class="team-body-people-slider-person-text">
+                <h3>Manager Creative Services</h3>
+                <p>
 Smoke is a graduate of Michigan State University. Her last job outside the home was in accounting. For the last 18 years, she&rsquo;s been a homemaker raising two incredible sons. Nothing&rsquo;s changed much since she began working at Amusement Park. It&rsquo;s just an extended family for her and another household that she enjoys taking care of. 
-                        </p>
-                        <p class="team-body-people-slider-person-text-email">
+                </p>
+                <p class="team-body-people-slider-person-text-email">
 Say hello at <a href="mailto:smoke@amusementparkent.com">
 smoke@amusementparkent.com</a>
-                        </p>                            
-                    </div>
-                </div></li>
-                
-                
-                                
-               <li>
-                <div class="team-body-people-slider-person">
-                    <div class="team-body-people-slider-person-redsq redsq futurastd">
-                        <h2>JIM DARLING</h2>
-                        <div class="team-body-people-slider-person-redsq-tri"></div>
-                    </div>
-                    <div class="team-body-people-slider-person-text">
-                        <h3>Director of Visual Arts</h3>
-                        <p>
-Jim&rsquo;s a family man and artist in addition to being the Director of Visual Arts in the Amusement Park family. His gallery work ranges from intricate ink drawings to layered woodwork with illustrative painted skins. Outside, Jim expands his toolset by including found objects and materials. His subject matter lives between play and real. Large issues are often looked at in simplistic terms and are then juxtaposed by intense detail. 
-                        </p>
-                        <p class="team-body-people-slider-person-text-email">
+                </p>                            
+            </div>
+        </div>
+
+
+        <div class="team-body-people-slider-person">
+            <div class="team-body-people-slider-person-redsq darkredsq futurastd">
+                <h2>JIM DARLING</h2>
+                <div class="team-body-people-slider-person-redsq-tri"></div>
+            </div>
+            <div class="team-body-people-slider-person-text">
+                <h3>Director of Visual Arts</h3>
+                <p>
+Jim&rsquo;s a family man and artist in addition to being the Director of Visual Arts in the Amusement Park family. His gallery work ranges from intricate ink drawings to layered woodwork with illustrative painted skins. Outside, Jim expands his toolset by including found objects and materials. His subject matter lives between play and real. Large issues are often looked at in simplistic terms and are then juxtaposed by intense detail.
+                </p>
+                <p class="team-body-people-slider-person-text-email">
 Say hello at <a href="mailto:darling@amusementparkent.com">
 darling@amusementparkent.com</a>
-                        </p>                            
-                    </div>
-                </div></li>
-                
-                                
-               <li>
-                <div class="team-body-people-slider-person">
-                    <div class="team-body-people-slider-person-redsq redsq futurastd">
-                        <h2>DOUG<br /> ALVES</h2>
-                        <div class="team-body-people-slider-person-redsq-tri"></div>
-                    </div>
-                    <div class="team-body-people-slider-person-text">
-                        <h3>Associate Creative Director</h3>
-                        <p>
-                        Doug, a Brazilian-born artist, has some heavy weight commissions under his belt. With published work in over thirty books and magazines, Doug has lent his creative expertise to mega-brands such as: Adidas, Gatorade, and Adobe. Most recently, Doug was awarded as one of the top 10 illustrators in the world by <em>DPI Magazine</em>. Doug's work is full of passion and vibrancy and his intricately crafted pen and ink drawings, collages, and computer compositions play with the themes of nature and make believe.
-                        </p>
-                        <p class="team-body-people-slider-person-text-email">
+                </p>                            
+            </div>
+        </div>
+
+
+      <div class="team-body-people-slider-person">
+              <div class="team-body-people-slider-person-redsq redsq futurastd">
+                  <h2>DOUG<br /> ALVES</h2>
+                  <div class="team-body-people-slider-person-redsq-tri"></div>
+              </div>
+              <div class="team-body-people-slider-person-text">
+                  <h3>Associate Creative Director</h3>
+                  <p>
+Doug, a Brazilian-born artist, has some heavy weight commissions under his belt. With published work in over thirty books and magazines, Doug has lent his creative expertise to mega-brands such as: Adidas, Gatorade, and Adobe. Most recently, Doug was awarded as one of the top 10 illustrators in the world by <em>DPI Magazine</em>. Doug&rsquo;s work is full of passion and vibrancy and his intricately crafted pen and ink drawings, collages, and computer compositions play with the themes of nature and make believe.
+                  </p>
+                  <p class="team-body-people-slider-person-text-email">
 Say hello at <a href="mailto:doug@amusementparkent.com">
 doug@amusementparkent.com</a>
-                        </p>                            
-                    </div>
-                </div></li>
-                
-                   
-               <li>
-                <div class="team-body-people-slider-person">
-                    <div class="team-body-people-slider-person-redsq redsq futurastd">
-                        <h2>ROB HEPPLER</h2>
-                        <div class="team-body-people-slider-person-redsq-tri"></div>
-                    </div>
-                    <div class="team-body-people-slider-person-text">
-                        <h3>Senior Writer</h3>
-                        <p>
-                        Former Hypebeast Blogger and currently blogging for TheHundreds.com, Rob is a pillar in the streetwear community. He founded the first street culture radio show, &ldquo;Weekly Drop.&rdquo; He's also the creator of the &ldquo;Lobster&rdquo; Nike SB Dunk and the Coraline Dunk. Rob made the jump to advertising after graduating from the prestigious WK12 Program at Wieden + Kennedy. Rob&rsquo;s favorite personal achievements include Baconorbeercan.com and his 13-year-old daughter, Sierra.
+                  </p>                            
+              </div>
+          </div>
 
-                        </p>
-                        <p class="team-body-people-slider-person-text-email">
+
+          <div class="team-body-people-slider-person">
+              <div class="team-body-people-slider-person-redsq darkredsq futurastd">
+                  <h2>ROB HEPPLER</h2>
+                  <div class="team-body-people-slider-person-redsq-tri"></div>
+              </div>
+              <div class="team-body-people-slider-person-text">
+                  <h3>Senior Writer</h3>
+                  <p>
+Former Hypebeast Blogger and currently blogging for TheHundreds.com, Rob is a pillar in the streetwear community. He founded the first street culture radio show, &ldquo;Weekly Drop.&rdquo; He's also the creator of the &ldquo;Lobster&rdquo; Nike SB Dunk and the Coraline Dunk. Rob made the jump to advertising after graduating from the prestigious WK12 Program at Wieden + Kennedy. Rob&rsquo;s favorite personal achievements include Baconorbeercan.com and his 13-year-old daughter, Sierra.
+                  </p>
+                  <p class="team-body-people-slider-person-text-email">
 Say hello at <a href="mailto:rob@amusementparkent.com">
 rob@amusementparkent.com</a>
-                        </p>                            
-                    </div>
-                </div></li>
-                
-                
-               <li>
-                <div class="team-body-people-slider-person">
-                    <div class="team-body-people-slider-person-redsq redsq futurastd">
-                        <h2>JEROME <span style="font-size:30px;">DAUGHTREY</span></h2>
-                        <div class="team-body-people-slider-person-redsq-tri"></div>
-                    </div>
-                    <div class="team-body-people-slider-person-text">
-                        <h3>(aka Romey-Rome aka Ace-$) Writer</h3>
-                        <p>
-Jerome is a linguistic enthusiast and student of life. As an up-and-coming writer, he follows a simple life-to-career philosophy: "All you'll ever need is Hope & Hustle." Fueled by his passion to glorify Jesus Christ, he refuses to be outworked. <em>-Colossians 3:23</em>
-                        </p>
-                        <p class="team-body-people-slider-person-text-email">
+                  </p>                            
+              </div>
+          </div>
+
+
+        <div class="team-body-people-slider-person">
+            <div class="team-body-people-slider-person-redsq redsq futurastd">
+                <h2>JEROME <span style="font-size:30px;">DAUGHTREY</span></h2>
+                <div class="team-body-people-slider-person-redsq-tri"></div>
+            </div>
+            <div class="team-body-people-slider-person-text">
+                <h3>(aka Romey-Rome aka Ace-$) Writer</h3>
+                <p>
+Jerome is a linguistic enthusiast and student of life. As an up-and-coming writer, he follows a simple life-to-career philosophy: &ldquo;All you&rsquo;ll ever need is Hope & Hustle.&rdquo; Fueled by his passion to glorify Jesus Christ, he refuses to be outworked. <em>- Colossians 3:23</em>
+                </p>
+                <p class="team-body-people-slider-person-text-email">
 Say hello at <a href="mailto:jerome@amusementparkent.com">
 jerome@amusementparkent.com</a>
-                        </p>                            
-                    </div>
-                </div></li>
-                   
-                   
-                                                   
-               <li>
-                <div class="team-body-people-slider-person">
-                    <div class="team-body-people-slider-person-redsq redsq futurastd">
-                        <h2>JON MARSHALL</h2>
-                        <div class="team-body-people-slider-person-redsq-tri"></div>
-                    </div>
-                    <div class="team-body-people-slider-person-text">
-                        <h3>Graphic Designer</h3>
-                        <p>
+                </p>                            
+            </div>
+        </div>
+
+
+        <div class="team-body-people-slider-person">
+            <div class="team-body-people-slider-person-redsq darkredsq futurastd">
+                <h2>JON MARSHALL</h2>
+                <div class="team-body-people-slider-person-redsq-tri"></div>
+            </div>
+            <div class="team-body-people-slider-person-text">
+                <h3>Graphic Designer</h3>
+                <p>
 Jon is from Shelbyville, a small town in Kentucky. He attended Western Kentucky University where he also played football. He often refers to himself as a young John Nash (aka a beautiful mind). 
-                        </p>
-                        <p class="team-body-people-slider-person-text-email">
+                </p>
+                <p class="team-body-people-slider-person-text-email">
 Say hello at <a href="mailto:jon@amusementparkent.com">
 jon@amusementparkent.com</a>
-                        </p>                            
-                    </div>
-                </div></li>
-                
-                
-               <li>
-                <div class="team-body-people-slider-person">
-                    <div class="team-body-people-slider-person-redsq redsq futurastd">
-                        <h2>POETRI</h2>
-                        <div class="team-body-people-slider-person-redsq-tri"></div>
-                    </div>
-                    <div class="team-body-people-slider-person-text">
-                        <h3>Senior Writer</h3>
-                        <p>
-                        Poetri is a Tony Award winning poet who is a firm believer in Christ. Throughout his career he has written commercials for clients such as Nike, NFL Films, BET and Delta. He can also be seen in the movies &ldquo;Blades of Glory&rdquo; and &ldquo;Yes Man,&rdquo; and has appeared on television in &ldquo;House of Payne&rdquo; and &ldquo;Bones&rdquo;. 
+                </p>                            
+            </div>
+        </div>
 
-                        </p>
-                        <p class="team-body-people-slider-person-text-email">
+
+        <div class="team-body-people-slider-person">
+            <div class="team-body-people-slider-person-redsq redsq futurastd">
+                <h2>POETRI</h2>
+                <div class="team-body-people-slider-person-redsq-tri"></div>
+            </div>
+            <div class="team-body-people-slider-person-text">
+                <h3>Senior Writer</h3>
+                <p>
+Poetri is a Tony Award winning poet who is a firm believer in Christ. Throughout his career he has written commercials for clients such as Nike, NFL Films, BET and Delta. He can also be seen in the movies &ldquo;Blades of Glory&rdquo; and &ldquo;Yes Man,&rdquo; and has appeared on television in &ldquo;House of Payne&rdquo; and &ldquo;Bones&rdquo;.
+                </p>
+                <p class="team-body-people-slider-person-text-email">
 Say hello at <a href="mailto:poetri@amusementparkent.com">
 poetri@amusementparkent.com</a>
-                        </p>                            
-                    </div>
-                </div></li>
-                                            
-                
-               <li>
-                <div class="team-body-people-slider-person">
-                    <div class="team-body-people-slider-person-redsq redsq futurastd">
-                        <h2>CHRISTINA OKUBO</h2>
-                        <div class="team-body-people-slider-person-redsq-tri"></div>
-                    </div>
-                    <div class="team-body-people-slider-person-text">
-                        <h3>Senior Creative Strategist</h3>
-                        <p>
-Christina is a creative strategist who specializes in working with fashion and retail brands. She&rsquo;s fused her unique experience through her work with American Apparel, Wieden + Kennedy (for clients such as Levi&rsquo;s, Target and Nike), as well as independent apparel and accessory brands. She loves art, design, architecture, traveling and snowboarding. She is bi-cultural, multilingual and is a published photographer.
-                        </p>
-                        <p class="team-body-people-slider-person-text-email">
+                </p>                            
+            </div>
+        </div>
+
+
+        <div class="team-body-people-slider-person">
+            <div class="team-body-people-slider-person-redsq darkredsq futurastd">
+                <h2>CHRISTINA OKUBO</h2>
+                <div class="team-body-people-slider-person-redsq-tri"></div>
+            </div>
+            <div class="team-body-people-slider-person-text">
+                <h3>Senior Creative Strategist</h3>
+                <p>
+Christina is a creative strategist who specializes in working with fashion and retail brands. She&rsquo;s fused her unique experience through her work with American Apparel, Wieden + Kennedy (for clients such as Levi&rsquo;s, Target and Nike), as well as independent apparel and accessory brands. She loves art, design, architecture, traveling and snowboarding. She is bi-cultural, multilingual and is a published photographer.
+                </p>
+                <p class="team-body-people-slider-person-text-email">
 Say hello at <a href="mailto:christina@amusementparkent.com">
 christina@amusementparkent.com</a>
-                        </p>                            
-                    </div>
-                </div></li>
-                   
+                </p>                            
+            </div>
+        </div>
 
-                
-               <li>
-                <div class="team-body-people-slider-person">
-                    <div class="team-body-people-slider-person-redsq redsq futurastd">
-                        <h2>DEIRDRE SMITH</h2>
-                        <div class="team-body-people-slider-person-redsq-tri"></div>
-                    </div>
-                    <div class="team-body-people-slider-person-text">
-                        <h3>Writer</h3>
-                        <p>
-                        
-                        Deirdre comes to Amusement Park with experience as a singer, actress, writer, producer, director, choreographer and casting director. She&rsquo;s worked with the likes of Madonna, The Black Eyed Peas, Rosario Dawson, Quest Love, Bootsy Collins, Jabbawockeez and 107 young performers (at one time) for the City of L.A.  And she has worked with top brands like Gatorade and Nike. In her "&ldquo;free&rdquo; time, she runs a performing arts nonprofit, Peace Quest, Inc.
-                         
-                        </p>
-                        <p class="team-body-people-slider-person-text-email">
+
+        <div class="team-body-people-slider-person">
+            <div class="team-body-people-slider-person-redsq redsq futurastd">
+                <h2>DEIRDRE SMITH</h2>
+                <div class="team-body-people-slider-person-redsq-tri"></div>
+            </div>
+            <div class="team-body-people-slider-person-text">
+                <h3>Writer</h3>
+                <p>
+Deirdre comes to Amusement Park with experience as a singer, actress, writer, producer, director, choreographer and casting director. She&rsquo;s worked with the likes of Madonna, The Black Eyed Peas, Rosario Dawson, Quest Love, Bootsy Collins, Jabbawockeez and 107 young performers (at one time) for the City of L.A.  And she has worked with top brands like Gatorade and Nike. In her &ldquo;free&rdquo; time, she runs a performing arts nonprofit, Peace Quest, Inc.
+                </p>
+                <p class="team-body-people-slider-person-text-email">
 Say hello at <a href="mailto:dee@amusementparkent.com">
 dee@amusementparkent.com</a>
-                        </p>                            
-                    </div>
-                </div></li>
-                
-                                
-               <li>
-                <div class="team-body-people-slider-person">
-                    <div class="team-body-people-slider-person-redsq redsq futurastd">
-                        <h2>ESTHER<br> KIM</h2>
-                        <div class="team-body-people-slider-person-redsq-tri"></div>
-                    </div>
-                    <div class="team-body-people-slider-person-text">
-                        <h3>Interactive Designer</h3>
-                        <p>
-Esther came to L.A. from Dallas, TX. to work in the fields of special effects and motion graphics but became enraptured by the erratic life of advertising. Since then, she&rsquo;s been riding the roller coaster from graphics and motion to potions and everything else she can get her inconspicuous self into.
-                        </p>
-                        <p class="team-body-people-slider-person-text-email">
+                </p>                            
+            </div>
+        </div>
+
+
+        <div class="team-body-people-slider-person">
+            <div class="team-body-people-slider-person-redsq darkredsq futurastd">
+                <h2>ESTHER<br> KIM</h2>
+                <div class="team-body-people-slider-person-redsq-tri"></div>
+            </div>
+            <div class="team-body-people-slider-person-text">
+                <h3>Interactive Designer</h3>
+                <p>
+Esther came to L.A. from Dallas, TX. to work in the fields of special effects and motion graphics but became enraptured by the erratic life of advertising. Since then, she&rsquo;s been riding the roller coaster from graphics and motion to potions and everything else she can get her inconspicuous self into.
+                </p>
+                <p class="team-body-people-slider-person-text-email">
 Say hello at <a href="mailto:esther@amusementparkent.com">
 esther@amusementparkent.com</a>
-                        </p>                            
-                    </div>
-                </div></li>
-                 
-                
-               <li>
-                <div class="team-body-people-slider-person">
-                    <div class="team-body-people-slider-person-redsq redsq futurastd">
-                        <h2>JESSICA WILLIS</h2>
-                        <div class="team-body-people-slider-person-redsq-tri"></div>
-                    </div>
-                    <div class="team-body-people-slider-person-text">
-                        <h3>The Intern</h3>
-                        <p>
-                        Armed with two suitcases, a backpack, one tattered copy of <em>The Alchemist</em> –and no plan, Jessica embarked on a one-way flight across country to the City of Angels. After showing up at the doors of Amusement Park to introduce herself to the team, she somehow managed to bogart her way into working on a project — proof that, &ldquo;When you want something, all the universe conspires in helping you to achieve it.&rdquo;
+                </p>                            
+            </div>
+        </div>
 
-                        </p>
-                        <p class="team-body-people-slider-person-text-email">
+
+        <div class="team-body-people-slider-person">
+            <div class="team-body-people-slider-person-redsq redsq futurastd">
+                <h2>JESSICA WILLIS</h2>
+                <div class="team-body-people-slider-person-redsq-tri"></div>
+            </div>
+            <div class="team-body-people-slider-person-text">
+                <h3>The Intern</h3>
+                <p>
+Armed with two suitcases, a backpack, one tattered copy of <em>The Alchemist</em>, and no plan, Jessica embarked on a one-way flight across country to the City of Angels. After showing up at the doors of Amusement Park to introduce herself to the team, she somehow managed to bogart her way into working on a project - proof that, &ldquo;When you want something, all the universe conspires in helping you to achieve it.&rdquo;
+                </p>
+                <p class="team-body-people-slider-person-text-email">
 Say hello at <a href="mailto:jessica@amusementparkent.com">
 jessica@amusementparkent.com</a>
-                        </p>                            
-                    </div>
-                </div></li>
-                
+                </p>                            
+            </div>
+        </div>
 
 
 
-            </ul>
+
+
+
+
+        </div>
                         </div>
-                        <div class="team-body-people-slider-redsq darkredsq"></div>
+
                     </div>
 
 
@@ -569,6 +558,34 @@ CONSUMERS ON EVERY MEDIA PLATFORM.</h2>
                 </div>
         </div>
     </div>
+
+    <!-- LOAD JAVASCRIPT LATE - JUST BEFORE THE BODY TAG 
+         That way the browser will have loaded the images
+         and will know the width of the images. No need to
+         specify the width in the CSS or inline. -->
+
+    <script type="text/javascript" src="libs/jquery/jquery.js" ></script>
+
+    <!-- jQuery UI Widget and Effects Core (custom download)
+         You can make your own at: http://jqueryui.com/download -->
+    <script type="text/javascript" src="libs/smoothscroll/js/jquery-ui-1.8.18.custom.min.js"></script>
+
+    <script type="text/javascript" src="libs/easing/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="libs/easyslider/easySlider1.7.debug.js"></script>
+    <script type="text/javascript" src="libs/loader/jquery.loader3.debug.js"></script>
+
+    <!-- Latest version of jQuery Mouse Wheel by Brandon Aaron
+         You will find it here: http://brandonaaron.net/code/mousewheel/demos -->
+    <script src="libs/smoothscroll/js/jquery.mousewheel.min.js" type="text/javascript"></script>
+
+    <!-- Smooth Div Scroll 1.2 minified-->
+    <script src="libs/smoothscroll/js/jquery.smoothdivscroll-1.2.js" type="text/javascript"></script>
+
+    <!-- If you want to look at the uncompressed version you find it at
+         js/jquery.smoothDivScroll-1.2.js -->
+
+    <script type="text/javascript" src="script.debug.js"></script>
+
 
 </body>
 </html>
