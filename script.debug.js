@@ -5,14 +5,13 @@ pimg.src='images/loader.gif';
 $(document).ready(function(){
     $(function() {
         var gapWidth = 0;
-      
-      
+
+/*
         $.preLoadGUI({
           message: '',
           ending_message: '',
           bgOpacity: 1.0,
           load: [
-            ['http://www.yngest.com/ape-theme/images/about-block.jpg', 'img'],
             ['http://www.yngest.com/ape-theme/images/home-block.jpg', 'img'],
             ['http://www.yngest.com/ape-theme/images/team-block.jpg', 'img'],
             ['http://www.yngest.com/ape-theme/images/contact-block.jpg', 'img'],
@@ -22,7 +21,7 @@ $(document).ready(function(){
             ['http://www.yngest.com/ape-theme/images/bigpark_a.png', 'img'],
             ['http://www.yngest.com/ape-theme/images/asqp-im5.gif', 'img']
         ]});
-
+*/
 
         $(".JMyCarousel").smoothDivScroll({
             mousewheelScrolling: false
@@ -49,6 +48,75 @@ $(document).ready(function(){
         //  ,autoScrollingMode: "onstart"
         });
 
+       // home-body-news-content-rss
+       // http://127.0.0.1/ape/dev/blog/?cat=3&feed=rss2
+     //  var feedURL = 'http://feeds.reuters.com/reuters/oddlyEnoughNews';
+       var feedURL = '/ape/dev/blog/?cat=3&feed=atom';
+        $.getFeed({
+           url: feedURL,
+           success: function(feed) {
+        
+/*
+<div class="home-body-news-content-body-newsItem">
+<p class="date">
+    May 25
+</p>
+<p>
+<span>Jimmy Smith Discusses Intellectual Property<br /> by <a href="http://www.bloomberg.com/video/93464009-jimmy-smith-discusses-intellectual-property.html" target="_blank"><em>Bloomberg</em></a></span>
+</p>
+*/
+        /*
+            jQuery('.home-body-news-content-body').append('<h2>'
+                + '<a href="'
+                + feed.link
+                + '">'
+                + feed.title
+                + '</a>'
+                + '</h2>');
+         */       
+                var m_names = new Array("Jan", "Feb", "Mar", 
+                "Apr", "May", "Jun", "Jul", "Aug", "Sep", 
+                "Oct", "Nov", "Dec");
+
+                var html = '<ul>';
+                
+                for(var i = 0; i < feed.items.length && i < 5; i++) {
+                
+                    var item = feed.items[i];
+                    var publishDate = new Date(item.published);
+                    var curMonth = publishDate.getMonth();
+                    var curDay = publishDate.getDate();
+
+                    
+                    html += '<li><div class="home-body-news-content-body-newsItem">'
+                    + '<p class="date">'
+                    + m_names[curMonth] + ' ' + curDay
+                    + '</p>';
+                    
+                    html += '<p>'
+                    + '<span>'
+                    + item.title
+                    + '<br />'
+                    + item.description
+                    + '</span>'
+                    + '</p>'
+                    + '</div></li>';
+                }
+
+                html += '</ul>';
+                
+                jQuery('.home-body-news-content-body').append(html);
+
+
+                // Start ticker animation.
+                $(".home-body-news-content-body").jCarouselLite({
+                        vertical: true,
+                        visible: 1,
+                        auto:4000,
+                        speed:1500
+                    });
+            } 
+        });       
 
    /*
         $(".JMyCarousel").jMyCarousel({
