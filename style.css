@@ -44,6 +44,10 @@ em {
     padding:2px;
 }
 
+.news-error {
+    font-style:italic;
+}
+
 #description {
     padding-top: 200px;
     position: relative;

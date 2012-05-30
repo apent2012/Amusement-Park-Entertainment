@@ -101,13 +101,11 @@ $(document).ready(function(){
                     + '</p>'
                     + item.description
                     + '</div></li>';
-
-                //    console.log(item.link);
                 }
 
                 html += '</ul>';
                 
-                jQuery('.home-body-news-content-body').append(html);
+                jQuery('.home-body-news-content-body').html(html);
 
 
                 // Start ticker animation.
@@ -118,7 +116,12 @@ $(document).ready(function(){
                         speed:1500,
                         hoverPause: true
                     });
-            } 
+            },
+            error: function(jqXHR, textStatus, errorThrown) {
+                var errorMsg = '<p><span class="news-error">Failed to load RSS feed.</span></p>'
+
+                jQuery('.home-body-news-content-body').html(errorMsg);
+            }
         });       
 
    /*
