@@ -78,6 +78,7 @@ $(document).ready(function(){
                 "Apr", "May", "Jun", "Jul", "Aug", "Sep", 
                 "Oct", "Nov", "Dec");
 
+                var limit = '';
                 var html = '<ul>';
                 
                 for(var i = 0; i < feed.items.length && i < 5; i++) {
@@ -96,11 +97,12 @@ $(document).ready(function(){
                     html += '<p>'
                     + '<span>'
                     + item.title
-                    + '<br />'
-                    + item.description
                     + '</span>'
                     + '</p>'
+                    + item.description
                     + '</div></li>';
+
+                //    console.log(item.link);
                 }
 
                 html += '</ul>';
@@ -113,7 +115,8 @@ $(document).ready(function(){
                         vertical: true,
                         visible: 1,
                         auto:4000,
-                        speed:1500
+                        speed:1500,
+                        hoverPause: true
                     });
             } 
         });       
