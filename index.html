@@ -10,19 +10,19 @@
 <link rel="stylesheet" href="fonts/futurastd.css" type="text/css" media="screen"/>
 <link rel="stylesheet" href="libs/smoothscroll/css/smoothDivScroll.css" type="text/css" media="screen"/>
 
-
-<style type="text/css">
-    .JMyCarousel li {
-        width: 327px;
-        height: 327px;
-        background: #fff;
-        border: #000 solid 1px;
-    }
-    </style>
-
 </head>
 
 <body>
+    <div class="preloaded-images">
+      <img src="http://www.yngest.com/ape-theme/images/home-block.jpg" />
+      <img src="http://www.yngest.com/ape-theme/images/team-block.jpg" />
+      <img src="http://www.yngest.com/ape-theme/images/contact-block.jpg" />
+      <img src="http://www.yngest.com/ape-theme/images/workbox1.jpg" />
+      <img src="http://www.yngest.com/ape-theme/images/reelstill.jpg" />
+      <img src="http://www.yngest.com/ape-theme/images/workbox3.jpg" />
+      <img src="http://www.yngest.com/ape-theme/images/bigpark_a.jpg" />
+      <img src="http://www.yngest.com/ape-theme/images/asqp-im5.jpg" />
+    </div>
 
     <div class="header">
         <div class="header-content">
@@ -43,6 +43,11 @@
     <div id="content">
 
         <div id="block">
+            <div class="loader-wrapper">
+              <div class="loader-wrapper-circle">
+              </div>
+            </div>
+
             <div class="home-page block">
                 <div class="home-block block"></div>
                 <div class="home-body page-body">
@@ -549,6 +554,7 @@ CONSUMERS ON EVERY MEDIA PLATFORM.</h2>
          specify the width in the CSS or inline. -->
 
     <script type="text/javascript" src="libs/jquery/jquery.js" ></script>
+    <script src="libs/imagesloaded/jquery.imagesloaded.js"></script>
 
     <!-- jQuery UI Widget and Effects Core (custom download)
          You can make your own at: http://jqueryui.com/download -->
@@ -556,7 +562,9 @@ CONSUMERS ON EVERY MEDIA PLATFORM.</h2>
 
     <script type="text/javascript" src="libs/easing/jquery.easing.1.3.js"></script>
     <script type="text/javascript" src="libs/easyslider/easySlider1.7.debug.js"></script>
+    <!--
     <script type="text/javascript" src="libs/loader/jquery.loader3.debug.js"></script>
+  -->
 
     <!-- Latest version of jQuery Mouse Wheel by Brandon Aaron
          You will find it here: http://brandonaaron.net/code/mousewheel/demos -->

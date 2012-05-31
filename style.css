@@ -29,6 +29,38 @@ em {
     font-style:italic;
 }
 
+.loader-wrapper {
+    z-index:5;
+    position:fixed;
+    width:100%;
+    top:450px;
+}
+
+.loader-wrapper .loader-wrapper-circle {
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    width:100px;
+    height:100px;
+    position:absolute;
+    text-align:center;
+    background:url(images/loadercirclebg.png) 0 0 no-repeat;
+    display:none;
+}
+
+.loader-wrapper .lr {
+    width:8px;
+    height:10px;
+    display:none;
+    background:url(images/lr1.png) 0 0 no-repeat;
+    position:absolute;
+}
+
+.preloaded-images {
+    display: none;
+}
+
 .facebook {
     float:right;
     padding:2px;
@@ -284,6 +316,14 @@ a:hover {
 .JMyCarousel {
     height:327px;
 }
+
+.JMyCarousel li {
+    width: 327px;
+    height: 327px;
+    background: #fff;
+    border: #000 solid 1px;
+}
+
 
 .team-body-people-slider-container {
     height:327px;
@@ -713,6 +753,7 @@ a:hover {
 .work-body-content {
     background-color:#faf8f5;
     padding-bottom: 116px;
+    height:211px;
 }
 
 .work-body-content-ape {

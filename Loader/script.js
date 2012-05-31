@@ -1,120 +1,93 @@
-//<![CDATA[ 
 $(document).ready(function(){
-var p = 0;
 
-function moveit() {
-    p += .01;
+    var DegreesToRadians = function(degrees) {
+        var pi = 3.141592653589793;
+        return (degrees * (pi / 180));
+    };
 
-    var r = 33;
-    var xcenter = 71;
-    var ycenter = 71;
-	
-	var newLeft = Math.floor(xcenter + (r* Math.cos(p+64)));
-    var newTop = Math.floor(ycenter + (r * Math.sin(p+64)));
-    var newLeft1 = Math.floor(xcenter + (r* Math.cos(p+96)));
-    var newTop1 = Math.floor(ycenter + (r * Math.sin(p+96)));
-     var newLeft2 = Math.floor(ycenter + (r* Math.cos(p+128)));
-    var newTop2 = Math.floor(xcenter + (r* Math.sin(p+128)));
-     var newLeft3 = Math.floor(ycenter + (r* Math.cos(p+160)));
-    var newTop3 = Math.floor(xcenter + (r* Math.sin(p+160)));
-    var newLeft4 = Math.floor(xcenter + (r* Math.cos(p+192)));
-    var newTop4 = Math.floor(ycenter + (r * Math.sin(p+192)));
-    var newLeft5 = Math.floor(xcenter + (r* Math.cos(p+224)));
-    var newTop5 = Math.floor(ycenter + (r * Math.sin(p+224)));
-     var newLeft6 = Math.floor(ycenter + (r* Math.cos(p+256)));
-    var newTop6 = Math.floor(xcenter + (r* Math.sin(p+256)));
-     var newLeft7 = Math.floor(ycenter + (r* Math.cos(p+288)));
-    var newTop7 = Math.floor(xcenter + (r* Math.sin(p+288)));
-    var newLeft8 = Math.floor(xcenter + (r* Math.cos(p+320)));
-    var newTop8 = Math.floor(ycenter + (r * Math.sin(p+320)));
-    var newLeft9 = Math.floor(xcenter + (r* Math.cos(p+352)));
-    var newTop9 = Math.floor(ycenter + (r * Math.sin(p+352)));
-     var newLeft10 = Math.floor(ycenter + (r* Math.cos(p+384)));
-    var newTop10 = Math.floor(xcenter + (r* Math.sin(p+384)));
+    var CarPosition = function(angleInDegrees) {
+        var size = { width:8, height:10 };
+        var center = { x:51, y:51 };
+        var pos = { x:(center.x - size.width/2), y:(center.y - size.height/2) };
+        var radius = 34;
+        var angleInRadians = DegreesToRadians(angleInDegrees);
 
-  
+        pos.x = Math.floor(pos.x + (radius * Math.cos(angleInRadians)));
+        pos.y = Math.floor(pos.y + (radius * Math.sin(angleInRadians)));
 
-    $('#lr1').animate({
-        top: newTop,
-        left: newLeft,
-    }, 10, function() {
-        moveit()
+        return pos;
+    };
+
+    var carAngleOffsets = [];
+    var SetUpCars = function(count) {
+        var pos, car;
+        for (var i = 0; i < count; i++) {
+            carAngleOffsets.push(i * (360/count));
+            pos = CarPosition(carAngleOffsets[i]);
+            car = $('<div class="lr"></div>').css({
+                left:pos.x,
+                top:pos.y
+            });
+
+            $('.loader-wrapper-circle').append(car);
+        }
+
+        $('.lr').delay(230).fadeIn();
+    };
+
+    var stepDuration = 300;
+    var nextPos = 0;
+    var StepToPosition = function(nextAngle, count) {
+        for (var i = 0; i < count; i++) {
+            nextPos = CarPosition(nextAngle+carAngleOffsets[i]);
+            $('.lr:nth-child('+(i+1)+')').animate({
+                left:nextPos.x,
+                top:nextPos.y
+            }, stepDuration, 'linear');
+        }
+    };
+
+    var i = 0;
+    var stepDistanceInAngles = 20;
+    var intervalId;
+
+    var SetUpLoader = function(count) {
+        $('.loader-wrapper .loader-wrapper-circle').fadeIn();
+        SetUpCars(count);
+
+        intervalId = setInterval(function() {
+            StepToPosition(i, count);
+            i += stepDistanceInAngles;
+            if (i >= 360)
+                i = 0;
+        }, stepDuration);
+
+    };
+
+    var TakeDownLoader = function() {
+        $('.loader-wrapper .loader-wrapper-circle').fadeOut(function() {
+            clearInterval(intervalId);
+        });
+    };
+
+
+
+    SetUpLoader(12);
+
+    $('.preloaded-images').imagesLoaded( function( $images, $proper, $broken ) {
+      // callback provides three arguments:
+      // $images: the jQuery object with all images
+      // $proper: the jQuery object with properly loaded images
+      // $broken: the jQuery object with broken images
+      // `this` is a jQuery object of container
+      console.log( $images.length + ' images total have been loaded in ' + this );
+      console.log( $proper.length + ' properly loaded images' );
+      console.log( $broken.length + ' broken images' );
+
+      TakeDownLoader();
     });
-	
-	   $('#lr2').animate({
-        top: newTop1,
-        left: newLeft1,
-    }, 10, function() {
-        moveit()
-    });
 
-   $('#lr3').animate({
-        top: newTop2,
-        left: newLeft2,
-    }, 10, function() {
-        moveit()
-    });	
-	
-	
-	   $('#lr4').animate({
-        top: newTop3,
-        left: newLeft3,
-    }, 10, function() {
-        moveit()
-    });	
-	
-	   $('#lr5').animate({
-        top: newTop4,
-        left: newLeft4,
-    }, 10, function() {
-        moveit()
-    });	
-	
-	   $('#lr6').animate({
-        top: newTop5,
-        left: newLeft5,
-    }, 10, function() {
-        moveit()
-    });	
-	
-	   $('#lr7').animate({
-        top: newTop6,
-        left: newLeft6,
-    }, 10, function() {
-        moveit()
-    });	
-	
-	   $('#lr8').animate({
-        top: newTop7,
-        left: newLeft7,
-    }, 10, function() {
-        moveit()
-    });	
-	
-	   $('#lr9').animate({
-        top: newTop8,
-        left: newLeft8,
-    }, 10, function() {
-        moveit()
-    });	
-	
-	   $('#lr10').animate({
-        top: newTop9,
-        left: newLeft9,
-    }, 10, function() {
-        moveit()
-    });	
-	
-	   $('#lr11').animate({
-        top: newTop10,
-        left: newLeft10,
-    }, 10, function() {
-        moveit()
-    });	
-	
-	
-}
-$(document).ready(function() {
-    moveit();
 });
-});//]]>
+
+
+

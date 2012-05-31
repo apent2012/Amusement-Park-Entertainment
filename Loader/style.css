@@ -1,15 +1,88 @@
 @charset "UTF-8";
 /* CSS Document */
 
-#lr1,#lr2,#lr3,#lr4,#lr5,#lr6,#lr7,#lr8,#lr9,#lr10,#lr11 { 
-    position:fixed;
+html, 
+body {
+	background-color:red;
 }
 
-#love {
+.loader-wrapper {
+    z-index:5;
+    position:fixed;
+    width:100%;
+}
+
+.loader-wrapper .loader-wrapper-circle {
     top:25px;
-    left:25px;
-    width:50px;
-    height:50px;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    width:100px;
+    height:100px;
+    position:absolute;
+    text-align:center;
+    background:url(img/loadercirclebg.png) 0 0 no-repeat;
+    display:none;
+}
+
+.loader-wrapper .lr {
+    width:8px;
+    height:10px;
+    display:none;
+    background:url(img/lr1.png) 0 0 no-repeat;
     position:absolute;
 }
-​
+
+.preloaded-images {
+    display: none;
+}
+
+.img1 {
+    background:url(/ape/dev/images/home-block.jpg) 0 0 no-repeat;
+    width:1635px;
+    height:654px;
+}
+
+.img2 {
+    background:url(/ape/dev/images/team-block.jpg) 0 0 no-repeat;
+    width:1635px;
+    height:654px;
+}
+
+.img3 {
+    background:url(/ape/dev/images/contact-block.jpg) 0 0 no-repeat;
+    width:1635px;
+    height:654px;
+}
+
+.img4 {
+    background:url(/ape/dev/images/workbox1.jpg) 0 0 no-repeat;
+    width:327px;
+    height:654px;
+}
+
+.img5 {
+    background:url(/ape/dev/images/reelstill.jpg) 0 0 no-repeat;
+    width:981px;
+    height:550px;
+}
+
+.img6 {
+    background:url(/ape/dev/images/workbox3.jpg) 0 0 no-repeat;
+    width:327px;
+    height:654px;
+}
+
+.img7 {
+    background:url(/ape/dev/images/bigpark_a.jpg) 0 0 no-repeat;
+    width:1635px;
+    height:654px;
+}
+
+.img8 {
+    background:url(/ape/dev/images/asqp-im5.jpg) 0 0 no-repeat;
+    width:1635px;
+    height:654px;
+}
+
