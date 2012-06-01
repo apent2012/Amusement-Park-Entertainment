@@ -5,7 +5,7 @@ div.scrollingHotSpotLeft
 {
 	/* The hotspots have a minimum width of 100 pixels and if there is room the will grow
     and occupy 15% of the scrollable area (30% combined). Adjust it to your own taste. */
-	min-width: 327px; /* 75px; */
+	min-width: 353px; /* 75px; */
 	width: 10%;
 	height: 100%;
 	/* There is a big background image and it's used to solve some problems I experienced
@@ -15,7 +15,7 @@ div.scrollingHotSpotLeft
 	background-position: right center;
 	position: absolute;
 	z-index: 200;
-	left: 23px;
+	left: 0;
 	/*  The first url is for Firefox and other browsers, the second is for Internet Explorer */
 	cursor: url(../images/cursors/cursor_arrow_left.png), url(../images/cursors/cursor_arrow_left.cur),w-resize;
 }
@@ -35,7 +35,7 @@ div.scrollingHotSpotLeftVisible
 /* Invisible right hotspot */
 div.scrollingHotSpotRight
 {
-	min-width: 327px; /* 75px; */
+	min-width: 353px; /* 75px; */
 	width: 10%;
 	height: 100%;
 	background-image: url(../images/big_transparent.gif);
@@ -43,7 +43,7 @@ div.scrollingHotSpotRight
 	background-position: left center;
 	position: absolute;
 	z-index: 200;
-	right: 24px;
+	right: 0;
 	cursor: url(../images/cursors/cursor_arrow_right.png), url(../images/cursors/cursor_arrow_right.cur),e-resize;
 }
 
