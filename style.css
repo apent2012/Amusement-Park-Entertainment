@@ -364,6 +364,15 @@ a:hover {
     right:-17px;
 }
 
+.team-body-people-slider-person-darkredsq-tri {
+    background:url(images/triangle-dark.png) 0 0 no-repeat;
+    width:18px;
+    height:34px;
+    position:absolute;
+    top:142px;
+    right:-17px;
+}
+
 .team-body-people-slider-person-redsq h2 {
     font-weight:normal;
     font-size:36px;
