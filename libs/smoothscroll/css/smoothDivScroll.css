@@ -12,10 +12,10 @@ div.scrollingHotSpotLeft
     in Internet Explorer 6. */
 	background-image: url(../images/big_transparent.gif);
 	background-repeat: repeat;
-	background-position: center center;
+	background-position: right center;
 	position: absolute;
 	z-index: 200;
-	left: 0;
+	left: 22px;
 	/*  The first url is for Firefox and other browsers, the second is for Internet Explorer */
 	cursor: url(../images/cursors/cursor_arrow_left.png), url(../images/cursors/cursor_arrow_left.cur),w-resize;
 }
@@ -23,12 +23,12 @@ div.scrollingHotSpotLeft
 /* Visible left hotspot */
 div.scrollingHotSpotLeftVisible
 {
-	background-image: url(../images/arrow_left.png);				
-	background-color: #fff;
+	background-image: url(../images/arrow_left2.png);				
+	1background-color: #fff;
 	background-repeat: no-repeat;
-	opacity: 0.35; /* Standard CSS3 opacity setting */
-	-moz-opacity: 0.35; /* Opacity for really old versions of Mozilla Firefox (0.9 or older) */
-	filter: alpha(opacity = 35); /* Opacity for Internet Explorer. */
+	1opacity: 0.35; /* Standard CSS3 opacity setting */
+	1-moz-opacity: 0.35; /* Opacity for really old versions of Mozilla Firefox (0.9 or older) */
+	1filter: alpha(opacity = 35); /* Opacity for Internet Explorer. */
 	zoom: 1; /* Trigger "hasLayout" in Internet Explorer 6 or older versions */
 }
 
@@ -40,23 +40,24 @@ div.scrollingHotSpotRight
 	height: 100%;
 	background-image: url(../images/big_transparent.gif);
 	background-repeat: repeat;
-	background-position: center center;
+	background-position: left center;
 	position: absolute;
 	z-index: 200;
-	right: 0;
+	right: 22px;
 	cursor: url(../images/cursors/cursor_arrow_right.png), url(../images/cursors/cursor_arrow_right.cur),e-resize;
 }
 
 /* Visible right hotspot */
 div.scrollingHotSpotRightVisible
 {
-	background-image: url(../images/arrow_right.png);
-	background-color: #fff;
+	background-image: url(../images/arrow_right2.png);
+	1background-color: #fff;
 	background-repeat: no-repeat;
-	opacity: 0.35;
-	filter: alpha(opacity = 35);
-	-moz-opacity: 0.35;
+	1opacity: 0.35;
+	1filter: alpha(opacity = 35);
+	1-moz-opacity: 0.35;
 	zoom: 1;
+	1border:1px solid blue;
 }
 
 /* The scroll wrapper is always the same width and height as the containing element (div).
