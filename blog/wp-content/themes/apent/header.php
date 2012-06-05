@@ -197,22 +197,33 @@ h1 {
 				<div class="skip-link"><a class="assistive-text" href="#secondary" title="<?php esc_attr_e( 'Skip to secondary content', 'twentyeleven' ); ?>"><?php _e( 'Skip to secondary content', 'twentyeleven' ); ?></a></div>
 				<?php /* Our navigation menu.  If one isn't filled out, wp_nav_menu falls back to wp_page_menu. The menu assiged to the primary position is the one used. If none is assigned, the menu with the lowest ID is used. */ ?>
 				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-				<div class="tag-nav-menu">
-				<?php 	
-					$defaults = array(
-						'smallest' => 8, 'largest' => 22, 'unit' => 'pt', 'number' => 45,
-						'format' => 'flat', 'orderby' => 'name', 'order' => 'ASC',
-						'exclude' => '', 'include' => ''
-					);
-					$args = wp_parse_args( $args, $defaults );
-					$tags = get_tags( array_merge($args, array('orderby' => 'count', 'order' => 'DESC')) ); // Always query top tags 
-				//	error_log(print_r($tags, 1)); 
-
-					$tag = '<a href="/ape/blog/?tag='.$tags[0]->slug.'">'.$tags[0]->name.'</a>';
-					error_log(print_r($tag, 1));
-				?>
-				</div>
 			</nav><!-- #access -->
+			<div class="tag-nav-menu-container">
+				<div class="tag-nav-menu">
+					<div class="tag-nav-menu-title"><?php _e( 'Tags', 'twentyeleven' ); ?></div>
+					<div class="tag-nav-menu-links">
+			<?php 	
+				$defaults = array(
+					'smallest' => 8, 'largest' => 22, 'unit' => 'pt', 'number' => 45,
+					'format' => 'flat', 'orderby' => 'name', 'order' => 'ASC',
+					'exclude' => '', 'include' => ''
+				);
+				$args = wp_parse_args( $args, $defaults );
+				$tags = get_tags( array_merge($args, array('orderby' => 'count', 'order' => 'DESC')) ); // Always query top tags 
+			//	error_log(print_r($tags, 1)); 
+
+				$tagLinks = array();
+				foreach ($tags as $tag) {
+					$tagLink = '<a href="/ape/dev/blog/?tag='.$tag->slug.'">'.$tag->name.'</a>';
+					array_push($tagLinks, $tagLink);
+				}
+			//	error_log(print_r($tag, 1));
+
+				echo implode(', ', $tagLinks);
+			?>
+					</div>
+				</div>
+			</div>
 	</header><!-- #branding -->
 
 
