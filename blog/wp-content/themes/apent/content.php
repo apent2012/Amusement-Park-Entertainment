@@ -20,9 +20,11 @@
 			<?php endif; ?>
 
 			<?php if ( 'post' == get_post_type() ) : ?>
+			<?php /*
 			<div class="entry-meta">
 				<?php twentyeleven_posted_on(); ?>
 			</div><!-- .entry-meta -->
+			*/ ?>
 			<?php endif; ?>
 
 			<?php if ( comments_open() && ! post_password_required() ) : ?>
@@ -30,7 +32,7 @@
 				<?php comments_popup_link( '<span class="leave-reply">' . __( 'Reply', 'twentyeleven' ) . '</span>', _x( '1', 'comments number', 'twentyeleven' ), _x( '%', 'comments number', 'twentyeleven' ) ); ?>
 			</div>
 			<?php endif; ?>
-		</header><!-- .entry-header -->
+		</header> <!-- .entry-header -->
 
 		<?php if ( is_search() ) : // Only display Excerpts for Search ?>
 		<div class="entry-summary">
@@ -52,7 +54,8 @@
 				if ( $categories_list ):
 			?>
 			<span class="cat-links">
-				<?php printf( __( '<span class="%1$s">Posted in</span> %2$s', 'twentyeleven' ), 'entry-utility-prep entry-utility-prep-cat-links', $categories_list );
+				<?php twentyeleven_posted_on(); ?>
+				<?php printf( __( '<span class="%1$s">in</span> %2$s', 'twentyeleven' ), 'entry-utility-prep entry-utility-prep-cat-links', $categories_list );
 				$show_sep = true; ?>
 			</span>
 			<?php endif; // End if categories ?>
@@ -61,10 +64,10 @@
 				$tags_list = get_the_tag_list( '', __( ', ', 'twentyeleven' ) );
 				if ( $tags_list ):
 				if ( $show_sep ) : ?>
-			<span class="sep"> | </span>
+			<span class="sep"> - </span>
 				<?php endif; // End if $show_sep ?>
 			<span class="tag-links">
-				<?php printf( __( '<span class="%1$s">Tagged</span> %2$s', 'twentyeleven' ), 'entry-utility-prep entry-utility-prep-tag-links', $tags_list );
+				<?php printf( __( '<span class="%1$s">Tagged as</span> %2$s', 'twentyeleven' ), 'entry-utility-prep entry-utility-prep-tag-links', $tags_list );
 				$show_sep = true; ?>
 			</span>
 			<?php endif; // End if $tags_list ?>
@@ -72,11 +75,12 @@
 
 			<?php if ( comments_open() ) : ?>
 			<?php if ( $show_sep ) : ?>
-			<span class="sep"> | </span>
+			<span class="sep"> - </span>
 			<?php endif; // End if $show_sep ?>
 			<span class="comments-link"><?php comments_popup_link( '<span class="leave-reply">' . __( 'Leave a reply', 'twentyeleven' ) . '</span>', __( '<b>1</b> Reply', 'twentyeleven' ), __( '<b>%</b> Replies', 'twentyeleven' ) ); ?></span>
 			<?php endif; // End if comments_open() ?>
 
 			<?php edit_post_link( __( 'Edit', 'twentyeleven' ), '<span class="edit-link">', '</span>' ); ?>
+			<span class="share-links">Share: <a href="#" class="share-link-twitter">Twitter</a> - <a href="#" class="share-link-facebook">Facebook</a></span>
 		</footer><!-- #entry-meta -->
 	</article><!-- #post-<?php the_ID(); ?> -->

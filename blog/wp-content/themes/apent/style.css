@@ -82,8 +82,9 @@ body {
 }
 #primary {
 	float: left;
-	margin: 0 -26.4% 0 0;
+	margin: -22px -26.4% 0 0;
 	width: 100%;
+	font-size:12px;
 }
 #content {
 	1margin: 0 34% 0 7.6%;
@@ -839,6 +840,10 @@ a:hover {
 	clip: rect(1px, 1px, 1px, 1px);
 	position: absolute !important;
 }
+
+.entry-meta {
+	padding-bottom: 12px;
+}
 .entry-title,
 .entry-header .entry-meta {
 	padding-right: 76px;
@@ -849,7 +854,7 @@ a:hover {
 	font-size: 26px;
 	font-weight: bold;
 	line-height: 1.5em;
-	padding-bottom: .3em;
+	1padding-bottom: .3em;
 	padding-top: 15px;
 }
 .entry-title,
@@ -871,12 +876,26 @@ a:hover {
 .entry-meta a {
 	font-weight: bold;
 }
+.share-links {
+	1border:1px solid;
+	margin-left:36px;
+}
+.share-links a {
+	text-decoration:underline;
+}
+.share-link-twitter {
+	color:#23d6b6;
+}
+.share-link-facebook {
+	color:#30acec;
+}
 .single-author .entry-meta .by-author {
 	display: none;
 }
 .entry-content,
 .entry-summary {
-	padding: 1.625em 0 0;
+	1padding: 1.625em 0 0;
+	padding:0;
 }
 .entry-content h1,
 .entry-content h2,
@@ -1060,8 +1079,8 @@ img#wpstats {
 img[class*="align"],
 img[class*="wp-image-"],
 #content .gallery .gallery-icon img {/* Add fancy borders to all WordPress-added images but not things like badges and icons and the like */
-	border: 1px solid #ddd;
-	padding: 6px;
+	1border: 1px solid #ddd;
+	1padding: 6px;
 }
 .wp-caption img {
 	border-color: #eee;
@@ -1075,8 +1094,8 @@ a:active img[class*="wp-image-"],
 #content .gallery .gallery-icon a:focus img,
 #content .gallery .gallery-icon a:hover img,
 #content .gallery .gallery-icon a:active img {/* Add some useful style to those fancy borders for linked images ... */
-	background: #eee;
-	border-color: #bbb;
+	1background: #eee;
+	1border-color: #bbb;
 }
 .wp-caption a:focus img,
 .wp-caption a:active img,

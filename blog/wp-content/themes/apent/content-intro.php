@@ -7,7 +7,7 @@
  * @since Twenty Eleven 1.0
  */
 ?>
-
+foo
 <article id="post-<?php the_ID(); ?>" <?php post_class( 'intro' ); ?>>
 	<header class="entry-header">
 		<h2 class="entry-title"><?php the_title(); ?></h2>

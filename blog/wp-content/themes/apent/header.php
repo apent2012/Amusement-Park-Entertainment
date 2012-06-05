@@ -73,7 +73,7 @@ h1 {
 	1opacity: 0.7;
 	1-moz-opacity: 0.7;
 	1filter:alpha(opacity=70);
-	margin-bottom:22px;
+	margin-bottom:12px;
 	text-transform:uppercase;
 	1margin-top:40px;
 }
