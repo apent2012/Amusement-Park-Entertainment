@@ -208,8 +208,9 @@ h1 {
 					'format' => 'flat', 'orderby' => 'name', 'order' => 'ASC',
 					'exclude' => '', 'include' => ''
 				);
-				$args = wp_parse_args( $args, $defaults );
-				$tags = get_tags( array_merge($args, array('orderby' => 'count', 'order' => 'DESC')) ); // Always query top tags 
+
+			//	$args = wp_parse_args( $args, $defaults );
+				$tags = get_tags( array_merge($defaults, array('orderby' => 'count', 'order' => 'DESC')) ); // Always query top tags 
 			//	error_log(print_r($tags, 1)); 
 
 				$tagLinks = array();

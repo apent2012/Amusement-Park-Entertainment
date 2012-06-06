@@ -81,6 +81,15 @@
 			<?php endif; // End if comments_open() ?>
 
 			<?php edit_post_link( __( 'Edit', 'twentyeleven' ), '<span class="edit-link">', '</span>' ); ?>
-			<span class="share-links">Share: <a href="#" class="share-link-twitter">Twitter</a> - <a href="#" class="share-link-facebook">Facebook</a></span>
+			<span class="share-links">Share: <a href="<?php 
+				$shareLink = get_permalink();
+				$twitterText = get_the_title()." ".$shareLink;
+				$twitterShareURL = urlencode($twitterText);
+				echo 'http://twitter.com/home?status='.$twitterShareURL; 
+			?>" class="share-link-twitter" target="_blank">Twitter</a> - <a href="<?php 
+			//	$facebookTitle = urlencode(get_the_title());
+				$facebookShareURL = urlencode($shareLink);
+				echo 'http://www.facebook.com/share.php?u='.$facebookShareURL;
+			?>" class="share-link-facebook" target="_blank">Facebook</a></span>
 		</footer><!-- #entry-meta -->
 	</article><!-- #post-<?php the_ID(); ?> -->

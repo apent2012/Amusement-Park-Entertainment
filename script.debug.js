@@ -122,6 +122,10 @@ $(document).ready(function(){
        // home-body-news-content-rss
        // http://127.0.0.1/ape/dev/blog/?cat=3&feed=rss2
      //  var feedURL = 'http://feeds.reuters.com/reuters/oddlyEnoughNews';
+
+     // > BuildDiff
+     // The News Ticker category is 3 on the local test server.
+     // It is 4 on the remote live server.
        var feedURL = '/ape/dev/blog/?cat=3&feed=atom';
         $.getFeed({
            url: feedURL,
@@ -151,7 +155,7 @@ $(document).ready(function(){
 
                 var limit = '';
                 var html = '<ul>';
-                
+
                 for(var i = 0; i < feed.items.length && i < 5; i++) {
                 
                     var item = feed.items[i];
@@ -159,14 +163,13 @@ $(document).ready(function(){
                     var curMonth = publishDate.getMonth();
                     var curDay = publishDate.getDate();
 
-                    
                     html += '<li><div class="home-body-news-content-body-newsItem">'
                     + '<p class="date">'
                     + m_names[curMonth] + ' ' + curDay
                     + '</p>';
                     
                     html += '<p>'
-                    + '<span>'
+                    + '<span class="home-body-news-content-body-newsItem-title">'
                     + item.title
                     + '</span>'
                     + '</p>'
@@ -177,6 +180,59 @@ $(document).ready(function(){
                 html += '</ul>';
                 
                 jQuery('.home-body-news-content-body').html(html);
+
+            //    console.log(newsTitles);
+
+/*
+            <span class="share-links">Share: <a href="<?php 
+                $shareLink = get_permalink();
+                $twitterText = get_the_title()." ".$shareLink;
+                $twitterShareURL = urlencode($twitterText);
+                echo 'http://twitter.com/home?status='.$twitterShareURL; 
+            ?>" class="share-link-twitter">Twitter</a> - <a href="<?php 
+                $facebookShareURL = urlencode($shareLink);
+                echo 'http://www.facebook.com/share.php?u='.$facebookShareURL;
+            ?>" class="share-link-facebook">Facebook</a></span>
+
+<span class="share-links">Share: <a href="<?php echo 'http://twitter.com/home?status='.$twitterShareURL; ?>" class="share-link-twitter">Twitter</a>
+</span>
+*/
+                var shareLinkMarkup = function(shareLink, newsItemTitle) {
+                    // Generates share link markup.
+                    var markup = '';
+
+                    if (shareLink) {
+                        var twitterContent = newsItemTitle+" "+shareLink;
+                        var toTwitterShare = encodeURIComponent(twitterContent);
+                        var twitterShareURL = 'http://twitter.com/home?status='+toTwitterShare;
+
+                        var toFacebookShare = encodeURIComponent(shareLink);
+                        var facebookShareURL = 'http://www.facebook.com/share.php?u='+toFacebookShare;
+
+                        markup = '<span class="share-links">Share: <a href="'
+                            + twitterShareURL
+                            + '" class="share-link-twitter" target="_blank">Twitter</a>'
+                            + ' - <a href="'
+                            + facebookShareURL
+                            + '" class="share-link-facebook" target="_blank">Facebook</a>'
+                            + '</span>';
+                    }
+
+                    return markup;
+                };
+
+               $('.home-body-news-content-body-newsItem a').each(function(index) {
+                    // Extracts the external link from the post body.
+                    var shareLink = $(this).attr('href');
+
+                    // Appends share link markup to the end of the news ticker body.
+                    var newsItemDesc = $(this).parent();
+                    console.log(newsItemDesc);
+                    var newsItemTitle = newsItemDesc.parent().find('.home-body-news-content-body-newsItem-title').html();
+                    newsItemDesc.append(shareLinkMarkup(shareLink, newsItemTitle));
+                });
+
+
 
 
                 // Start ticker animation.
