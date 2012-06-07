@@ -106,11 +106,6 @@
 			el.data("initialAjaxContentLoaded", false);
 
 
-			// We have a very long, horizontal document consisting of a series of pages.
-			// SmoothScroll did not calculate the document offset correctly here.
-			// This is a hack to give us a better offset, at least for now.
-	//		var hack = -(el.data("scrollerOffset").left - 40);		// 3370
-
 			/*****************************************
 			SET UP EVENTS FOR SCROLLING RIGHT
 			*****************************************/
@@ -119,9 +114,7 @@
 			el.data("scrollingHotSpotRight").bind("mousemove", function (e) {
 				var parentOffset = $(this).parent().offset(); 
 				var x = e.pageX - parentOffset.left - (327 * 4) + 80;
-			//	console.log(x);
 
-			//	var x = e.pageX - (this.offsetLeft + el.data("scrollerOffset").left + hack);
 				el.data("scrollXPos", Math.round((x / el.data("hotSpotWidth")) * o.hotSpotScrollingStep));
 				if (el.data("scrollXPos") === Infinity) {
 					el.data("scrollXPos", 0);
@@ -156,26 +149,26 @@
 			});
 
 			var listen = true;
-			var eventHandler = PeopleSliderMouseoutHandler;
+			var eventHandler = SmoothScrollClickEventHandler;
 
 			var ScrollToSegment = function(roundDown) {
-			//	var roundDown = el.data("scrollWrapper").scrollLeft() <= (327 / 2);
-			//	console.log(roundDown)
-				if (listen) {
-	      	listen = false;
-				}
+				if (listen)
+			      	listen = false;
 
-     		$('.team-body-people-slider-person').unbind('click');
-        $('.team-body-people-slider-person-redsq').css('cursor', 'default');
+	     		$('.team-body-people-slider-person').unbind('click');
+	        	$('.team-body-people-slider-person-redsq').css('cursor', 'default');
 
 				el.data("scrollWrapper").stop().animate({ 
-					scrollLeft: roundDown ? 0 : '327' /* el.data("scrollWrapper").scrollLeft() + o.easingAfterHotSpotScrollingDistance */
-					}, 200, 'linear', function() {
+					scrollLeft: roundDown ? 0 : '327'
+					}
+					, 200
+					, 'linear'
+					, function() {
 						$('.team-body-people-slider-person').click(eventHandler);
-            $('.team-body-people-slider-person-redsq').css('cursor', 'pointer');
-            $('.person-gap .team-body-people-slider-person-redsq').css('cursor', 'default');
+			            $('.team-body-people-slider-person-redsq').css('cursor', 'pointer');
+			            $('.person-gap .team-body-people-slider-person-redsq').css('cursor', 'default');
 
-            listen = true;
+			            listen = true;
 					});
 			};
 
