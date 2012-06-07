@@ -81,7 +81,7 @@ body {
 }
 #primary {
 	float: left;
-	margin: -22px -26.4% 0 0;
+	margin: -22px -26.4% 0 -5px;
 	width: 100%;
 	font-size:12px;
 }
@@ -93,12 +93,14 @@ body {
 	float: right;
 	width: 16.8%;
 	font-size: 11px;
-	line-height:1.9em;
+	line-height:1.2em;
+	margin-top: -27px;
 }
 
-#secondary h3 {
+#secondary .textwidget h3 {
 	font-size: 12px;
 	font-weight:bold;
+	padding-bottom:6px;
 }
 
 /* Singular */
@@ -505,7 +507,7 @@ a:hover {
 	z-index: 9999;
 }
 #branding .header-title {
-	max-width: 968px;
+	max-width: 983px;
 	position:relative;
 	left:0;
 	right:0;
@@ -647,7 +649,7 @@ a:hover {
 }
 
 .tag-nav-menu {
-	max-width: 974px;
+	max-width: 983px;
 	left: 0;
 	right: 0;
 	margin-left: auto;
@@ -672,7 +674,6 @@ a:hover {
 	font-size:14px;
 	text-transform:uppercase;
 	padding-top:10px;
-	padding-left: 5px;
 	padding-right:6px;
 	height: 38px;
 	position:relative;
@@ -768,7 +769,7 @@ a:hover {
 
 #main {
 	clear: both;
-	padding-top: 40px;
+	padding-top: 60px;
 	max-width: 974px;
 	left:0;
 	right:0;
@@ -823,7 +824,6 @@ a:hover {
 	font-size: 26px;
 	font-weight: bold;
 	line-height: 1.5em;
-	1padding-bottom: .3em;
 	padding-top: 15px;
 }
 .entry-title,
@@ -846,7 +846,6 @@ a:hover {
 	font-weight: bold;
 }
 .share-links {
-	1border:1px solid;
 	margin-left:36px;
 }
 .share-links a {
@@ -863,7 +862,6 @@ a:hover {
 }
 .entry-content,
 .entry-summary {
-	1padding: 1.625em 0 0;
 	padding:0;
 }
 .entry-content h1,
@@ -1048,8 +1046,6 @@ img#wpstats {
 img[class*="align"],
 img[class*="wp-image-"],
 #content .gallery .gallery-icon img {/* Add fancy borders to all WordPress-added images but not things like badges and icons and the like */
-	1border: 1px solid #ddd;
-	1padding: 6px;
 }
 .wp-caption img {
 	border-color: #eee;
@@ -1908,6 +1904,7 @@ section.recent-posts .other-recent-posts li:after {
 	line-height: 1.7em;
 	text-transform: uppercase;
     font-family: 'FuturaStdBookBold', Arial, sans-serif;
+    padding-bottom:2px;
 }
 .widget ul {
 	font-size: 15px;
@@ -1921,15 +1918,23 @@ section.recent-posts .other-recent-posts li:after {
 	font-size: 13px;
 }
 .widget a {
-	font-weight: bold;
+	font-weight: normal;
 	text-decoration: underline;
 	font-size:11px;
-	color:#999;
+	color:#777;
 }
 .widget a:hover,
 .widget a:focus,
 .widget a:active {
 	text-decoration: underline;
+}
+
+.widget_recent_entries li {
+	padding-bottom:6px;
+}
+
+.widget_archive li {
+	padding-bottom:6px;
 }
 
 /* Search Widget */
@@ -2564,7 +2569,6 @@ p.comment-form-comment {
 	}
 	/* Reposition the site title and description slightly */
 	#site-title {
-		1padding: 5.30625em 0 0;
 	}
 	#site-title,
 	#site-description {
@@ -2855,7 +2859,6 @@ html, body {
 
 body {
     background-color:white;
-    1text-align: center;
     color: black;
     font-size: 16px;
 }
@@ -3006,7 +3009,6 @@ ul {
 }
 
 .footer-content-follow p {
-    1padding: 8px 0;
 	margin-bottom: 0;
 }
 
