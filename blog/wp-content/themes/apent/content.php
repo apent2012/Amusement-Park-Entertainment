@@ -16,6 +16,31 @@
 					<h3 class="entry-format"><?php _e( 'Featured', 'twentyeleven' ); ?></h3>
 				</hgroup>
 			<?php else : ?>
+			<div class="attachment">
+				<div class="attachment-firstTag">
+					<div class="attachment-firstTag-text">
+					<?php
+						$posttags = get_the_tags();
+						$posttags = array_values($posttags);
+						if (isset($posttags[0])) {
+							$firstTag = $posttags[0];
+							$firstTagName = $firstTag->name;
+							echo $firstTagName;
+						}
+					?>
+					</div>
+				</div>
+				<div class="attachment-date">
+					<div class="attachment-date-text">
+				<?php 
+					// Gets publish datetime.
+					$theDate = get_the_date('m/d');
+					echo $theDate;
+				?>
+					</div>
+				</div>
+				<?php echo_first_image(get_the_ID()); ?>
+			</div>
 			<h1 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'twentyeleven' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
 			<?php endif; ?>
 

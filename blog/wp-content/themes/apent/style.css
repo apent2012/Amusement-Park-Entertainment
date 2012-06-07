@@ -93,10 +93,12 @@ body {
 	float: right;
 	width: 16.8%;
 	font-size: 11px;
+	line-height:1.9em;
 }
 
 #secondary h3 {
 	font-size: 12px;
+	font-weight:bold;
 }
 
 /* Singular */
@@ -438,11 +440,6 @@ sub {
 input[type=text],
 input[type=password],
 textarea {
-	1background: #fafafa;
-	1-moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.1);
-	1-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.1);
-	1box-shadow: inset 0 1px 1px rgba(0,0,0,0.1);
-	1border: 1px solid #ddd;
 	border:0;
 	border-bottom: 2px solid #b2b2b2;
 	color: #888;
@@ -459,13 +456,9 @@ input[type=text] {
 	padding: 3px;
 }
 input#s {
-	1background: url(images/search.png) no-repeat 5px 6px;
-	1-moz-border-radius: 2px;
-	1border-radius: 2px;
 	font-size: 14px;
 	height: 24px;
 	line-height: 1.2em;
-	1padding: 4px 10px 4px 28px;
 	padding: 2px 4px;
 }
 input#searchsubmit {
@@ -507,7 +500,6 @@ a:hover {
 ----------------------------------------------- */
 
 #branding {
-	1border-top: 2px solid #bbb;
 	padding-bottom: 10px;
 	position: relative;
 	z-index: 9999;
@@ -525,7 +517,6 @@ a:hover {
 }
 #site-title {
 	margin-right: 270px;
-	1padding: 3.65625em 0 0;
 	padding-top:56px;
 }
 #site-title a {
@@ -566,7 +557,6 @@ a:hover {
 	-webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
 	-moz-box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
 	box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
-	1border:2px solid #e7e7e7;
 	clear: both;
 	display: block;
 	float: left;
@@ -684,16 +674,13 @@ a:hover {
 	padding-top:10px;
 	padding-left: 5px;
 	padding-right:6px;
-	1border:1px solid;
 	height: 38px;
 	position:relative;
 	margin-top:-5px;
 	float:left;
-	1letter-spacing:-0.07em;
 }
 
 .tag-nav-menu-links {
-	1border:1px solid blue;
 	display:inline-block;
 	height:38px;
 	float:left;
@@ -702,24 +689,13 @@ a:hover {
 	padding-left:4px;
 }
 
-/*
-.tag-nav-menu-links {
-	display:inline-block;
-	border:1px solid;
-	height: 38px;
-	position:relative;
-}
-*/
-
 /* Search Form */
 #branding #searchform {
 	position: absolute;
-	1top: 3.8em;
 	top:34px;
 	right: 0;
 	text-align: right;
 	float:right;
-	1border:1px solid gold;
 }
 #branding #searchform div {
 	margin: 0;
@@ -735,7 +711,6 @@ a:hover {
     color: #474542;
 	font-size:18px;
 	text-transform:uppercase;
-	1border:1px solid green;
 	margin-top:0;
 	float:right;
 	padding-top:8px;
@@ -754,7 +729,6 @@ a:hover {
 	-o-transition-timing-function: ease;
 	width: 82px;
 	padding-right:8px;
-	1border:1px solid red;
 }
 #branding #s:focus {
 	background-color: #f9f9f9;
@@ -1816,6 +1790,52 @@ section.recent-posts .other-recent-posts li:after {
 	text-transform: uppercase;
 }
 
+.attachment {
+	position:relative;
+    font-family: 'FuturaStdBookBold', Arial, sans-serif;
+}
+
+.attachment-placeholder {
+	height:196px;
+	border:1px solid;
+	position:relative;
+}
+
+.attachment-firstTag {
+	position:absolute;
+	width:126px;
+	height:98px;
+	background-color:#e51c20;
+	color:white;
+	font-size:12px;
+	text-transform:uppercase;
+	overflow: hidden;
+}
+
+.attachment-firstTag-text {
+	text-align:center;
+	margin-top:38px;
+}
+
+.attachment-date {
+	position:absolute;
+	width:126px;
+	height:98px;
+	background-color:#474542;
+	color:#b3b2b1;
+	font-size:12px;
+	text-transform:uppercase;
+	overflow: hidden;
+	margin-top:98px;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    font-size:24px;
+    font-weight:bold;
+}
+
+.attachment-date-text {
+	text-align:center;
+	margin-top:28px;
+}
 
 /* =Navigation
 -------------------------------------------------------------- */
@@ -2825,49 +2845,6 @@ p.comment-form-comment {
 /* AP Ent. Theme
 ------------------------------------------------- */
 
-/*
-body {
-    1text-align: center;
-}
-
-#wrapper {
-    display: block; 
-    border: 1px #a2a2a2 solid;
-    width:90%; 
-    margin:0px auto;
-}
-
-#header {
-    border: 2px #a2a2a2 solid;
-}
-
-#content {
-    width: 75%;
-    border: 2px #a2a2a2 solid;
-    float: left;
-}
-
-#sidebar {
-    width: 23%;
-    border: 2px #a2a2a2 solid;
-    float: right;
-}
-
-#delimiter {
-    clear: both;
-}
-
-#footer {
-    border: 2px #a2a2a2 solid;
-}
-
-.title {
-    font-size: 11pt;
-    font-family: verdana;
-    font-weight: bold;
-}
-
-*/
 html, body {
     height: 100%;
     padding: 0;
@@ -2891,10 +2868,10 @@ body {
 
 a {
     color:#fa4542;
+    text-decoration:underline;
 }
 
 a:hover {
-    text-decoration:underline;
     color:#e51c20;
 }
 
@@ -3021,14 +2998,16 @@ ul {
 
 .footer-content-follow-social {
     font-size:9px;
-    padding: 8px 0;
+    1padding: 8px 0;
     opacity: 0.7;
     -moz-opacity: 0.7;
     filter:alpha(opacity=70);
+	margin-bottom: 0;
 }
 
 .footer-content-follow p {
-    padding: 8px 0;
+    1padding: 8px 0;
+	margin-bottom: 0;
 }
 
 .footer-content-follow h2 {
@@ -3045,7 +3024,7 @@ ul {
     opacity: 0.7;
     -moz-opacity: 0.7;
     filter:alpha(opacity=70);
-    font-family: 'Helvetica', Arial, sans-serif;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
     font-weight:bold;
 }
 
@@ -3069,13 +3048,13 @@ ul {
 }
 
 .footer-content-phone-number {
-    font-family: 'Helvetica', Arial, sans-serif;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
     font-weight:bold;
     font-size:12px;
     opacity: 0.4;
     -moz-opacity: 0.4;
     filter:alpha(opacity=40);
-    padding-top:12px;
+    padding-top:9px;
 }
 
 .footer-content-contact {
@@ -3087,7 +3066,9 @@ ul {
 }
 
 .footer-content-contact p {
-    padding: 6px 0;
+    padding: 4px 0;
+    margin-bottom:0;
+    line-height:1.4em;
 }
 
 .footer-content-contact span {
@@ -3095,11 +3076,11 @@ ul {
     font-weight:bold;
     padding-right:14px;
     color:#fa4542;
-    font-family: 'Helvetica', Arial, sans-serif;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
 }
 
 .footer-content-contact-address {
-    font-family: 'Helvetica', Arial, sans-serif;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
     font-weight:bold;
     font-size:12px;
     opacity: 0.4;

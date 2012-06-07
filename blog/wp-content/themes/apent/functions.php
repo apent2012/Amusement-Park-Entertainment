@@ -48,3 +48,35 @@ function exclude_category($query) {
 }
 
 add_filter('pre_get_posts', 'exclude_category');
+
+
+function echo_first_image ($postID)
+{
+	$args = array(
+	'numberposts' => 1,
+	'order'=> 'ASC',
+	'post_mime_type' => 'image',
+	'post_parent' => $postID,
+	'post_status' => null,
+	'post_type' => 'attachment'
+	);
+	
+	$attachments = get_children( $args );
+	
+//	error_log(print_r($attachments, 1));
+	
+	if ($attachments) {
+		foreach($attachments as $attachment) {
+			$image_attributes = wp_get_attachment_image_src( $attachment->ID, 'thumbnail' ) 
+				? wp_get_attachment_image_src( $attachment->ID, 'thumbnail' ) 
+				: wp_get_attachment_image_src( $attachment->ID, 'full' );
+				
+		//	echo '<img src="'..'" class="current">';
+			echo wp_get_attachment_image( $attachment->ID, 'full' );			
+		}
+	}
+}
+
+
+
+
