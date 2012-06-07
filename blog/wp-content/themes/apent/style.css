@@ -2947,40 +2947,44 @@ ul {
 }
 
 
+.nav-tab {
+    display:inline-block;
+    position:absolute;
+}
 
 .about-tab {
     width:60px;
     height:60px;
     background: url(../../../../images/about.jpg) 0 0 no-repeat;
-    display:inline-block;
+    margin-left:-304px;
 }
 
 .team-tab {
     width:52px;
     height:60px;
     background: url(../../../../images/team.jpg) 0 0 no-repeat;
-    display:inline-block;
+    margin-left:-244px;
 }
 
 .work-tab {
     width:60px;
     height:60px;
     background: url(../../../../images/work.jpg) 0 0 no-repeat;
-    display:inline-block;
+    margin-left:-192px;
 }
 
 .blog-tab {
     width:56px;
     height:60px;
     background: url(../../../../images/blog.jpg) 0 0 no-repeat;
-    display:inline-block;
+    margin-left:-132px;
 }
 
 .contact-tab {
     width:76px;
     height:60px;
     background: url(../../../../images/contact.jpg) 0 0 no-repeat;
-    display:inline-block;
+    margin-left:-76px;
 }
 
 .ape-name {

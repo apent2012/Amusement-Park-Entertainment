@@ -139,13 +139,17 @@ h1 {
             <div class="ape-name"></div>
         </a>
         <div class="nav">
-            <a href="../index.html#page2" title="About"><span class="about-tab"></span></a>
-            <a href="../index.html#page3" title="Team"><div class="team-tab"></div></a>
-            <a href="../index.html#page4" title="Work"><div class="work-tab"></div></a>
-            <a href="" title="Blog"><div class="blog-tab"></div></a>
-            <a href="../index.html#page5" title="Contact"><div class="contact-tab"></div></a>
+            <a href="../index.html#page2" title="About" class="about-tab-link">
+              <div class="about-tab nav-tab"></div></a>
+            <a href="../index.html#page3" title="Team" class="team-tab-link">
+              <div class="team-tab nav-tab"></div></a>
+            <a href="../index.html#page4" title="Work" class="work-tab-link">
+              <div class="work-tab nav-tab"></div></a>
+            <a href="" title="Blog" class="blog-tab-link">
+              <div class="blog-tab nav-tab"></div></a>
+            <a href="../index.html#page5" title="Contact" class="contact-tab-link">
+              <div class="contact-tab nav-tab"></div></a>
         </div>
-        <div class="clear"></div>
     </div>
 </div>    
 <div id="page" class="hfeed">
