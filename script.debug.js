@@ -1,12 +1,11 @@
-// Preload priority images.
-new Image().src = 'images/loadercirclebg.png';
-new Image().src = 'images/lr1.png';
-
 $(document).ready(function(){
 
 
 
     // The home page news ticker.
+    //
+
+
     // Makes an AJAX call to the News Ticker category feed, parses the RSS feed, 
     //  injects the information into the home page, then starts the ticker animation.
 
@@ -119,6 +118,8 @@ $(document).ready(function(){
 
 
     // The scrolling team members.
+    //
+
     $(".JMyCarousel").smoothDivScroll({
         mousewheelScrolling: false
         ,manualContinuousScrolling: true
@@ -153,6 +154,8 @@ $(document).ready(function(){
 
 
     // Handles the sliding header and footer.
+    //
+
     var pageWidth = 1635;
 
     // Returns true if the window is scrolled to the top of the page, false if not.
@@ -275,6 +278,8 @@ $(document).ready(function(){
 
 
     // Handles the header nav menu button click events.
+    //
+
     $('.header-content a').bind('click', function(event) {
         var $anchor = $(this);
 
@@ -337,6 +342,8 @@ $(document).ready(function(){
 
 
     // Handles the various down arrows that jump the page down.
+    //
+
     $('.home-body-news-content-circleDown').bind('click', function() {
         $('html, body').stop().animate({
             scrollTop: 650
@@ -375,6 +382,7 @@ $(document).ready(function(){
 
 
     // The embedded video player.
+    //
 
     var embeddedVideoId = 'ytplayer';
 
@@ -441,6 +449,8 @@ $(document).ready(function(){
 
 
 // People slider click event.
+//
+
 SmoothScrollClickEventHandler = function(event) {
     if( window.$ ) {
         // jQuery is loaded.
@@ -539,6 +549,8 @@ SmoothScrollClickEventHandler = function(event) {
 
 
 // Triggers when the video is closed.
+//
+
 function onVideoClose() {
     if (typeof HandleVideoClose == 'function') 
         HandleVideoClose();
