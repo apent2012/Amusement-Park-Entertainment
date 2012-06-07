@@ -80,7 +80,6 @@ $(document).ready(function(){
 
                 // Appends share link markup to the end of the news ticker body.
                 var newsItemDesc = $(this).parent();
-            //    console.log(newsItemDesc);
                 var newsItemTitle = newsItemDesc.parent().find('.home-body-news-content-body-newsItem-title').html();
                 newsItemDesc.append(shareLinkMarkup(shareLink, newsItemTitle));
             });
@@ -230,7 +229,6 @@ $(document).ready(function(){
                     top: '-=60'
                   }, 300, function() {
                     // Animation complete.
-                   // console.log('done animating');
                    headerState = 0;
                     $('.header').hide();
                   });
@@ -244,7 +242,6 @@ $(document).ready(function(){
                     bottom: '-=212'
                   }, 300, function() {
                     // Animation complete.
-                   // console.log('done animating');
                    footerState = 0;
                     $('.footer').hide();
                   });
