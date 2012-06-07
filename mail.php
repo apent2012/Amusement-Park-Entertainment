@@ -3,7 +3,7 @@
 $debug = true;
 
 if (!$debug)
-    header( "refresh:5;url=http://www.amusementparkent.com/" );
+    header( "refresh:5;url=http://www.amusementparkentertainment.com/" );
 
 
 if (!$debug)
@@ -14,7 +14,7 @@ $name = $_POST['contact-name'];
 $from = $_POST['contact-email'];
 $message = $_POST['contact-message'];
 
-$subject = "Message received from www.amusementparkent.com";
+$subject = "Message received from www.amusementparkentertainment.com";
 
 $headers = "From:" . $from;
 if (!$debug)

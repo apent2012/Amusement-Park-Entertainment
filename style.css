@@ -11,18 +11,6 @@ body {
     text-align: center;
     color: black;
     font-size: 16px;
-
-/*
-    1zoom: 0.75;
-
-    -webkit-transform: scale(0.85);
-    -moz-transform: scale(0.85);
-    -o-transform: scale(0.85);
-
-    -webkit-transform-origin: 0 0;
-    -moz-transform-origin: 0 0;
-    -o-transform-origin: 0 0;
-*/
 }
 
 em {
@@ -106,7 +94,6 @@ em {
 }
 
 #preLoadGUIBeta3 {
-    1display:block !important;
     top:50% !important;
     margin-top:-50px !important;
     height:100px !important;
@@ -341,10 +328,9 @@ a:hover {
 }
 
 .team-body-people-slider-person {
-    width:327px;    /*981px;*/
+    width:327px;
     height:327px;
     background-color:#eee8dd;
-    1margin-left: -654px;
     float:left;
 }
 
@@ -412,7 +398,6 @@ a:hover {
 }
 
 .carousel-container {
-    1border:1px solid red;
     position:relative;
 }
 
@@ -421,7 +406,6 @@ a:hover {
     width:327px;
     height:327px;
     display:inline-block;
-    1border:1px solid green;
     position:absolute;
     top:0;
     z-index:2;
@@ -440,7 +424,6 @@ a:hover {
 #peoplePrevBtn {
     background: url(images/teamarrow-left.png) 0 0 no-repeat;
     display:inline-block;
-    1display:none;
     position:absolute;
     left:327px;
     float:left;
@@ -482,50 +465,22 @@ a:hover {
 
 .leading-slice {
     height:327px;
-    1border:1px solid gold;
     display:inline-block;
     position:absolute;
-    1left:0;
-    1top:0;
-    1right:-654px;
     float:left;
 }
 
 .trailing-slice {
     height:327px;
-    1border:1px solid green;
     display:inline-block;
     float:left;
     position:absolute;
-    1left:-327px;
-    1top:0;
-    1right:-654px;
 }
 
-/*
-.leading-bios {
-    1border:1px solid gold;
-    height:327px;
-    display:inline-block;
-    z-index:4;
-    margin-left:-977px;
-}
-
-.trailing-bios {
-    1border:1px solid gold;
-    height:327px;
-    display:inline-block;
-    z-index:4;
-    margin-left:654px;
-}
-*/
 .bio-panel-close-button {
-    1border:1px solid blue;
     background: url(images/work-video-close.png) 0 0 no-repeat;
     width:32px;
     height:32px;
-    1right:140px;
-    1top:10px;
     position:absolute;
     display:none;
     cursor:pointer;
@@ -542,7 +497,6 @@ a:hover {
     height:327px;
     display:inline-block;
     background-color:#5e0008;
-    1background: url(images/darkredsq.png) 0 0 no-repeat;
 }
 
 .contact-body {
@@ -689,9 +643,6 @@ a:hover {
     background-color:#eee8dd;
 }
 
-.team-body-person-redsq {
-}
-
 .person-left .team-body-person-text {
     float:left;
     padding-right:162px;
@@ -798,9 +749,6 @@ a:hover {
     z-index:1;
 }
 
-.work-block-content-videos {
-}
-
 .work-block-content-videos-bg {
     background-color: black;
 }
@@ -899,9 +847,6 @@ a:hover {
     color:black;
 }
 
-/* 817+(1635 * 1) */
-/* leftGap + (pageWidth * pageIndex) */
-
 .home-page {
     margin-left:0;
     left:0;
@@ -955,8 +900,6 @@ a:hover {
 .home-body-news-content-body {
     float:left;
     color: #6B6863;
-    1padding-top:25px;
-    1border: 1px solid gold; 
     margin-top:27px;
     max-height:56px;
     font-family: 'Helvetica', Arial, sans-serif;
@@ -1013,11 +956,6 @@ a:hover {
     margin-top:-4px;
 }
 
-.home-body-news-content-body p span {
-    1opacity: 0.7;
-    1-moz-opacity: 0.7;
-    1filter:alpha(opacity=70);
-}
 .home-body-news-content-body2 .date {
 	font-family: 'Helvetica', Arial, sans-serif;
     font-weight:bold;
@@ -1094,7 +1032,6 @@ a:hover {
 }
 
 .about-body-margin-redsq {
-    1background: url(images/redsq.gif) 0 0 no-repeat;
     background-color:#e51c20;
     width:327px;
     height:327px;
@@ -1227,7 +1164,6 @@ strong {
 
 .redsq {
     background-color:#e51c20;
-    1background: url(images/redsq.gif) 0 0 no-repeat;
     width:327px;
     height:327px;
 }
@@ -1244,10 +1180,6 @@ strong {
     top:0;
     margin-top:1137px;
     left:-100px;
-}
-
-
-.big-background-img {
 }
 
 
