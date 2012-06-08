@@ -118,7 +118,7 @@ body {
 .singular footer.entry-meta,
 .singular #comments-title {
 	margin: 0 auto;
-	width: 68.9%;
+	width: 75.9%;
 }
 
 /* Attachments */
@@ -502,7 +502,7 @@ a:hover {
 ----------------------------------------------- */
 
 #branding {
-	padding-bottom: 10px;
+	padding-bottom: 50px;
 	position: relative;
 	z-index: 9999;
 }
@@ -769,7 +769,7 @@ a:hover {
 
 #main {
 	clear: both;
-	padding-top: 60px;
+	padding-top: 20px;
 	max-width: 974px;
 	left:0;
 	right:0;
@@ -820,15 +820,15 @@ a:hover {
 }
 .entry-title {
 	clear: both;
-	color: #222;
-	font-size: 26px;
+	color: #7f7f7f;
+	font-size: 24px;
 	font-weight: bold;
 	line-height: 1.5em;
 	padding-top: 15px;
 }
 .entry-title,
 .entry-title a {
-	color: #222;
+	color: #7f7f7f;
 	text-decoration: none;
 }
 .entry-title a:hover,
@@ -837,10 +837,11 @@ a:hover {
 	color: #1982d1;
 }
 .entry-meta {
-	color: #666;
+	color: black;
 	clear: both;
 	font-size: 12px;
 	line-height: 18px;
+	font-weight:bold;
 }
 .entry-meta a {
 	font-weight: bold;
@@ -857,12 +858,20 @@ a:hover {
 .share-link-facebook {
 	color:#30acec;
 }
+
+.comments-link {
+	padding-left:23px;
+}
 .single-author .entry-meta .by-author {
 	display: none;
 }
 .entry-content,
 .entry-summary {
 	padding:0;
+}
+.entry-content p {
+	font-weight:bold;
+	color:#7f7f7f;
 }
 .entry-content h1,
 .entry-content h2,
@@ -1194,14 +1203,14 @@ article.format-status .entry-content {
 /* Singular content styles for Posts and Pages */
 .singular .hentry {
 	border-bottom: none;
-	padding: 4.875em 0 0;
+	padding: 3.875em 0 0;
 	position: relative;
 }
 .singular.page .hentry {
 	padding: 3.5em 0 0;
 }
 .singular .entry-title {
-	color: #000;
+	color: #7F7F7F;
 	font-size: 36px;
 	font-weight: bold;
 	line-height: 48px;
@@ -1839,7 +1848,7 @@ section.recent-posts .other-recent-posts li:after {
 #content nav {
 	clear: both;
 	overflow: hidden;
-	padding: 0 0 1.625em;
+	padding: 0 0 1.5em;
 }
 #content nav a {
 	font-size: 12px;
@@ -1875,6 +1884,7 @@ section.recent-posts .other-recent-posts li:after {
 	top: -0.3em;
 	text-align: right;
 	z-index: 1;
+	width: 140px;
 }
 #nav-single .nav-previous,
 #nav-single .nav-next {
@@ -2206,10 +2216,10 @@ a.comment-reply-link > span {
 
 /* Comment Form */
 #respond {
-	background: #ddd;
-	border: 1px solid #d3d3d3;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
+	background: #e5e5e5;
+	1border: 1px solid #d3d3d3;
+	1-moz-border-radius: 3px;
+	1border-radius: 3px;
 	margin: 0 auto 1.625em;
 	padding: 1.625em;
 	position: relative;

@@ -878,13 +878,13 @@ a:hover {
 }
 
 .home-body-news {
-	height: 180px;
+	height: 140px;
 }
 
 .home-body-news-content {
 	border-bottom: 1px solid #bebab1;
 	width: 980px;
-	height: 180px;
+	height: 120px;
 	text-align: left;
 }
 
@@ -892,7 +892,6 @@ a:hover {
     color:black;
     float:left;
     width:78px;
-    height:140px;
     font-size: 18px;
     opacity: 0.7;
     -moz-opacity: 0.7;
@@ -905,6 +904,7 @@ a:hover {
     float:left;
     color: #6B6863;
     margin-top:27px;
+    min-width:360px;
     max-height:56px;
     font-family: 'Helvetica', Arial, sans-serif;
     font-size:12px;
@@ -912,7 +912,7 @@ a:hover {
 }
 
 .home-body-news-content-body li {
-    height:46px;
+    height:50px;
 }
 
 .home-body-news-content-body2 {
@@ -929,10 +929,10 @@ a:hover {
     text-decoration:underline;
 }
 .share-link-twitter {
-    color:#23d6b6;
+    1color:#23d6b6;
 }
 .share-link-facebook {
-    color:#30acec;
+    1color:#30acec;
 }
 
 .home-body-news-content-circleDown {
@@ -958,6 +958,11 @@ a:hover {
     font-size:12px;
     line-height: 1.7em;
     margin-top:-4px;
+    padding-bottom:4px;
+}
+
+.home-body-news-content-body-newsItem-desc p {
+    font-size:10px;
 }
 
 .home-body-news-content-body2 .date {
@@ -983,33 +988,34 @@ a:hover {
     width: 103px;
     height:140px;
     font-size: 18px;
-    opacity: 0.7;
-    -moz-opacity: 0.7;
-    filter:alpha(opacity=70);
-    padding-top:25px;
+    color:#6b6863;
+    padding-top:32px;
+}
+
+.home-body-news-content-tumblr .facebook-hilite {
+    color:#f6827c;
 }
 
 .home-body-ape {
     font-weight:normal;
-    font-size:43px; /* 48px; */
-    opacity: 0.75;
-    -moz-opacity: 0.75;
-    filter:alpha(opacity=75);
+    font-size:43px;
+    color:#6b6863;
     text-align:center;
+    width:100%;
+    position:relative;
+}
+
+.home-body-ape-title {
+    display: inline-block;
+    padding-top: 25px;
+    font-size: 48px;
+    letter-spacing: -.04em;
+    text-align: center;
+    width: 1000px;
     left:0;
     right:0;
     margin-left:auto;
     margin-right:auto;
-    width:100%;
-}
-
-.home-body-ape-title {
-	width: 981px;
-	display: inline-block;
-	text-align: center;
-	padding-top: 25px;
-	font-size: 48px;
-	letter-spacing: -.04em;
 }
 
 .home-body-ape-subtitle {
@@ -1018,6 +1024,7 @@ a:hover {
     padding-top: 17px;
     padding-bottom:300px;
 	line-height: 1.2em;
+    color:#474542;
 }
 
 .about-body {

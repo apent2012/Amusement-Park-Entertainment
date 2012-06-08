@@ -17,35 +17,29 @@
 				</hgroup>
 			<?php else : ?>
 			<div class="attachment">
-					<?php
-						$posttags = get_the_tags();
-						if (is_array($posttags)) {
-							$posttags = array_values($posttags);
-							if (isset($posttags[0])) {
-								$firstTag = $posttags[0];
-								$firstTagName = $firstTag->name;
-					?>
+				<?php
+					$posttags = get_the_tags();
+					if (is_array($posttags)) {
+						$posttags = array_values($posttags);
+						if (isset($posttags[0])) {
+							$firstTag = $posttags[0];
+							$firstTagName = $firstTag->name;
+				?>
 				<div class="attachment-firstTag">
 					<div class="attachment-firstTag-text">
-					<?php
-
-								echo $firstTagName;
-					?>
+					<?php echo $firstTagName; ?>
 					</div>
 				</div>
-				<?php 
-					// Gets publish datetime.
-					$theDate = get_the_date('m/d');
-				?>
+				<?php $theDate = get_the_date('m/d'); ?>
 				<div class="attachment-date">
 					<div class="attachment-date-text">
 				<?php echo $theDate; ?>
 					</div>
 				</div>
-					<?php
-							}
+				<?php
 						}
-					?>
+					}
+				?>
 				<?php echo_first_image(get_the_ID()); ?>
 			</div>
 			<h1 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'twentyeleven' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
@@ -87,7 +81,7 @@
 			?>
 			<span class="cat-links">
 				<?php twentyeleven_posted_on(); ?>
-				<?php printf( __( '<span class="%1$s">in</span> %2$s', 'twentyeleven' ), 'entry-utility-prep entry-utility-prep-cat-links', $categories_list );
+				<?php //printf( __( '<span class="%1$s">in</span>'/*%2$s'*/, 'twentyeleven' ), 'entry-utility-prep entry-utility-prep-cat-links', $categories_list );
 				$show_sep = true; ?>
 			</span>
 			<?php endif; // End if categories ?>
@@ -99,18 +93,11 @@
 			<span class="sep"> - </span>
 				<?php endif; // End if $show_sep ?>
 			<span class="tag-links">
-				<?php printf( __( '<span class="%1$s">Tagged as</span> %2$s', 'twentyeleven' ), 'entry-utility-prep entry-utility-prep-tag-links', $tags_list );
+				<?php printf( __( '<span class="%1$s">Filed under</span> %2$s', 'twentyeleven' ), 'entry-utility-prep entry-utility-prep-tag-links', $tags_list );
 				$show_sep = true; ?>
 			</span>
 			<?php endif; // End if $tags_list ?>
 			<?php endif; // End if 'post' == get_post_type() ?>
-
-			<?php if ( comments_open() ) : ?>
-			<?php if ( $show_sep ) : ?>
-			<span class="sep"> - </span>
-			<?php endif; // End if $show_sep ?>
-			<span class="comments-link"><?php comments_popup_link( '<span class="leave-reply">' . __( 'Leave a reply', 'twentyeleven' ) . '</span>', __( '<b>1</b> Reply', 'twentyeleven' ), __( '<b>%</b> Replies', 'twentyeleven' ) ); ?></span>
-			<?php endif; // End if comments_open() ?>
 
 			<?php edit_post_link( __( 'Edit', 'twentyeleven' ), '<span class="edit-link">', '</span>' ); ?>
 			<span class="share-links">Share: <a href="<?php 
@@ -123,5 +110,13 @@
 				$facebookShareURL = urlencode($shareLink);
 				echo 'http://www.facebook.com/share.php?u='.$facebookShareURL;
 			?>" class="share-link-facebook" target="_blank">Facebook</a></span>
+			<?php if ( comments_open() ) : ?>
+			<?php /*if ( $show_sep ) : ?>
+			<span class="sep"> - </span>
+			<?php endif; // End if $show_sep ?>
+			*/ ?>
+			<span class="comments-link"><?php comments_popup_link( '<span class="leave-reply">' . __( 'Comments(0)', 'twentyeleven' ) . '</span>', __( 'Comments(1)', 'twentyeleven' ), __( 'Comments(%)', 'twentyeleven' ) ); ?></span>
+			<?php endif; // End if comments_open() ?>
+
 		</footer><!-- #entry-meta -->
 	</article><!-- #post-<?php the_ID(); ?> -->

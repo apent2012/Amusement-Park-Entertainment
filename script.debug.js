@@ -42,8 +42,9 @@ $(document).ready(function(){
                 + item.title
                 + '</span>'
                 + '</p>'
+                + '<div class="home-body-news-content-body-newsItem-desc">'
                 + item.description
-                + '</div></li>';
+                + '</div></div></li>';
             }
 
             html += '</ul>';
@@ -106,16 +107,6 @@ $(document).ready(function(){
 
 
 
-
-
-
-
-
-
-
-
-
-
     // The scrolling team members.
     //
 
@@ -138,16 +129,6 @@ $(document).ready(function(){
             $(hashSelectors[hash]).click();
         }
     });
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -257,23 +238,6 @@ $(document).ready(function(){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     // Handles the header nav menu button click events.
     //
 
@@ -324,20 +288,6 @@ $(document).ready(function(){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     // Handles the various down arrows that jump the page down.
     //
 
@@ -358,21 +308,6 @@ $(document).ready(function(){
             scrollTop: 650
         }, 1000, 'easeInOutExpo');
     });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -428,18 +363,11 @@ $(document).ready(function(){
     };
 
 
-
-
-
     // Binds the smooth scroll click handler to the people scroller.
     $('.team-body-people-slider-person').click(SmoothScrollClickEventHandler);
 
  
 });
-
-
-
-
 
 
 
@@ -541,10 +469,6 @@ SmoothScrollClickEventHandler = function(event) {
 
 
 
-
-
-
-
 // Triggers when the video is closed.
 //
 
@@ -552,18 +476,6 @@ function onVideoClose() {
     if (typeof HandleVideoClose == 'function') 
         HandleVideoClose();
 };
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

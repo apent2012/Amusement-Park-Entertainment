@@ -42,7 +42,7 @@ function exclude_category($query) {
 	if ( $query->is_home() ) {
 		// > BuildDiff
 		$query->set('cat', '-3');
-		// $query->set('cat', '-4');
+		//$query->set('cat', '-4');
 	}
 	return $query;
 }
@@ -77,6 +77,30 @@ function echo_first_image ($postID)
 	}
 }
 
+add_filter('comment_form_defaults', 'apent_message_before');
+function apent_message_before($defaults) {
+	error_log(print_r($defaults, 1));
+	$defaults['comment_notes_before'] = '<p class="comment-notes">foo</p>';
+	return $defaults;
+}
 
+/*
+function apent_comment_form( $args = array(), $post_id = null ) {
+	?>
+foo
+	<?php
+}
 
+// Removes thematic_blogtitle from the thematic_header phase
+function remove_parent_actions() {
+    remove_action('comment_form', 'comment_form', 3);
+}
+*/
+/*
+// Call 'remove_thematic_actions' during WP initialization
+add_action('init','remove_thematic_actions');
 
+// Add our custom function to the 'thematic_header' phase
+add_action('thematic_header','fancy_theme_blogtitle', 3);
+
+*/

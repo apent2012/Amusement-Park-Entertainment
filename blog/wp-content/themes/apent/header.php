@@ -213,16 +213,15 @@ h1 {
 					'exclude' => '', 'include' => ''
 				);
 
-			//	$args = wp_parse_args( $args, $defaults );
 				$tags = get_tags( array_merge($defaults, array('orderby' => 'count', 'order' => 'DESC')) ); // Always query top tags 
-			//	error_log(print_r($tags, 1)); 
 
 				$tagLinks = array();
 				foreach ($tags as $tag) {
-					$tagLink = '<a href="/ape/dev/blog/?tag='.$tag->slug.'">'.$tag->name.'</a>';
+					// > BuildDiff
+					//$tagLink = '<a href="/ape/dev/blog/?tag='.$tag->slug.'">'.$tag->name.'</a>';
+					$tagLink = '<a href="/blog/?tag='.$tag->slug.'">'.$tag->name.'</a>';
 					array_push($tagLinks, $tagLink);
 				}
-			//	error_log(print_r($tag, 1));
 
 				echo implode(', ', $tagLinks);
 			?>
