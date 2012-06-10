@@ -77,30 +77,149 @@ function echo_first_image ($postID)
 	}
 }
 
+/*
 add_filter('comment_form_defaults', 'apent_message_before');
 function apent_message_before($defaults) {
 	error_log(print_r($defaults, 1));
 	$defaults['comment_notes_before'] = '<p class="comment-notes">foo</p>';
 	return $defaults;
 }
+*/
 
-/*
-function apent_comment_form( $args = array(), $post_id = null ) {
+
+class ApentCommentForm {
+
+  public $test;
+
+  public function __construct(){
+    $this->test = function($a) {
+      print "$a\n";
+    };
+  }
+
+  public function __call($method, $args){
+    if ( $this->{$method} instanceof Closure ) {
+      return call_user_func_array($this->{$method},$args);
+    } else {
+      return parent::__call($method, $args);
+    }
+  }
+}
+
+
+
+// Builds a function chain that can build custom markup.
+// [1] > [2,3,4] > [5,6]
+
+function apent_comment_form() {
+
+	$titleText = 'foo';
+
+	$title = function() use ($titleText) {
+?>
+<span class="apent-comment-form-title">
+	<?php echo $titleText; ?>
+</span>
+<?php
+	};
+
+	$bodyContent = function() {
+?>
+Content goes here.
+<?php		
+	};
+
+	$body = function() use ($bodyContent) {
+?>
+<div class="apent-comment-form-body-content">
+	<?php $bodyContent() ?>
+</div>
+<?php
+	};
+
+	$footerContent = function() {
+?>
+Footer content goes here.
+<?php		
+	};
+
+	$footer = function() use ($footerContent) {
+?>
+<div class="apent-comment-form-body">
+	<?php $footerContent() ?>
+</div>
+<?php		
+	};
+
+	$form = function() use ($title, $body, $footer) {
 	?>
-foo
+<div class="apent-comment-form">
+	<?php $title(); ?>
+	<?php $body(); ?>
+	<?php $footer(); ?>
+</div>
 	<?php
+	};
+
+
+	$form();
 }
 
-// Removes thematic_blogtitle from the thematic_header phase
-function remove_parent_actions() {
-    remove_action('comment_form', 'comment_form', 3);
-}
-*/
+
 /*
-// Call 'remove_thematic_actions' during WP initialization
-add_action('init','remove_thematic_actions');
+function custom_comment_form() {
 
-// Add our custom function to the 'thematic_header' phase
-add_action('thematic_header','fancy_theme_blogtitle', 3);
+	// A function chain is a series of anonymous functions.
 
+	$_ptr = 0;
+
+	$_next = function() use ($funcChain, $_ptr) {
+
+	};
+
+	$funcChain = array(
+	function() use ($_next) {
+	?>
+<div class="apent-comment-form">
+	<?php $_next(); ?>
+</div>
+	<?php
+	},
+	function() {
+?>
+foo
+<?php
+	});
+}
 */
+
+class FunctionChain {
+
+  public $test;
+  private $_ptr = 0;
+
+  public function __construct($chain) {
+    $this->test = function($a) {
+      print "$a\n";
+    };
+  }
+
+  public function __call($method, $args){
+    if ( $this->{$method} instanceof Closure ) {
+      return call_user_func_array($this->{$method},$args);
+    } else {
+      return parent::__call($method, $args);
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
