@@ -324,7 +324,7 @@ body, input, textarea {
 	color: #373737;
 	font: 15px "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: 300;
-	line-height: 1.625;
+	line-height: 1.9;
 }
 body {
 	background: #e2e2e2;
@@ -2217,26 +2217,38 @@ a.comment-reply-link > span {
 /* Comment Form */
 #respond {
 	background: #e5e5e5;
-	1border: 1px solid #d3d3d3;
-	1-moz-border-radius: 3px;
-	1border-radius: 3px;
 	margin: 0 auto 1.625em;
-	padding: 1.625em;
+	padding: 8px;
 	position: relative;
-	width: 68.9%;
+	width: 756px;
 }
+
+#respond h3 {
+	background-color:white;
+	padding:20px;
+	color:#7f7f7f;
+	font-size:18px;
+}
+
+#respond .comment-notes {
+	background-color:white;
+	padding:20px;
+	display:none;
+}
+
 #respond input[type="text"],
 #respond textarea {
 	background: #fff;
-	border: 4px solid #eee;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-	-webkit-box-shadow: inset 0 1px 3px rgba(204,204,204,0.95);
-	-moz-box-shadow: inset 0 1px 3px rgba(204,204,204,0.95);
-	box-shadow: inset 0 1px 3px rgba(204,204,204,0.95);
+	border:0;
+	1border: 4px solid #eee;
+	1-moz-border-radius: 5px;
+	1border-radius: 5px;
+	1-webkit-box-shadow: inset 0 1px 3px rgba(204,204,204,0.95);
+	1-moz-box-shadow: inset 0 1px 3px rgba(204,204,204,0.95);
+	1box-shadow: inset 0 1px 3px rgba(204,204,204,0.95);
 	position: relative;
-	padding: 10px;
-	text-indent: 80px;
+	padding: 2px;
+	text-indent: 120px;
 }
 #respond .comment-form-author,
 #respond .comment-form-email,
@@ -2248,28 +2260,60 @@ a.comment-reply-link > span {
 #respond .comment-form-email label,
 #respond .comment-form-url label,
 #respond .comment-form-comment label {
-	background: #eee;
-	-webkit-box-shadow: 1px 2px 2px rgba(204,204,204,0.8);
-	-moz-box-shadow: 1px 2px 2px rgba(204,204,204,0.8);
-	box-shadow: 1px 2px 2px rgba(204,204,204,0.8);
-	color: #555;
+	1background: #eee;
+	1-webkit-box-shadow: 1px 2px 2px rgba(204,204,204,0.8);
+	1-moz-box-shadow: 1px 2px 2px rgba(204,204,204,0.8);
+	1box-shadow: 1px 2px 2px rgba(204,204,204,0.8);
+	color: #7f7f7f;
 	display: inline-block;
-	font-size: 13px;
-	left: 4px;
+	font-size: 12px;
+	left: 20px;
 	min-width: 60px;
-	padding: 4px 10px;
-	position: relative;
-	top: 40px;
+	1padding: 4px 10px;
+	position: absolute;
+	top: 20px;
 	z-index: 1;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+}
+#respond .comment_field_container label {
+	top:5px;
+    font-weight:bold;
 }
 #respond input[type="text"]:focus,
 #respond textarea:focus {
 	text-indent: 0;
 	z-index: 1;
+	1border:1px solid red;
 }
 #respond textarea {
 	resize: vertical;
-	width: 95%;
+	width: 752px;
+	top:6px;
+	height: 120px;
+}
+#respond .comment_field_container {
+	1border:1px solid;
+	margin-top:1px;
+	position:relative;
+	background-color: white;
+	padding-top:5px;
+}
+#respond .comment_field_container p {
+	1border:1px solid;
+	display:inline-block;
+}
+#respond .comment_field_container p input {
+	margin: 4px;
+	background-color: #E5E5E5;
+	1border: 1px solid red;
+	left:75px;
+	width:164px;
+}
+#respond .comment_field_container .comment-form-email {
+	left: 70px;
+}
+#respond .comment_field_container .comment-form-url {
+	left: 80px;
 }
 #respond .comment-form-author .required,
 #respond .comment-form-email .required {
@@ -2286,7 +2330,7 @@ a.comment-reply-link > span {
 	font-size: 13px;
 }
 #respond p {
-	margin: 10px 0;
+	1margin: 10px 0;
 }
 #respond .form-submit {
 	float: right;
@@ -2355,8 +2399,8 @@ a.comment-reply-link > span {
 }
 #respond input[type=text] {
 	display: block;
-	height: 24px;
-	width: 75%;
+	height: 22px;
+	1width: 75%;
 }
 #respond p {
 	font-size: 12px;

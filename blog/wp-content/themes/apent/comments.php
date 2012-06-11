@@ -72,6 +72,10 @@
 		<p class="nocomments"><?php _e( 'Comments are closed.', 'twentyeleven' ); ?></p>
 	<?php endif; ?>
 
-	<?php apent_comment_form(); //comment_form(); ?>
+	<?php 
+
+	0 ? comment_form() : apent_comment_form();
+
+	?>
 
 </div><!-- #comments -->
