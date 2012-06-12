@@ -38,11 +38,24 @@
  * @since Twenty Eleven 1.0
  */
 
+if (!defined('ENVIRONMENT')) {
+	if ($_SERVER['HTTP_HOST'] == 'localhost') {
+		define('ENVIRONMENT', 'DEVELOPMENT');
+	}
+	else {
+		define('ENVIRONMENT', 'PRODUCTION');
+	}
+}
+
 function exclude_category($query) {
 	if ( $query->is_home() ) {
 		// > BuildDiff
-		//$query->set('cat', '-3');
-		$query->set('cat', '-4');
+		if (ENVIRONMENT == 'DEVELOPMENT') {
+			$query->set('cat', '-3');
+		}
+		else {
+			$query->set('cat', '-4');
+		}
 	}
 	return $query;
 }
