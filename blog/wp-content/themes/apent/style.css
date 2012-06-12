@@ -324,7 +324,7 @@ body, input, textarea {
 	color: #373737;
 	font: 15px "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: 300;
-	line-height: 1.9;
+	line-height: 1.4;
 }
 body {
 	background: #e2e2e2;
@@ -2248,7 +2248,7 @@ a.comment-reply-link > span {
 	1box-shadow: inset 0 1px 3px rgba(204,204,204,0.95);
 	position: relative;
 	padding: 2px;
-	text-indent: 120px;
+	1text-indent: 120px;
 }
 #respond .comment-form-author,
 #respond .comment-form-email,
@@ -2271,13 +2271,22 @@ a.comment-reply-link > span {
 	min-width: 60px;
 	1padding: 4px 10px;
 	position: absolute;
-	top: 20px;
+	top: 17px;
 	z-index: 1;
     font-family: 'Helvetica Neue', Helvetica, sans-serif;
+}
+#respond .comment-form-comment textarea {
+	padding:8px;
 }
 #respond .comment_field_container label {
 	top:5px;
     font-weight:bold;
+}
+#respond .comment_form_login {
+	background-color:white;
+	margin-top:2px;
+	padding:20px;
+	font-weight:bold;
 }
 #respond input[type="text"]:focus,
 #respond textarea:focus {
@@ -2287,13 +2296,13 @@ a.comment-reply-link > span {
 }
 #respond textarea {
 	resize: vertical;
-	width: 752px;
+	width: 98%;
 	top:6px;
 	height: 120px;
 }
 #respond .comment_field_container {
 	1border:1px solid;
-	margin-top:1px;
+	margin-top:4px;
 	position:relative;
 	background-color: white;
 	padding-top:5px;
@@ -2313,49 +2322,60 @@ a.comment-reply-link > span {
 	left: 70px;
 }
 #respond .comment_field_container .comment-form-url {
-	left: 80px;
+	left: 130px;
 }
 #respond .comment-form-author .required,
 #respond .comment-form-email .required {
 	color: #bd3500;
 	font-size: 22px;
 	font-weight: bold;
-	left: 75%;
+	right: -63px;
 	position: absolute;
-	top: 45px;
+	1top: 45px;
 	z-index: 1;
+	margin-top: 6px;
 }
 #respond .comment-notes,
 #respond .logged-in-as {
-	font-size: 13px;
+	font-size: 12px;
+	background-color:white;
+	margin-top:4px;
+	padding:20px;
+	font-weight:bold;
 }
 #respond p {
 	1margin: 10px 0;
 }
 #respond .form-submit {
-	float: right;
-	margin: -20px 0 10px;
+	background-color: #E5E5E5;
+	width: 98%;
+	padding: 8px;
+	1border: 1px solid;
 }
 #respond input#submit {
-	background: #222;
+	background: white;
 	border: none;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
-	-webkit-box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
-	-moz-box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
-	box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
-	color: #eee;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	1-webkit-box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
+	1-moz-box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
+	1box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
+	color: #7f7f7f;
 	cursor: pointer;
-	font-size: 15px;
-	margin: 20px 0;
-	padding: 5px 42px 5px 22px;
+	font-size: 13px;
+	margin: 8px 0;
+	padding: 5px 32px 5px 32px;
 	position: relative;
-	left: 30px;
+	right: 0;
 	text-shadow: 0 -1px 0 rgba(0,0,0,0.3);
+	float:right;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    font-weight:bold;
+    line-height:2.4;
 }
 #respond input#submit:active {
-	background: #1982d1;
-	color: #bfddf3;
+	background: #FA4542; /* #1982d1 */
+	color: white;
 }
 #respond #cancel-comment-reply-link {
 	color: #666;

@@ -12,7 +12,8 @@
 
 	</div><!-- #main -->
 
-	<footer id="colophon" role="contentinfo">
+    <div class="clear"></div>
+<?php //	<footer id="colophon" role="contentinfo"> ?>
 
 			<?php
 				/* A sidebar in the footer? Yep. You can can customize
@@ -53,7 +54,8 @@
                 </div>
         </div>
     </div>
-    </footer><!-- #colophon -->
+<?php //    </footer><!-- #colophon --> ?>
+    
 </div><!-- #page -->
 
 <?php wp_footer(); ?>

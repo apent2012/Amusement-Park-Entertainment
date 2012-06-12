@@ -144,7 +144,7 @@ function apent_comment_form( $args = array(), $post_id = null ) {
 		'fields'               => apply_filters( 'comment_form_default_fields', $fields ),
 		'comment_field'        => '<p class="comment-form-comment"><label for="comment">' . _x( 'Enter Text Here', 'noun' ) . '</label><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea></p>',
 		'must_log_in'          => '<p class="must-log-in">' .  sprintf( __( 'You must be <a href="%s">logged in</a> to post a comment.' ), wp_login_url( apply_filters( 'the_permalink', get_permalink( $post_id ) ) ) ) . '</p>',
-		'logged_in_as'         => '<p class="logged-in-as">' . sprintf( __( 'Logged in as <a href="%1$s">%2$s</a>. <a href="%3$s" title="Log out of this account">Log out?</a>' ), admin_url( 'profile.php' ), $user_identity, wp_logout_url( apply_filters( 'the_permalink', get_permalink( $post_id ) ) ) ) . '</p>',
+		'logged_in_as'         => '<p class="logged-in-as">' . sprintf( __( 'Logged in as <a href="%1$s">%2$s</a>. <a href="%3$s" title="Log out of this account">Log out?</a>' ), admin_url( 'profile.php' ), $user_identity, wp_logout_url( apply_filters( 'the_permalink', get_permalink( $post_id ).'#respond' ) ) ) . '</p>',
 		'comment_notes_before' => '<p class="comment-notes">' . __( 'Your email address will not be published.' ) . ( $req ? $required_text : '' ) . '</p>',
 		'comment_notes_after'  => '<p class="form-allowed-tags">' . sprintf( __( 'You may use these <abbr title="HyperText Markup Language">HTML</abbr> tags and attributes: %s' ), ' <code>' . allowed_tags() . '</code>' ) . '</p>',
 		'id_form'              => 'commentform',
@@ -168,12 +168,14 @@ function apent_comment_form( $args = array(), $post_id = null ) {
 				<?php else : ?>
 					<form action="<?php echo site_url( '/wp-comments-post.php' ); ?>" method="post" id="<?php echo esc_attr( $args['id_form'] ); ?>">
 						<?php do_action( 'comment_form_top' ); ?>
+
+						<?php echo $args['comment_notes_before']; ?>
+						<?php echo apply_filters( 'comment_form_field_comment', $args['comment_field'] ); ?>
 						<?php if ( is_user_logged_in() ) : ?>
 							<?php echo apply_filters( 'comment_form_logged_in', $args['logged_in_as'], $commenter, $user_identity ); ?>
+							
 							<?php do_action( 'comment_form_logged_in_after', $commenter, $user_identity ); ?>
 						<?php else : ?>
-							<?php echo $args['comment_notes_before']; ?>
-							<?php echo apply_filters( 'comment_form_field_comment', $args['comment_field'] ); ?>
 							<div class="comment_field_container">
 							<?php
 							do_action( 'comment_form_before_fields' );
@@ -183,12 +185,21 @@ function apent_comment_form( $args = array(), $post_id = null ) {
 							do_action( 'comment_form_after_fields' );
 							?>
 							</div>
+							<div class="comment_form_login">
+								<?php 
+								echo _( 'Comment as a guest, or ' ); 
+							//	wp_loginout(); 
+								?>
+								<a href="<?php echo wp_login_url(get_permalink().'#respond'); ?>">Login</a>.<br>								
+							</div>
+
 						<?php endif; ?>
 						<?php echo $args['comment_notes_after']; ?>
 						<p class="form-submit">
 							<input name="submit" type="submit" id="<?php echo esc_attr( $args['id_submit'] ); ?>" value="<?php echo esc_attr( $args['label_submit'] ); ?>" />
 							<?php comment_id_fields( $post_id ); ?>
 						</p>
+						<div class="clear"></div>
 						<?php do_action( 'comment_form', $post_id ); ?>
 					</form>
 				<?php endif; ?>
@@ -197,6 +208,25 @@ function apent_comment_form( $args = array(), $post_id = null ) {
 		<?php else : ?>
 			<?php do_action( 'comment_form_comments_closed' ); ?>
 		<?php endif; ?>
+    <script type="text/javascript">
+    	jQuery(document).ready(function() {
+			var $textarea = jQuery('#respond .comment-form-comment textarea');
+
+    		var RefreshTextareaLabel = function() {
+    			var textareaContent = $textarea.val();
+    			if (textareaContent != '') {
+    				$textarea.parent().children('label').css('display', 'none');
+    			}
+    			else {
+    				$textarea.parent().children('label').css('display', 'block');
+    			}
+    		};
+
+    		RefreshTextareaLabel();
+
+    		$textarea.blur(RefreshTextareaLabel);
+    	});
+    </script>
 	<?php
 }
 
