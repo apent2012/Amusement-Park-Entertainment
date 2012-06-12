@@ -2296,7 +2296,7 @@ a.comment-reply-link > span {
 }
 #respond textarea {
 	resize: vertical;
-	width: 98%;
+	width: 100%;
 	top:6px;
 	height: 120px;
 }
@@ -2310,6 +2310,8 @@ a.comment-reply-link > span {
 #respond .comment_field_container p {
 	1border:1px solid;
 	display:inline-block;
+	width:250px;
+	margin-left:-5px;
 }
 #respond .comment_field_container p input {
 	margin: 4px;
@@ -2318,18 +2320,12 @@ a.comment-reply-link > span {
 	left:75px;
 	width:164px;
 }
-#respond .comment_field_container .comment-form-email {
-	left: 70px;
-}
-#respond .comment_field_container .comment-form-url {
-	left: 130px;
-}
 #respond .comment-form-author .required,
 #respond .comment-form-email .required {
 	color: #bd3500;
 	font-size: 22px;
 	font-weight: bold;
-	right: -63px;
+	right: 8px;
 	position: absolute;
 	1top: 45px;
 	z-index: 1;
@@ -2343,8 +2339,9 @@ a.comment-reply-link > span {
 	padding:20px;
 	font-weight:bold;
 }
-#respond p {
+#respond .comment-form-comment {
 	1margin: 10px 0;
+	margin-right:16px;
 }
 #respond .form-submit {
 	background-color: #E5E5E5;
@@ -2367,7 +2364,7 @@ a.comment-reply-link > span {
 	padding: 5px 32px 5px 32px;
 	position: relative;
 	right: 0;
-	text-shadow: 0 -1px 0 rgba(0,0,0,0.3);
+	1text-shadow: 0 -1px 0 rgba(0,0,0,0.3);
 	float:right;
     font-family: 'Helvetica Neue', Helvetica, sans-serif;
     font-weight:bold;
