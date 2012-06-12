@@ -62,63 +62,17 @@ function exclude_category($query) {
 
 add_filter('pre_get_posts', 'exclude_category');
 
-
-function echo_first_image ($postID)
-{
-	$args = array(
-		'numberposts' => 1,
-		'order'=> 'ASC',
-		'post_mime_type' => 'image',
-		'post_parent' => $postID,
-		'post_status' => null,
-		'post_type' => 'attachment'
-	);
-	
-	$attachments = get_children( $args );
-	
-//	error_log(print_r($attachments, 1));
-	
-	if ($attachments) {
-		foreach($attachments as $attachment) {
-			$image_attributes = wp_get_attachment_image_src( $attachment->ID, 'thumbnail' ) 
-				? wp_get_attachment_image_src( $attachment->ID, 'thumbnail' ) 
-				: wp_get_attachment_image_src( $attachment->ID, 'full' );
-				
-		//	echo '<img src="'..'" class="current">';
-			echo wp_get_attachment_image( $attachment->ID, 'full' );			
-		}
+function get_featured_image($postID) {
+	$image = null;
+	if (has_post_thumbnail( $postID )) {
+		$image = get_the_post_thumbnail( $postID, 'full' );
+	//	
+	//	Displays the image as a horizontal banner.
+	//	$image = get_the_post_thumbnail( $postID );
 	}
+
+	return $image;
 }
-
-/*
-add_filter('comment_form_defaults', 'apent_message_before');
-function apent_message_before($defaults) {
-	error_log(print_r($defaults, 1));
-	$defaults['comment_notes_before'] = '<p class="comment-notes">foo</p>';
-	return $defaults;
-}
-*/
-
-/*
-class ApentCommentForm {
-
-  public $test;
-
-  public function __construct(){
-    $this->test = function($a) {
-      print "$a\n";
-    };
-  }
-
-  public function __call($method, $args){
-    if ( $this->{$method} instanceof Closure ) {
-      return call_user_func_array($this->{$method},$args);
-    } else {
-      return parent::__call($method, $args);
-    }
-  }
-}
- */
 
 
 add_filter('comment_form_defaults', 'apent_title_reply');
@@ -242,144 +196,6 @@ function apent_comment_form( $args = array(), $post_id = null ) {
     </script>
 	<?php
 }
-
-/*
-function apent_comment_form() {
-	?>
-<div id="comments">
-	<div id="respond">
-		<h3 id="reply-title"><?php echo __( 'Add New Comment' ); ?> <small><a rel="nofollow" id="cancel-comment-reply-link" href="/ape/dev/blog/?p=100#respond" style="display:none;">Cancel reply</a></small></h3>
-		<form action="http://localhost/ape/dev/blog/wp-comments-post.php" method="post" id="commentform">
-
-			<p class="comment-notes">Your email address will not be published. Required fields are marked <span class="required">*</span></p>
-
-			<p class="comment-form-author"><label for="author">Name</label> <span class="required">*</span><input id="author" name="author" type="text" value="" size="30" aria-required="true"></p>
-
-			<p class="comment-form-email"><label for="email">Email</label> <span class="required">*</span><input id="email" name="email" type="text" value="" size="30" aria-required="true"></p>
-
-			<p class="comment-form-url"><label for="url">Website</label><input id="url" name="url" type="text" value="" size="30"></p>
-			<p class="comment-form-comment"><label for="comment">Comment</label><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea></p>
-
-			<p class="form-allowed-tags">You may use these <abbr title="HyperText Markup Language">HTML</abbr> tags and attributes:  <code>&lt;a href="" title=""&gt; &lt;abbr title=""&gt; &lt;acronym title=""&gt; &lt;b&gt; &lt;blockquote cite=""&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=""&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=""&gt; &lt;strike&gt; &lt;strong&gt; </code></p>
-
-			<p class="form-submit">
-				<input name="submit" type="submit" id="submit" value="Post Comment">
-				<input type="hidden" name="comment_post_ID" value="100" id="comment_post_ID">
-				<input type="hidden" name="comment_parent" id="comment_parent" value="0">
-			</p>
-		</form>
-	</div><!-- #respond -->
-</div>
-	<?php
-}
- */
-
-/*
-// Builds a function chain that can build custom markup.
-// [1] > [2,3,4] > [5,6]
-
-function apent_comment_form() {
-
-	$titleText = 'foo';
-
-	$title = function() use ($titleText) {
-?>
-<span class="apent-comment-form-title">
-	<?php echo $titleText; ?>
-</span>
-<?php
-	};
-
-	$bodyContent = function() {
-?>
-Content goes here.
-<?php		
-	};
-
-	$body = function() use ($bodyContent) {
-?>
-<div class="apent-comment-form-body-content">
-	<?php $bodyContent() ?>
-</div>
-<?php
-	};
-
-	$footerContent = function() {
-?>
-Footer content goes here.
-<?php		
-	};
-
-	$footer = function() use ($footerContent) {
-?>
-<div class="apent-comment-form-body">
-	<?php $footerContent() ?>
-</div>
-<?php		
-	};
-
-	$form = function() use ($title, $body, $footer) {
-	?>
-<div class="apent-comment-form">
-	<?php $title(); ?>
-	<?php $body(); ?>
-	<?php $footer(); ?>
-</div>
-	<?php
-	};
-
-
-	$form();
-}
- */
-
-/*
-function custom_comment_form() {
-
-	// A function chain is a series of anonymous functions.
-
-	$_ptr = 0;
-
-	$_next = function() use ($funcChain, $_ptr) {
-
-	};
-
-	$funcChain = array(
-	function() use ($_next) {
-	?>
-<div class="apent-comment-form">
-	<?php $_next(); ?>
-</div>
-	<?php
-	},
-	function() {
-?>
-foo
-<?php
-	});
-}
-*/
-/*
-class FunctionChain {
-
-  public $test;
-  private $_ptr = 0;
-
-  public function __construct($chain) {
-    $this->test = function($a) {
-      print "$a\n";
-    };
-  }
-
-  public function __call($method, $args){
-    if ( $this->{$method} instanceof Closure ) {
-      return call_user_func_array($this->{$method},$args);
-    } else {
-      return parent::__call($method, $args);
-    }
-  }
-}
- */
 
 
 

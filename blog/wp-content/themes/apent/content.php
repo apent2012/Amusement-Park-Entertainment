@@ -15,7 +15,10 @@
 					<h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'twentyeleven' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 					<h3 class="entry-format"><?php _e( 'Featured', 'twentyeleven' ); ?></h3>
 				</hgroup>
-			<?php else : ?>
+			<?php else : 
+					$featuredImage = get_featured_image(get_the_ID()); 
+					if ($featuredImage) {
+						?>
 			<div class="attachment">
 				<?php
 					$posttags = get_the_tags();
@@ -40,8 +43,11 @@
 						}
 					}
 				?>
-				<?php echo_first_image(get_the_ID()); ?>
+				<?php echo get_featured_image(get_the_ID()); //echo_first_image(get_the_ID()); ?>
 			</div>
+						<?php
+					}
+			?>
 			<h1 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'twentyeleven' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
 			<?php endif; ?>
 

@@ -11,6 +11,10 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 	<header class="entry-header">
+		<?php
+					$featuredImage = get_featured_image(get_the_ID()); 
+					if ($featuredImage) {
+						?>
 			<div class="attachment">
 				<?php
 					$posttags = get_the_tags();
@@ -35,8 +39,11 @@
 						}
 					}
 				?>
-				<?php echo_first_image(get_the_ID()); ?>
+				<?php echo get_featured_image(get_the_ID()); //echo_first_image(get_the_ID()); ?>
 			</div>
+						<?php
+					}
+		?>
 		<h1 class="entry-title"><?php the_title(); ?></h1>
 
 		<?php if ( 'post' == get_post_type() ) : ?>
