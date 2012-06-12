@@ -1,3 +1,4 @@
+
 # Apache configuration file
 # httpd.apache.org/docs/2.2/mod/quickreference.html
 
@@ -8,28 +9,6 @@
 #   Kroc Camen: camendesign.com/.htaccess
 #   perishablepress.com/press/2006/01/10/stupid-htaccess-tricks/
 #   Sample .htaccess file of CMS MODx: modxcms.com
-
-
-
-
-# Disables directory listing
-Options -Indexes
-
-# Fixes news ticker AJAX issue
-# Perhaps, with how the rest of this file is configured, this may not be needed?
-# 
-
-<IfModule mod_headers.c>
-	Header add Access-Control-Allow-Origin "http://www.amusementparkent.com"
-	Header add Access-Control-Allow-Origin "http://amusementparkent.com"
-</IfModule>
-
-RewriteEngine on
-RewriteCond %{HTTP_HOST} ^amusementparkent.com
-RewriteRule ^(.*)$ http://www.amusementparkentertainment.com/$1 [R=permanent,L]
-
-
-
 
 
 
@@ -348,11 +327,14 @@ FileETag None
 # Option 1:
 # Rewrite "www.example.com -> example.com"
 
-<IfModule mod_rewrite.c>
-  RewriteCond %{HTTPS} !=on
-  RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
-  RewriteRule ^ http://%1%{REQUEST_URI} [R=301,L]
-</IfModule>
+#<IfModule mod_rewrite.c>
+#  RewriteCond %{HTTP_HOST} ^amusementparkent.com
+#  RewriteRule ^(.*)$ http://www.amusementparkentertainment.com/$1 [R=permanent,L]
+
+#  RewriteCond %{HTTPS} !=on
+#  RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+#  RewriteRule ^ http://%1%{REQUEST_URI} [R=301,L]
+#</IfModule>
 
 # ----------------------------------------------------------------------
 

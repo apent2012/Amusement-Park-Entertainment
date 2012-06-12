@@ -11,8 +11,8 @@ $(document).ready(function(){
 
 
     // > BuildDiff
-    var feedURL = '/ape/dev/blog/?cat=3&feed=atom'; // Test
-    // var feedURL = '/blog/?cat=4&feed=atom';      // Live
+    var feedURL = '/ape/dev/blog/?cat=3&feed=rss2'; // Test
+    // var feedURL = '/blog/?cat=4&feed=rss2';      // Live
 
 
     $.getFeed({

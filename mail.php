@@ -40,7 +40,7 @@ $subject = "Message received from www.amusementparkentertainment.com";
 $success = 0;
 $headers = "From:" . $from;
 if (ENVIRONMENT == 'PRODUCTION') {
-    if ($to)
+    if ($to && $message)
         $success = mail($to, $subject, $message, $headers);
 }
 
@@ -166,7 +166,7 @@ h1 {
 WE WILL AUTOMATICALLY TRY TO REDIRECT YOU.<br />
 CLICK HERE TO BE REDIRECTED TO THE SITE.
 </p>
-<a href="/"><div class="down-arrow"></div></a>
+<a href="<?php echo $root; ?>/"><div class="down-arrow"></div></a>
 </div>
 
 
