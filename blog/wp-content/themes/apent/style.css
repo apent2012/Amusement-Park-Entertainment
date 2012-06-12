@@ -1068,8 +1068,6 @@ a:active img[class*="wp-image-"],
 #content .gallery .gallery-icon a:focus img,
 #content .gallery .gallery-icon a:hover img,
 #content .gallery .gallery-icon a:active img {/* Add some useful style to those fancy borders for linked images ... */
-	1background: #eee;
-	1border-color: #bbb;
 }
 .wp-caption a:focus img,
 .wp-caption a:active img,
@@ -1327,6 +1325,7 @@ blockquote.pull {
 }
 .format-status img.avatar {
 	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
 	border-radius: 3px;
 	-webkit-box-shadow: 0 1px 2px #ccc;
 	-moz-box-shadow: 0 1px 2px #ccc;
@@ -1474,6 +1473,7 @@ article.intro .entry-content {
 article.intro .edit-link a {
 	background: #aaa;
 	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
 	border-radius: 3px;
 	color: #fff;
 	font-size: 12px;
@@ -1576,6 +1576,7 @@ article.feature-image.large .entry-title a {
 	background: #222;
 	background: rgba(0,0,0,0.8);
 	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
 	border-radius: 3px;
 	color: #fff;
 	display: inline-block;
@@ -1677,6 +1678,7 @@ section.feature-image.large img {
 	background: #3c3c3c;
 	background: rgba(60,60,60,0.9);
 	-moz-border-radius: 12px;
+	-webkit-border-radius: 12px;
 	border-radius: 12px;
 	-webkit-box-shadow: inset 1px 1px 5px rgba(0,0,0,0.5), inset 0 0 2px rgba(255,255,255,0.5);
 	-moz-box-shadow: inset 1px 1px 5px rgba(0,0,0,0.5), inset 0 0 2px rgba(255,255,255,0.5);
@@ -1828,7 +1830,6 @@ section.recent-posts .other-recent-posts li:after {
 	height:98px;
 	background-color:#474542;
 	color:#b3b2b1;
-	font-size:12px;
 	text-transform:uppercase;
 	overflow: hidden;
 	margin-top:98px;
@@ -1910,7 +1911,6 @@ section.recent-posts .other-recent-posts li:after {
 	color: black;
 	font-size: 18px;
 	font-weight: 500;
-	1letter-spacing: 0.1em;
 	line-height: 1.7em;
 	text-transform: uppercase;
     font-family: 'FuturaStdBookBold', Arial, sans-serif;
@@ -1957,9 +1957,9 @@ section.recent-posts .other-recent-posts li:after {
 .widget_search #searchsubmit {
 	background: #ddd;
 	border: 1px solid #ccc;
-	-webkit-box-shadow: inset 0px -1px 1px rgba(0, 0, 0, 0.09);
-	-moz-box-shadow: inset 0px -1px 1px rgba(0, 0, 0, 0.09);
-	box-shadow: inset 0px -1px 1px rgba(0, 0, 0, 0.09);
+	-webkit-box-shadow: inset 0 -1px 1px rgba(0, 0, 0, 0.09);
+	-moz-box-shadow: inset 0 -1px 1px rgba(0, 0, 0, 0.09);
+	box-shadow: inset 0 -1px 1px rgba(0, 0, 0, 0.09);
 	color: #888;
 	font-size: 13px;
 	line-height: 25px;
@@ -1969,9 +1969,9 @@ section.recent-posts .other-recent-posts li:after {
 .widget_search #searchsubmit:active {
 	background: #1982d1;
 	border-color: #0861a5;
-	-webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.1);
-	-moz-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.1);
-	box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
 	color: #bfddf3;
 }
 
@@ -2083,6 +2083,7 @@ section.ephemera .entry-title a span {
 	background: #f6f6f6;
 	border: 1px solid #ddd;
 	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
 	border-radius: 3px;
 	margin: 0 0 1.625em;
 	padding: 1.625em;
@@ -2100,6 +2101,7 @@ section.ephemera .entry-title a span {
 	background: #fff;
 	border-left: 1px solid #ddd;
 	-moz-border-radius: 0 3px 3px 0;
+	-webkit-border-radius: 0 3px 3px 0;
 	border-radius: 0 3px 3px 0;
 	margin: 1.625em 0 0;
 	padding: 1.625em;
@@ -2132,6 +2134,7 @@ section.ephemera .entry-title a span {
 }
 .commentlist .avatar {
 	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
 	border-radius: 3px;
 	-webkit-box-shadow: 0 1px 2px #ccc;
 	-moz-box-shadow: 0 1px 2px #ccc;
@@ -2161,6 +2164,7 @@ section.ephemera .entry-title a span {
 a.comment-reply-link {
 	background: #eee;
 	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
 	border-radius: 3px;
 	color: #666;
 	display: inline-block;
@@ -2240,15 +2244,8 @@ a.comment-reply-link > span {
 #respond textarea {
 	background: #fff;
 	border:0;
-	1border: 4px solid #eee;
-	1-moz-border-radius: 5px;
-	1border-radius: 5px;
-	1-webkit-box-shadow: inset 0 1px 3px rgba(204,204,204,0.95);
-	1-moz-box-shadow: inset 0 1px 3px rgba(204,204,204,0.95);
-	1box-shadow: inset 0 1px 3px rgba(204,204,204,0.95);
 	position: relative;
 	padding: 2px;
-	1text-indent: 120px;
 }
 #respond .comment-form-author,
 #respond .comment-form-email,
@@ -2260,16 +2257,11 @@ a.comment-reply-link > span {
 #respond .comment-form-email label,
 #respond .comment-form-url label,
 #respond .comment-form-comment label {
-	1background: #eee;
-	1-webkit-box-shadow: 1px 2px 2px rgba(204,204,204,0.8);
-	1-moz-box-shadow: 1px 2px 2px rgba(204,204,204,0.8);
-	1box-shadow: 1px 2px 2px rgba(204,204,204,0.8);
 	color: #7f7f7f;
 	display: inline-block;
 	font-size: 12px;
 	left: 20px;
 	min-width: 60px;
-	1padding: 4px 10px;
 	position: absolute;
 	top: 17px;
 	z-index: 1;
@@ -2292,7 +2284,6 @@ a.comment-reply-link > span {
 #respond textarea:focus {
 	text-indent: 0;
 	z-index: 1;
-	1border:1px solid red;
 }
 #respond textarea {
 	resize: vertical;
@@ -2301,14 +2292,12 @@ a.comment-reply-link > span {
 	height: 120px;
 }
 #respond .comment_field_container {
-	1border:1px solid;
 	margin-top:4px;
 	position:relative;
 	background-color: white;
 	padding-top:5px;
 }
 #respond .comment_field_container p {
-	1border:1px solid;
 	display:inline-block;
 	width:250px;
 	margin-left:-5px;
@@ -2316,7 +2305,6 @@ a.comment-reply-link > span {
 #respond .comment_field_container p input {
 	margin: 4px;
 	background-color: #E5E5E5;
-	1border: 1px solid red;
 	left:75px;
 	width:164px;
 }
@@ -2327,7 +2315,6 @@ a.comment-reply-link > span {
 	font-weight: bold;
 	right: 8px;
 	position: absolute;
-	1top: 45px;
 	z-index: 1;
 	margin-top: 6px;
 }
@@ -2340,23 +2327,19 @@ a.comment-reply-link > span {
 	font-weight:bold;
 }
 #respond .comment-form-comment {
-	1margin: 10px 0;
 	margin-right:16px;
 }
 #respond .form-submit {
 	background-color: #E5E5E5;
 	width: 98%;
 	padding: 8px;
-	1border: 1px solid;
 }
 #respond input#submit {
 	background: white;
 	border: none;
 	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
 	border-radius: 8px;
-	1-webkit-box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
-	1-moz-box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
-	1box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
 	color: #7f7f7f;
 	cursor: pointer;
 	font-size: 13px;
@@ -2364,7 +2347,6 @@ a.comment-reply-link > span {
 	padding: 5px 32px 5px 32px;
 	position: relative;
 	right: 0;
-	1text-shadow: 0 -1px 0 rgba(0,0,0,0.3);
 	float:right;
     font-family: 'Helvetica Neue', Helvetica, sans-serif;
     font-weight:bold;
@@ -2840,6 +2822,7 @@ p.comment-form-comment {
 		background: none;
 		border: 1px solid #ddd;
 		-moz-border-radius: 3px 3px 3px 3px;
+		-webkit-border-radius: 3px 3px 3px 3px;
 		border-radius: 3px 3px 3px 3px;
 		margin: 0 auto 1.625em;
 		padding: 1.625em;
