@@ -41,8 +41,8 @@
 function exclude_category($query) {
 	if ( $query->is_home() ) {
 		// > BuildDiff
-		$query->set('cat', '-3');
-		//$query->set('cat', '-4');
+		//$query->set('cat', '-3');
+		$query->set('cat', '-4');
 	}
 	return $query;
 }

@@ -811,9 +811,6 @@ a:hover {
 	position: absolute !important;
 }
 
-.entry-meta {
-	padding-bottom: 12px;
-}
 .entry-title,
 .entry-header .entry-meta {
 	padding-right: 76px;
@@ -842,9 +839,15 @@ a:hover {
 	font-size: 12px;
 	line-height: 18px;
 	font-weight:bold;
+	padding-bottom: 12px;
+	position:relative;
 }
 .entry-meta a {
 	font-weight: bold;
+}
+.single .entry-meta .edit-link {
+	position:relative;
+	top:0;
 }
 .share-links {
 	margin-left:36px;
@@ -1201,7 +1204,6 @@ article.format-status .entry-content {
 /* Singular content styles for Posts and Pages */
 .singular .hentry {
 	border-bottom: none;
-	padding: 3.875em 0 0;
 	position: relative;
 }
 .singular.page .hentry {
@@ -1254,10 +1256,7 @@ blockquote.pull {
 }
 .singular .entry-meta .edit-link a {
 	bottom: auto;
-	left: 50px;
-	position: absolute;
 	right: auto;
-	top: 80px;
 }
 
 
@@ -1802,6 +1801,10 @@ section.recent-posts .other-recent-posts li:after {
     font-family: 'FuturaStdBookBold', Arial, sans-serif;
 }
 
+.single .attachment img {
+	margin-top: -3.7em;
+}
+
 .attachment-placeholder {
 	height:196px;
 	border:1px solid;
@@ -1882,10 +1885,11 @@ section.recent-posts .other-recent-posts li:after {
 #nav-single {
 	float: right;
 	position: relative;
-	top: -0.3em;
+	top: -2.6em;
 	text-align: right;
 	z-index: 1;
 	width: 140px;
+	right:106px;
 }
 #nav-single .nav-previous,
 #nav-single .nav-next {
@@ -2325,6 +2329,7 @@ a.comment-reply-link > span {
 	margin-top:4px;
 	padding:20px;
 	font-weight:bold;
+	margin-bottom:0;
 }
 #respond .comment-form-comment {
 	margin-right:16px;
