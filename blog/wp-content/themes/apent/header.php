@@ -136,20 +136,20 @@ h1 {
 <body <?php body_class(); ?>>
 <div class="header" style="top:0px;">
     <div class="header-content">
-            <a href="../index.html#page1" title="Home" id="logo-tab">
+            <a href="../#page1" title="Home" id="logo-tab">
             <div class="logo"></div>
             <div class="ape-name"></div>
         </a>
         <div class="nav">
-            <a href="../index.html#page2" title="About" class="about-tab-link">
+            <a href="../#page2" title="About" class="about-tab-link">
               <div class="about-tab nav-tab"></div></a>
-            <a href="../index.html#page3" title="Team" class="team-tab-link">
+            <a href="../#page3" title="Team" class="team-tab-link">
               <div class="team-tab nav-tab"></div></a>
-            <a href="../index.html#page4" title="Work" class="work-tab-link">
+            <a href="../#page4" title="Work" class="work-tab-link">
               <div class="work-tab nav-tab"></div></a>
             <a href="" title="Blog" class="blog-tab-link">
               <div class="blog-tab nav-tab"></div></a>
-            <a href="../index.html#page5" title="Contact" class="contact-tab-link">
+            <a href="../#page5" title="Contact" class="contact-tab-link">
               <div class="contact-tab nav-tab"></div></a>
         </div>
     </div>
