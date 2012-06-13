@@ -298,15 +298,35 @@ a:hover {
 .home-block-cell {
     width:327px;
     height:327px;
-    1float:left;
     color:white;
     font-size:36px;
     display:inline-block;
 }
-.home-block-slider, .home-block-slider2 {
+.home-block-slider, 
+.home-block-slider2,
+.home-block-slider3,
+.home-block-slider4,
+.home-block-slider5,
+.home-block-slider6,
+.home-block-slider7,
+.home-block-slider8,
+.home-block-slider9,
+.home-block-slider10
+ {
     display:inline-block;
     float:left;
 }
+
+.home-block-slider .home-block-cell div {
+    width:327px;
+    height:327px;
+}
+
+.home-block-slider .home-block-cell:nth-child(1) {
+    background: url(images/slider/sq0.gif) 0 0 no-repeat;
+}
+
+
 
 .home-block-slider .home-block-cell:nth-child(odd) {
     background-color:green;
@@ -320,6 +340,55 @@ a:hover {
 .home-block-slider2 .home-block-cell:nth-child(odd) {
     background-color:blue;
  }
+.home-block-slider3 .home-block-cell:nth-child(odd) {
+    background-color:green;
+ }
+.home-block-slider3 .home-block-cell:nth-child(even) {
+    background-color:blue;
+ }
+.home-block-slider4 .home-block-cell:nth-child(even) {
+    background-color:green;
+ }
+.home-block-slider4 .home-block-cell:nth-child(odd) {
+    background-color:blue;
+ }
+.home-block-slider5 .home-block-cell:nth-child(odd) {
+    background-color:green;
+ }
+.home-block-slider5 .home-block-cell:nth-child(even) {
+    background-color:blue;
+ }
+.home-block-slider6 .home-block-cell:nth-child(even) {
+    background-color:green;
+ }
+.home-block-slider6 .home-block-cell:nth-child(odd) {
+    background-color:blue;
+ }
+.home-block-slider7 .home-block-cell:nth-child(odd) {
+    background-color:green;
+ }
+.home-block-slider7 .home-block-cell:nth-child(even) {
+    background-color:blue;
+ }
+.home-block-slider8 .home-block-cell:nth-child(even) {
+    background-color:green;
+ }
+.home-block-slider8 .home-block-cell:nth-child(odd) {
+    background-color:blue;
+ }
+.home-block-slider9 .home-block-cell:nth-child(odd) {
+    background-color:green;
+ }
+.home-block-slider9 .home-block-cell:nth-child(even) {
+    background-color:blue;
+ }
+.home-block-slider10 .home-block-cell:nth-child(even) {
+    background-color:green;
+ }
+.home-block-slider10 .home-block-cell:nth-child(odd) {
+    background-color:blue;
+ }
+
 
 .about-block {
     background: url(images/about-block.jpg) 0 0 no-repeat;

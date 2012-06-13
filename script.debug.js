@@ -4,30 +4,32 @@ $(document).ready(function() {
     // The home page grid slider.
     //
 
+    var bjqs = function(sel) {
+        $(sel).bjqs({
+            'width': 327,
+            'height': 327,
+            'showMarkers': false,
+            'showControls': false,
+            'centerMarkers': false,
+            'hoverPause': false,
+            'automatic': true,
+            'rotationSpeed': 2000,
+            'animation': 'slide',
+            'keyboardNav': false
+        });
+    };
 
-    $('.home-block-slider').bjqs({
-        'width': 327,
-        'height': 327,
-        'showMarkers': false,
-        'showControls': false,
-        'centerMarkers': false,
-        'hoverPause': false,
-        'automatic': true,
-        'rotationSpeed': 2000,
-        'animation': 'slide'
-    });
+    bjqs('.home-block-slider');
+    bjqs('.home-block-slider2');
+    bjqs('.home-block-slider3');
+    bjqs('.home-block-slider4');
+    bjqs('.home-block-slider5');
+    bjqs('.home-block-slider6');
+    bjqs('.home-block-slider7');
+    bjqs('.home-block-slider8');
+    bjqs('.home-block-slider9');
+    bjqs('.home-block-slider10');
 
-     $('.home-block-slider2').bjqs({
-        'width': 327,
-        'height': 327,
-        'showMarkers': false,
-        'showControls': false,
-        'centerMarkers': false,
-        'hoverPause': false,
-        'automatic': true,
-        'rotationSpeed': 2000,
-        'animation': 'slide'
-    });
 
 
 
