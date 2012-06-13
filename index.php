@@ -66,7 +66,36 @@
             </div>
 
             <div class="home-page block">
-                <div class="home-block block"></div>
+                <div class="home-block block">
+                  <div class="home-block-slider">
+                    <ul class="bjqs home-block-cell">
+                      <li class="home-block-cell"><div>1</div></li
+                      ><li class="home-block-cell"><div>2</div></li
+                      ><li class="home-block-cell"><div>3</div></li
+                      ><li class="home-block-cell"><div>4</div></li
+                      ><li class="home-block-cell"><div>5</div></li
+                      ><li class="home-block-cell"><div>6</div></li
+                      ><li class="home-block-cell"><div>7</div></li
+                      ><li class="home-block-cell"><div>8</div></li
+                      ><li class="home-block-cell"><div>9</div></li
+                      ><li class="home-block-cell"><div>10</div></li>
+                    </ul>
+                  </div>
+                  <div class="home-block-slider2">
+                    <ul class="bjqs home-block-cell">
+                      <li class="home-block-cell"><div>2</div></li
+                      ><li class="home-block-cell"><div>3</div></li
+                      ><li class="home-block-cell"><div>4</div></li
+                      ><li class="home-block-cell"><div>5</div></li
+                      ><li class="home-block-cell"><div>6</div></li
+                      ><li class="home-block-cell"><div>7</div></li
+                      ><li class="home-block-cell"><div>8</div></li
+                      ><li class="home-block-cell"><div>9</div></li
+                      ><li class="home-block-cell"><div>10</div></li
+                      ><li class="home-block-cell"><div>1</div></li>
+                    </ul>
+                  </div>
+                </div>
                 <div class="home-body page-body">
 
                         <div class="home-body-news">
@@ -581,12 +610,12 @@ CONSUMERS ON EVERY MEDIA PLATFORM.</h2>
     <script src="libs/imagesloaded/jquery.imagesloaded.min.js"></script>
     <script src="libs/smoothscroll/js/jquery-ui-1.8.18.custom.min.js" type="text/javascript"></script>
     <script src="libs/easing/jquery.easing.1.3.js" type="text/javascript"></script>
-    <script src="libs/easyslider/easySlider1.7.js" type="text/javascript"></script>
     <script src="libs/smoothscroll/js/jquery.mousewheel.min.js" type="text/javascript"></script>
     <script src="libs/smoothscroll/js/jquery.smoothdivscroll-1.2.mod.min.js" type="text/javascript"></script>
     <script src="libs/jfeed/build/dist/jquery.jfeed.mod.min.js" type="text/javascript"></script>
     <script src="libs/news-ticker/jcarousellite_1.0.1.mod.min.js" type="text/javascript"></script>
     <script src="loader.js" type="text/javascript"></script>
+    <script src="libs/slider/basic-jquery-slider.min.js" type="text/javascript"></script>
   <script src="script.debug.js" type="text/javascript"></script>
 
 
