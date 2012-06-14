@@ -1,4 +1,13 @@
-<!DOCTYPE html>
+<?php
+    if (!defined('ENVIRONMENT')) {
+      if ($_SERVER['HTTP_HOST'] == 'localhost') {
+        define('ENVIRONMENT', 'DEVELOPMENT');
+      }
+      else {
+        define('ENVIRONMENT', 'PRODUCTION');
+      }
+    }
+?><!DOCTYPE html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
@@ -19,6 +28,9 @@
   <link rel="stylesheet" href="libs/smoothscroll/css/smoothDivScroll.css" type="text/css" media="screen"/>
 
   <script src="libs/modernizr/modernizr-2.5.3.min.js"></script>
+  <?php if (ENVIRONMENT == 'DEVELOPMENT') : ?>
+  <script>Development = true;</script>
+  <?php endif; ?>
 </head>
 
 <body>
@@ -66,152 +78,8 @@
             </div>
 
             <div class="home-page block">
-                <div class="home-block block">
-                  <div class="home-block-slider-container">
-                    <div class="home-block-slider">
-                      <ul class="bjqs">
-                        <li class="home-block-cell"><div>1</div></li
-                        ><li class="home-block-cell"><div>2</div></li
-                        ><li class="home-block-cell"><div>3</div></li
-                        ><li class="home-block-cell"><div>4</div></li
-                        ><li class="home-block-cell"><div>5</div></li
-                        ><li class="home-block-cell"><div>6</div></li
-                        ><li class="home-block-cell"><div>7</div></li
-                        ><li class="home-block-cell"><div>8</div></li
-                        ><li class="home-block-cell"><div>9</div></li
-                        ><li class="home-block-cell"><div>10</div></li>
-                      </ul>
-                    </div>
-                    <div class="home-block-slider2">
-                      <ul class="bjqs home-block-cell">
-                        <li class="home-block-cell"><div>2</div></li
-                        ><li class="home-block-cell"><div>3</div></li
-                        ><li class="home-block-cell"><div>4</div></li
-                        ><li class="home-block-cell"><div>5</div></li
-                        ><li class="home-block-cell"><div>6</div></li
-                        ><li class="home-block-cell"><div>7</div></li
-                        ><li class="home-block-cell"><div>8</div></li
-                        ><li class="home-block-cell"><div>9</div></li
-                        ><li class="home-block-cell"><div>10</div></li
-                        ><li class="home-block-cell"><div>1</div></li>
-                      </ul>
-                    </div>
-                    <div class="home-block-slider3">
-                      <ul class="bjqs home-block-cell">
-                        <li class="home-block-cell"><div>3</div></li
-                        ><li class="home-block-cell"><div>4</div></li
-                        ><li class="home-block-cell"><div>5</div></li
-                        ><li class="home-block-cell"><div>6</div></li
-                        ><li class="home-block-cell"><div>7</div></li
-                        ><li class="home-block-cell"><div>8</div></li
-                        ><li class="home-block-cell"><div>9</div></li
-                        ><li class="home-block-cell"><div>10</div></li
-                        ><li class="home-block-cell"><div>1</div></li
-                        ><li class="home-block-cell"><div>2</div></li>
-                      </ul>
-                    </div>
-                    <div class="home-block-slider4">
-                      <ul class="bjqs home-block-cell">
-                        <li class="home-block-cell"><div>4</div></li
-                        ><li class="home-block-cell"><div>5</div></li
-                        ><li class="home-block-cell"><div>6</div></li
-                        ><li class="home-block-cell"><div>7</div></li
-                        ><li class="home-block-cell"><div>8</div></li
-                        ><li class="home-block-cell"><div>9</div></li
-                        ><li class="home-block-cell"><div>10</div></li
-                        ><li class="home-block-cell"><div>1</div></li
-                        ><li class="home-block-cell"><div>2</div></li
-                        ><li class="home-block-cell"><div>3</div></li>
-                      </ul>
-                    </div>
-                    <div class="home-block-slider5">
-                      <ul class="bjqs home-block-cell">
-                        <li class="home-block-cell"><div>5</div></li
-                        ><li class="home-block-cell"><div>6</div></li
-                        ><li class="home-block-cell"><div>7</div></li
-                        ><li class="home-block-cell"><div>8</div></li
-                        ><li class="home-block-cell"><div>9</div></li
-                        ><li class="home-block-cell"><div>10</div></li
-                        ><li class="home-block-cell"><div>1</div></li
-                        ><li class="home-block-cell"><div>2</div></li
-                        ><li class="home-block-cell"><div>3</div></li
-                        ><li class="home-block-cell"><div>4</div></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="home-block-slider-container2">
-                    <div class="home-block-slider6">
-                      <ul class="bjqs home-block-cell">
-                        <li class="home-block-cell"><div>6</div></li
-                        ><li class="home-block-cell"><div>7</div></li
-                        ><li class="home-block-cell"><div>8</div></li
-                        ><li class="home-block-cell"><div>9</div></li
-                        ><li class="home-block-cell"><div>10</div></li
-                        ><li class="home-block-cell"><div>1</div></li
-                        ><li class="home-block-cell"><div>2</div></li
-                        ><li class="home-block-cell"><div>3</div></li
-                        ><li class="home-block-cell"><div>4</div></li
-                        ><li class="home-block-cell"><div>5</div></li>
-                      </ul>
-                    </div>
-                    <div class="home-block-slider7">
-                      <ul class="bjqs home-block-cell">
-                        <li class="home-block-cell"><div>7</div></li
-                        ><li class="home-block-cell"><div>8</div></li
-                        ><li class="home-block-cell"><div>9</div></li
-                        ><li class="home-block-cell"><div>10</div></li
-                        ><li class="home-block-cell"><div>1</div></li
-                        ><li class="home-block-cell"><div>2</div></li
-                        ><li class="home-block-cell"><div>3</div></li
-                        ><li class="home-block-cell"><div>4</div></li
-                        ><li class="home-block-cell"><div>5</div></li
-                        ><li class="home-block-cell"><div>6</div></li>
-                      </ul>
-                    </div>
-                    <div class="home-block-slider8">
-                      <ul class="bjqs home-block-cell">
-                        <li class="home-block-cell"><div>8</div></li
-                        ><li class="home-block-cell"><div>9</div></li
-                        ><li class="home-block-cell"><div>10</div></li
-                        ><li class="home-block-cell"><div>1</div></li
-                        ><li class="home-block-cell"><div>2</div></li
-                        ><li class="home-block-cell"><div>3</div></li
-                        ><li class="home-block-cell"><div>4</div></li
-                        ><li class="home-block-cell"><div>5</div></li
-                        ><li class="home-block-cell"><div>6</div></li
-                        ><li class="home-block-cell"><div>7</div></li>
-                      </ul>
-                    </div>
-                    <div class="home-block-slider9">
-                      <ul class="bjqs home-block-cell">
-                        <li class="home-block-cell"><div>9</div></li
-                        ><li class="home-block-cell"><div>10</div></li
-                        ><li class="home-block-cell"><div>1</div></li
-                        ><li class="home-block-cell"><div>2</div></li
-                        ><li class="home-block-cell"><div>3</div></li
-                        ><li class="home-block-cell"><div>4</div></li
-                        ><li class="home-block-cell"><div>5</div></li
-                        ><li class="home-block-cell"><div>6</div></li
-                        ><li class="home-block-cell"><div>7</div></li
-                        ><li class="home-block-cell"><div>8</div></li>
-                      </ul>
-                    </div>
-                    <div class="home-block-slider10">
-                      <ul class="bjqs home-block-cell">
-                        <li class="home-block-cell"><div>10</div></li
-                        ><li class="home-block-cell"><div>1</div></li
-                        ><li class="home-block-cell"><div>2</div></li
-                        ><li class="home-block-cell"><div>3</div></li
-                        ><li class="home-block-cell"><div>4</div></li
-                        ><li class="home-block-cell"><div>5</div></li
-                        ><li class="home-block-cell"><div>6</div></li
-                        ><li class="home-block-cell"><div>7</div></li
-                        ><li class="home-block-cell"><div>8</div></li
-                        ><li class="home-block-cell"><div>9</div></li>
-                      </ul>
-                    </div>
-                  </div>
-
+                <div class="home-block-container">
+                  <div class="home-block block"><div class="home-block-slider-container block"></div></div>
                 </div>
                 <div class="home-body page-body">
 

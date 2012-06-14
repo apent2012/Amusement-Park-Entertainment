@@ -284,12 +284,27 @@ a:hover {
 }
 
 .home-block {
+    height:654px;
+    width:3270px;
+    position:relative;
+    overflow:scroll;
+}
+.home-page .home-block-container {
+    width:1635px;
+    height:654px;
+    overflow: hidden;
+    position:relative;
+}
+.home-block .home-block-slider-container,
+.home-block .home-block-slider-container2 {
     background: url(images/home-block.jpg) 0 0 no-repeat;
     height:654px;
     float:left;
     position:relative;
+    display:inline-block;
 }
 
+/*
 .home-block .bjqs {
     white-space:nowrap;
     position:absolute;
@@ -388,7 +403,7 @@ a:hover {
 .home-block-slider10 .home-block-cell:nth-child(odd) {
     background-color:blue;
  }
-
+ */
 
 .about-block {
     background: url(images/about-block.jpg) 0 0 no-repeat;
@@ -975,7 +990,7 @@ a:hover {
 
 .home-body {
     height:654px;
-    margin-top:654px;
+    margin-top:0;
 }
 
 .home-body-news {

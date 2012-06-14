@@ -3,34 +3,52 @@ $(document).ready(function() {
 
     // The home page grid slider.
     //
+    (function() {
+        var $homeBlock = $('.home-block');
+        var content = $homeBlock.html();
+    //    var contentWidth = $('.home-block-slider-container').width();
+        $homeBlock.append(content);
 
-    var bjqs = function(sel) {
-        $(sel).bjqs({
-            'width': 327,
-            'height': 327,
-            'showMarkers': false,
-            'showControls': false,
-            'centerMarkers': false,
-            'hoverPause': false,
-            'automatic': true,
-            'rotationSpeed': 2000,
-            'animation': 'slide',
-            'keyboardNav': false
-        });
-    };
+        /*
+        var appendContent = function() {
+            console.log('appending');
+            // Add to our width.
+            var curWidth = $homeBlock.width();
+            $homeBlock.width(curWidth+contentWidth);
 
-    bjqs('.home-block-slider');
-    bjqs('.home-block-slider2');
-    bjqs('.home-block-slider3');
-    bjqs('.home-block-slider4');
-    bjqs('.home-block-slider5');
-    bjqs('.home-block-slider6');
-    bjqs('.home-block-slider7');
-    bjqs('.home-block-slider8');
-    bjqs('.home-block-slider9');
-    bjqs('.home-block-slider10');
+            // Append the content element.
+            $homeBlock.append(content);
+        };
+
+        appendContent();
+         */
+        
+        var i = 1;
+        var flashToStart = function() {
+        //    console.log('flashing');
+            i = 0;
+            $('.home-block-container').scrollLeft('0');
+        };
+
+        var stepHomeBlock = function() {
+
+            $('.home-block-container').animate({ scrollLeft: (i*327)+'px' },
+                1000, function() {
+                    // Animation complete.
+                //    console.log(i%5);
+
+                    if (i%5 === 0)
+                        flashToStart();
+
+                    i++;
+                });
+        };
 
 
+        setInterval(stepHomeBlock, 5000);
+
+    //    $('.home-block').click(stepHomeBlock);
+    })();
 
 
 
