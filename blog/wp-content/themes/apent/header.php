@@ -210,7 +210,6 @@ h1 {
 
 				$tagLinks = array();
 				foreach ($tags as $tag) {
-					// > BuildDiff
 					if (ENVIRONMENT == 'DEVELOPMENT') {
 						$tagLink = '<a href="/ape/dev/blog/?tag='.$tag->slug.'">'.$tag->name.'</a>';
 					}

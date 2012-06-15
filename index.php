@@ -509,13 +509,13 @@ CONSUMERS ON EVERY MEDIA PLATFORM.</h2>
                 </div>
             </div>
 
-    <div class="big-background"></div>
-    </div>
+          <div class="big-background"></div>
+          </div>
 
         </div>
 
     </div>
-    
+
     <div class="footer">
         <div class="footer-content">
             <div class="footer-content-follow">

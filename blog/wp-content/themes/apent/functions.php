@@ -49,7 +49,6 @@ if (!defined('ENVIRONMENT')) {
 
 function exclude_category($query) {
 	if ( $query->is_home() ) {
-		// > BuildDiff
 		if (ENVIRONMENT == 'DEVELOPMENT') {
 			$query->set('cat', '-3');
 		}

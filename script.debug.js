@@ -59,9 +59,15 @@ $(document).ready(function() {
     // Makes an AJAX call to the News Ticker category feed, parses the RSS feed,
     //  injects the information into the home page, then starts the ticker animation.
 
-    // > BuildDiff
-    var feedURL = '/ape/dev/blog/?cat=3&feed=rss2'; // Test
-    // var feedURL = '/blog/?cat=4&feed=rss2';      // Live
+    var feedURL = '';
+    if (typeof Development === 'undefined') {
+        // Test
+        feedURL = '/ape/dev/blog/?cat=3&feed=rss2';
+    }
+    else {
+        // Live
+        feedURL = '/blog/?cat=4&feed=rss2';
+    }
 
     $.getFeed({
         url: feedURL,
