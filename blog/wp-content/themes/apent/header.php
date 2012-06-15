@@ -8,6 +8,10 @@
  * @subpackage Twenty_Eleven
  * @since Twenty Eleven 1.0
  */
+
+    require("../library.inc");
+
+
 ?><!DOCTYPE html>
 <!--[if IE 6]>
 <html id="ie6" <?php language_attributes(); ?>>
@@ -60,6 +64,12 @@
 		wp_enqueue_script( 'comment-reply' );
 
 	wp_enqueue_script("jquery");
+	wp_enqueue_script("bgpos", '/../libs/nav-rollovers/jquery.bgpos.js',
+		array('jquery'));
+	wp_enqueue_script("jquery-easing", '/../libs/easing/jquery.easing.1.3.js',
+		array('jquery'));
+	wp_enqueue_script("nav-rollovers", '/../libs/nav-rollovers/nav-rollovers.js',
+		array('jquery', 'bgpos', 'jquery-easing'));
 
 	/* Always have wp_head() just before the closing </head>
 	 * tag of your theme, or you will break many plugins, which
@@ -134,26 +144,7 @@ h1 {
 </head>
 
 <body <?php body_class(); ?>>
-<div class="header" style="top:0px;">
-    <div class="header-content">
-            <a href="../#page1" title="Home" id="logo-tab">
-            <div class="logo"></div>
-            <div class="ape-name"></div>
-        </a>
-        <div class="nav">
-            <a href="../#page2" title="About" class="about-tab-link">
-              <div class="about-tab nav-tab"></div></a>
-            <a href="../#page3" title="Team" class="team-tab-link">
-              <div class="team-tab nav-tab"></div></a>
-            <a href="../#page4" title="Work" class="work-tab-link">
-              <div class="work-tab nav-tab"></div></a>
-            <a href="" title="Blog" class="blog-tab-link">
-              <div class="blog-tab nav-tab"></div></a>
-            <a href="../#page5" title="Contact" class="contact-tab-link">
-              <div class="contact-tab nav-tab"></div></a>
-        </div>
-    </div>
-</div>    
+<?php echo_apent_header('../'); ?>
 <div id="page" class="hfeed">
 	<header id="branding" role="banner">
 		<div class="header-title">

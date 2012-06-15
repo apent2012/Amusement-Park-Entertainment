@@ -173,12 +173,6 @@ a:hover {
     margin:0;
 }
 
-.nav {
-    z-index:10000;
-    float:right;
-    position:relative;
-}
-
 .page {
     width:400px;
     height:400px;
@@ -196,18 +190,22 @@ a:hover {
     margin-left:2000px;
 }
 
-.logo {
-    background: url(images/tent.jpg) 0 0 no-repeat;
-    width:66px;
-    height:60px;
-    float:left;
+
+
+
+
+
+/* Header */
+
+body.main .header {
+    top:-60px;
 }
 
 .header {
     background-color:#efe8de;
     width:100%;
     height:60px;
-    top:-60px;
+    top:0;
     margin-top:-3px;
     text-align:center;
     z-index:100;
@@ -225,6 +223,43 @@ a:hover {
     left:327px;
 }
 
+.logo {
+    background: url(images/tent.jpg) 0 0 no-repeat;
+    width:66px;
+    height:60px;
+    float:left;
+}
+
+.ape-name {
+    background: url(images/ape.jpg) 0 0 no-repeat;
+    width:138px;
+    height:60px;
+    float:left;
+}
+
+.nav {
+    z-index:10000;
+    float:right;
+    position:relative;
+}
+
+.nav li { 
+    display:inline; 
+    text-indent:-9999px; 
+}
+.nav li a {
+    display: block;
+    float: left;
+    width: 80px;
+    height: 60px;
+    background-image: url(images/buttons.png);
+}
+
+.nav li .about-tab-link { background-position:0 0; }
+.nav li .team-tab-link { background-position:-80px 0;  }
+.nav li .work-tab-link { background-position:-160px 0; }
+.nav li .blog-tab-link { background-position:-240px 0; }
+.nav li .contact-tab-link { background-position:-320px 0; }
 
 .nav-tab {
     display:inline-block;
@@ -266,12 +301,7 @@ a:hover {
     margin-left:-76px;
 }
 
-.ape-name {
-    background: url(images/ape.jpg) 0 0 no-repeat;
-    width:138px;
-    height:60px;
-    float:left;
-}
+
 
 .block {
     display:inline-block;
