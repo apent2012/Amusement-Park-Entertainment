@@ -61,12 +61,12 @@ $(document).ready(function() {
 
     var feedURL = '';
     if (typeof Development === 'undefined') {
-        // Test
-        feedURL = '/ape/dev/blog/?cat=3&feed=rss2';
-    }
-    else {
         // Live
         feedURL = '/blog/?cat=4&feed=rss2';
+    }
+    else {
+        // Test
+        feedURL = '/ape/dev/blog/?cat=3&feed=rss2';
     }
 
     $.getFeed({
@@ -105,7 +105,7 @@ $(document).ready(function() {
                         var toFacebookShare = encodeURIComponent(shareLink);
                         var facebookShareURL = 'http://www.facebook.com/share.php?u=' + toFacebookShare;
 
-                        markup = '<span class="share-links">Share: <a href="' + twitterShareURL + '" class="share-link-twitter" target="_blank">Twitter</a>' + ' - <a href="' + facebookShareURL + '" class="share-link-facebook" target="_blank">Facebook</a>' + '</span>';
+                        markup = '<span class="share-links"><b>Share:</b> <a href="' + twitterShareURL + '" class="share-link-twitter" target="_blank">Twitter</a>' + ' - <a href="' + facebookShareURL + '" class="share-link-facebook" target="_blank">Facebook</a>' + '</span>';
                     }
 
                     return markup;

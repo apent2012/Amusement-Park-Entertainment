@@ -17,6 +17,10 @@ em {
     font-style:italic;
 }
 
+b {
+    font-weight:bold;
+}
+
 .loader-wrapper {
     z-index:5;
     position:fixed;
@@ -1030,7 +1034,7 @@ body.main .header {
 .home-body-news-content {
 	border-bottom: 1px solid #bebab1;
 	width: 980px;
-	height: 120px;
+	height: 140px;
 	text-align: left;
 }
 
@@ -1042,14 +1046,14 @@ body.main .header {
     opacity: 0.7;
     -moz-opacity: 0.7;
     filter:alpha(opacity=70);
-    padding-top:25px;
+    padding-top:47px;
 	font-weight: normal;
 }
 
 .home-body-news-content-body {
     float:left;
     color: #6B6863;
-    margin-top:27px;
+    margin-top:43px;
     min-width:360px;
     max-height:4em;
     font-family: 'Helvetica', Arial, sans-serif;
@@ -1086,7 +1090,7 @@ body.main .header {
     background: url(images/circledown.png) 0 0 no-repeat;
     width:50px;
     height:48px;
-    margin-top:25px;
+    margin-top:38px;
     position:absolute;
     cursor:pointer;
 }
@@ -1136,7 +1140,7 @@ body.main .header {
     height:140px;
     font-size: 18px;
     color:#6b6863;
-    padding-top:32px;
+    padding-top:47px;
 }
 
 .home-body-news-content-tumblr .facebook-hilite {
@@ -1154,8 +1158,7 @@ body.main .header {
 
 .home-body-ape-title {
     display: inline-block;
-    padding-top: 25px;
-    font-size: 48px;
+    font-size: 40px;
     letter-spacing: -.04em;
     text-align: center;
     width: 1000px;
@@ -1167,7 +1170,7 @@ body.main .header {
 
 .home-body-ape-subtitle {
     font-weight: normal;
-    font-size:14px;
+    font-size:12px;
     padding-top: 17px;
     padding-bottom:300px;
 	line-height: 1.2em;

@@ -13,7 +13,6 @@ jQuery(document).ready(function()
 	
 	// Capture the "hover" events
 	jQuery("#jquerynav li a").hover(function(){
-		console.log('rollover');
 		jQuery(this)
 			.data("newYpos", jQuery(this).data("newYpos") + 1)
 			.stop()
@@ -21,7 +20,6 @@ jQuery(document).ready(function()
 				backgroundPosition: jQuery(this).data("originalXpos") + "px " + jQuery(this).data("newYpos") * 60 + "px"
 			}, 600, "easeOutCirc");
 	}, function(){
-		console.log('rollout');
 		jQuery(this)
 			.data("newYpos", jQuery(this).data("newYpos") + 1)
 			.stop()
