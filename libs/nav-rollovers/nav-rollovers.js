@@ -5,10 +5,15 @@
 jQuery(document).ready(function()
 {
 	// Set the nescesarry data
-	jQuery("#jquerynav li a").each(function(){
-		var backgroundPositions = jQuery(this).css('background-position').split(" "); // Returns "##px" and "##px"
-		jQuery(this).data("originalXpos", backgroundPositions[0].slice(0, -2)); // Retrieve the original X position
-		jQuery(this).data("newYpos", 0); // Set the new Y position to 0
+	jQuery("#jquerynav li a").each(function() {
+		// Returns "##px" and "##px"
+		var backgroundPositions = jQuery(this).css('background-position').split(" ");
+
+		// Retrieve the original X position
+		jQuery(this).data("originalXpos", backgroundPositions[0].slice(0, -2));
+
+		// Set the new Y position to 0
+		jQuery(this).data("newYpos", 0);
 	});
 	
 	// Capture the "hover" events
@@ -17,14 +22,14 @@ jQuery(document).ready(function()
 			.data("newYpos", jQuery(this).data("newYpos") + 1)
 			.stop()
 			.animate({
-				backgroundPosition: jQuery(this).data("originalXpos") + "px " + jQuery(this).data("newYpos") * 60 + "px"
+				backgroundPosition: jQuery(this).data("originalXpos") + "px " + jQuery(this).data("newYpos") * 20 + "px"
 			}, 600, "easeOutCirc");
-	}, function(){
+	}, function() {
 		jQuery(this)
 			.data("newYpos", jQuery(this).data("newYpos") + 1)
 			.stop()
 			.animate({
-				backgroundPosition: jQuery(this).data("originalXpos") + "px " + jQuery(this).data("newYpos") * 60 + "px"
+				backgroundPosition: jQuery(this).data("originalXpos") + "px " + jQuery(this).data("newYpos") * 20 + "px"
 			}, 400, "easeInCirc");
 	});
 });

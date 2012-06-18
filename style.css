@@ -245,6 +245,7 @@ body.main .header {
     z-index:10000;
     float:right;
     position:relative;
+    padding-top: 20px;
 }
 
 .nav li { 
@@ -255,15 +256,31 @@ body.main .header {
     display: block;
     float: left;
     width: 80px;
-    height: 60px;
+    height: 20px;
     background-image: url(images/buttons.png);
+    1border: 1px solid;
 }
 
-.nav li .about-tab-link { background-position:0 0; }
-.nav li .team-tab-link { background-position:-80px 0;  }
-.nav li .work-tab-link { background-position:-160px 0; }
-.nav li .blog-tab-link { background-position:-240px 0; }
-.nav li .contact-tab-link { background-position:-320px 0; }
+.nav li .about-tab-link { 
+    background-position:0 0;
+    width:60px;
+}
+.nav li .team-tab-link { 
+    background-position:-52px 0;
+    width:56px;
+}
+.nav li .work-tab-link { 
+    background-position:-95px 0;
+    width:60px;
+}
+.nav li .blog-tab-link { 
+    background-position:-147px 0;
+    width:50px;
+}
+.nav li .contact-tab-link {
+    background-position:-191px 0;
+    width:60px;
+}
 
 .nav-tab {
     display:inline-block;
