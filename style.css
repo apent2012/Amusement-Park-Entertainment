@@ -245,20 +245,32 @@ body.main .header {
     z-index:10000;
     float:right;
     position:relative;
-    padding-top: 20px;
+    width:287px;
+    height:60px;
 }
 
 .nav li { 
     display:inline; 
+    position:absolute;
     text-indent:-9999px; 
+    cursor:pointer;
+}
+.nav li div {
+    display:inline-block;
+    margin-top:20px;
+    height:20px;
+    width:60px;
+    position:absolute;
+    background-image: url(images/buttons.png);
+    1border:1px solid blue;
 }
 .nav li a {
-    display: block;
+    1border:1px solid;
+    display: inline-block;
     float: left;
-    width: 80px;
-    height: 20px;
-    background-image: url(images/buttons.png);
-    1border: 1px solid;
+    width: 60px;
+    height: 60px;
+    position:relative;
 }
 
 .nav li .about-tab-link { 
@@ -280,6 +292,7 @@ body.main .header {
 .nav li .contact-tab-link {
     background-position:-191px 0;
     width:60px;
+    top:0px;
 }
 
 .nav-tab {
@@ -290,37 +303,32 @@ body.main .header {
 .about-tab {
     width:60px;
     height:60px;
-    background: url(images/about.jpg) 0 0 no-repeat;
-    margin-left:-304px;
 }
 
 .team-tab {
     width:52px;
     height:60px;
-    background: url(images/team.jpg) 0 0 no-repeat;
-    margin-left:-244px;
+    margin-left:60px;
 }
 
 .work-tab {
     width:60px;
     height:60px;
-    background: url(images/work.jpg) 0 0 no-repeat;
-    margin-left:-192px;
+    margin-left:112px;
 }
 
 .blog-tab {
     width:56px;
     height:60px;
-    background: url(images/blog.jpg) 0 0 no-repeat;
-    margin-left:-132px;
+    margin-left:172px;
 }
 
 .contact-tab {
     width:76px;
     height:60px;
-    background: url(images/contact.jpg) 0 0 no-repeat;
-    margin-left:-76px;
+    margin-left:223px;
 }
+
 
 
 

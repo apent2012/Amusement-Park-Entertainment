@@ -5,9 +5,10 @@
 jQuery(document).ready(function()
 {
 	// Set the nescesarry data
-	jQuery("#jquerynav li a").each(function() {
+	jQuery("#jquerynav li div").each(function() {
 		// Returns "##px" and "##px"
 		var backgroundPositions = jQuery(this).css('background-position').split(" ");
+	//	console.log(backgroundPositions);
 
 		// Retrieve the original X position
 		jQuery(this).data("originalXpos", backgroundPositions[0].slice(0, -2));
@@ -15,21 +16,33 @@ jQuery(document).ready(function()
 		// Set the new Y position to 0
 		jQuery(this).data("newYpos", 0);
 	});
-	
+
+/*
+	var navClick = function() {
+		var href = jQuery(this).children('a').attr('href');
+		console.log(href);
+
+		jQuery(this).children('a').click();
+	};
+
+	jQuery("#jquerynav li").click(navClick);
+ */
+
 	// Capture the "hover" events
-	jQuery("#jquerynav li a").hover(function(){
-		jQuery(this)
-			.data("newYpos", jQuery(this).data("newYpos") + 1)
+	jQuery("#jquerynav li").hover(function() {
+		var elem = jQuery(this).find('div');
+		console.log(this);
+		elem.data("newYpos", elem.data("newYpos") + 1)
 			.stop()
 			.animate({
-				backgroundPosition: jQuery(this).data("originalXpos") + "px " + jQuery(this).data("newYpos") * 20 + "px"
+				backgroundPosition: elem.data("originalXpos") + "px " + elem.data("newYpos") * 20 + "px"
 			}, 600, "easeOutCirc");
 	}, function() {
-		jQuery(this)
-			.data("newYpos", jQuery(this).data("newYpos") + 1)
+		var elem = jQuery(this).find('div');
+		elem.data("newYpos", elem.data("newYpos") + 1)
 			.stop()
 			.animate({
-				backgroundPosition: jQuery(this).data("originalXpos") + "px " + jQuery(this).data("newYpos") * 20 + "px"
+				backgroundPosition: elem.data("originalXpos") + "px " + elem.data("newYpos") * 20 + "px"
 			}, 400, "easeInCirc");
 	});
 });
