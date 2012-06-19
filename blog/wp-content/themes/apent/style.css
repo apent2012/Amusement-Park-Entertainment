@@ -2991,25 +2991,53 @@ ul {
     z-index:10000;
     float:right;
     position:relative;
+    width:287px;
+    height:60px;
 }
 
 .nav li { 
-	display:inline; 
-	text-indent:-9999px; 
+    display:inline; 
+    position:absolute;
+    text-indent:-9999px; 
+    cursor:pointer;
+}
+.nav li div {
+    display:inline-block;
+    margin-top:20px;
+    height:20px;
+    width:60px;
+    position:absolute;
+    background-image: url(../../../../images/buttons.png);
 }
 .nav li a {
-	display: block;
-	float: left;
-	width: 80px;
-	height: 60px;
-	background-image: url(../../../../images/buttons.png);
+    display: inline-block;
+    float: left;
+    width: 60px;
+    height: 60px;
+    position:relative;
 }
 
-.nav li .about-tab-link { background-position:0 0; }
-.nav li .team-tab-link { background-position:-80px 0;  }
-.nav li .work-tab-link { background-position:-160px 0; }
-.nav li .blog-tab-link { background-position:-240px 0; }
-.nav li .contact-tab-link { background-position:-320px 0; }
+.nav li .about-tab-link { 
+    background-position:0 0;
+    width:60px;
+}
+.nav li .team-tab-link { 
+    background-position:-52px 0;
+    width:56px;
+}
+.nav li .work-tab-link { 
+    background-position:-95px 0;
+    width:60px;
+}
+.nav li .blog-tab-link { 
+    background-position:-147px 0;
+    width:50px;
+}
+.nav li .contact-tab-link {
+    background-position:-191px 0;
+    width:60px;
+    top:0px;
+}
 
 .nav-tab {
     display:inline-block;
@@ -3019,36 +3047,30 @@ ul {
 .about-tab {
     width:60px;
     height:60px;
-    background: url(../../../../images/about.jpg) 0 0 no-repeat;
-    margin-left:-304px;
 }
 
 .team-tab {
     width:52px;
     height:60px;
-    background: url(../../../../images/team.jpg) 0 0 no-repeat;
-    margin-left:-244px;
+    margin-left:60px;
 }
 
 .work-tab {
     width:60px;
     height:60px;
-    background: url(../../../../images/work.jpg) 0 0 no-repeat;
-    margin-left:-192px;
+    margin-left:112px;
 }
 
 .blog-tab {
     width:56px;
     height:60px;
-    background: url(../../../../images/blog.jpg) 0 0 no-repeat;
-    margin-left:-132px;
+    margin-left:172px;
 }
 
 .contact-tab {
     width:76px;
     height:60px;
-    background: url(../../../../images/contact.jpg) 0 0 no-repeat;
-    margin-left:-76px;
+    margin-left:223px;
 }
 
 

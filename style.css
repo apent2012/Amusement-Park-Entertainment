@@ -262,10 +262,8 @@ body.main .header {
     width:60px;
     position:absolute;
     background-image: url(images/buttons.png);
-    1border:1px solid blue;
 }
 .nav li a {
-    1border:1px solid;
     display: inline-block;
     float: left;
     width: 60px;
