@@ -1,27 +1,62 @@
 $(document).ready(function() {
 
+    var _l = function(arg) {
+        console.log(arg);
+    };
 
     // The home page grid slider.
     //
+    var animateCell = function(sel, delay) {
+        if (typeof delay === 'undefined')
+            delay = 3000;
+
+        var $animateCell = $(sel);
+        var content = $animateCell.html(); //.children('div:first-child')
+        var width = $animateCell.width();
+        var frameCount = $animateCell.children(':first-child').children().length;
+        $animateCell.append(content);
+
+        var i = 0;
+        var flashToStart = function() {
+            i = 0;
+            $animateCell.scrollLeft('0');
+        };
+
+        var stepHomeBlock = function() {
+            $animateCell.animate({ scrollLeft: (i*width)+'px' },
+                1000, 'easeInOutSine', function() {
+                    // Animation complete.
+                    if (i%frameCount === 0)
+                        flashToStart();
+
+                    i++;
+                });
+        };
+
+
+        setInterval(stepHomeBlock, delay);
+    //    $('.home-block-cell').click(stepHomeBlock);
+
+
+    };
+
+    animateCell('.home-block-cell1', 2000);
+    animateCell('.home-block-cell2', 1800);
+    animateCell('.home-block-cell3', 2200);
+    animateCell('.home-block-cell4', 2100);
+    animateCell('.home-block-cell5', 1500);
+    animateCell('.home-block-cell6', 2200);
+    animateCell('.home-block-cell7', 1800);
+    animateCell('.home-block-cell8', 2000);
+    animateCell('.home-block-cell9', 1600);
+    animateCell('.home-block-cell10', 1900);
+
+    /*
     (function() {
         var $homeBlock = $('.home-block');
         var content = $homeBlock.html();
     //    var contentWidth = $('.home-block-slider-container').width();
         $homeBlock.append(content);
-
-        /*
-        var appendContent = function() {
-            console.log('appending');
-            // Add to our width.
-            var curWidth = $homeBlock.width();
-            $homeBlock.width(curWidth+contentWidth);
-
-            // Append the content element.
-            $homeBlock.append(content);
-        };
-
-        appendContent();
-         */
         
         var i = 1;
         var flashToStart = function() {
@@ -49,7 +84,7 @@ $(document).ready(function() {
 
     //    $('.home-block').click(stepHomeBlock);
     })();
-
+     */
 
 
 
