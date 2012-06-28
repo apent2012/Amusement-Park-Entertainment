@@ -15,6 +15,8 @@
 
   <meta name="viewport" content="width=device-width">
 
+  <link rel="icon" href="favicon.ico" />
+
   <link rel="stylesheet" href="reset.css" type="text/css" media="screen"/>
   <link rel="stylesheet" href="style.css" type="text/css" media="screen"/>
   <link rel="stylesheet" href="fonts/futurastd.css" type="text/css" media="screen"/>
@@ -582,22 +584,63 @@ jessica@amusementparkent.com</a>
                     <div class="work-block-left"></div>
                     <div class="work-block-content">
                         <div class="work-block-content-work"></div>
-                        <div class="work-block-content-video-close" onclick="javascript:onVideoClose();"></div>
+                        <div class="work-block-content-video-close"></div>
                         <div class="work-block-content-videos">
                             <div class="work-block-content-videos-bg">
                                 <div id="ytplayer"></div>
 
-                                <div id="videos-slider" class="work-block-content-videos-slider">
-                                    <div id="ytapiplayer1" class="videoPlaceholder"></div>
+                                <div class="videos-slider-container">
+                                <div class="work-block-content-videos-slider">
+
+                                    <!-- Featured Work -->
+
+                                    <div class="work-item work-video" data-preview="images/reelstill.jpg" data-video-id="42184748">
+                                      <div class="work-still-container">
+                                        <div class="work-still videoPlaceholder">
+                                        </div>
+                                      </div>
+                                      <div class="work-block-content-videos-info">
+                                          <h2>Amusement Park Entertainment Reel</h2>
+                                          <p>
+All work featured was co-created and/or creative directed by members of the Amusement Park<br /> Entertainment team during various stages of their careers, except where noted.<br />
+                                          </p>
+                                      </div>                                      
+                                    </div>
+
+                                    <div class="work-item work-gallery" data-preview="images/work/jim-darling.jpg" data-images="images/work/jim-darling-1.jpg images/work/jim-darling-2.jpg images/work/jim-darling-3.jpg images/work/jim-darling-4.jpg images/work/jim-darling-5.jpg images/work/jim-darling-6.jpg">
+                                      <div class="work-still-container">
+                                        <div class="work-still">
+                                        </div>
+                                      </div>
+                                      <div class="work-block-content-videos-info">
+                                          <h2>Jim Darling</h2>
+                                          <p>
+Lorem ipsum ad veniam esse adipisicing sit do adipisicing Ut nostrud eiusmod sed adipisicing aliqua magna voluptate id incididunt pariatur eiusmod ea enim irure minim cillum consequat. 
+                                          </p>
+                                      </div>                                      
+                                    </div>
+
+                                    <div class="work-item work-video" data-preview="images/work/krispy-kreme.jpg" data-video-id="44583147">
+                                      <div class="work-still-container">
+                                        <div class="work-still videoPlaceholder">
+                                        </div>
+                                      </div>
+                                      <div class="work-block-content-videos-info">
+                                          <h2>Amusement Park Entertainment Reel</h2>
+                                          <p>
+All work featured was co-created and/or creative directed by members of the Amusement Park<br /> Entertainment team during various stages of their careers, except where noted.<br />
+                                          </p>
+                                      </div>                                      
+                                    </div>
+
+                                    <!-- End Featured Work -->
+
+                                </div>
+                                <div class="work-slider-arrow-left"></div>
+                                <div class="work-slider-arrow-right"></div>
                                 </div>
                             </div>
 
-                            <div class="work-block-content-videos-info">
-                                <h2>Amusement Park Entertainment Reel</h2>
-                                <p>
-All work featured was co-created and/or creative directed by members of the Amusement Park<br> Entertainment team during various stages of their careers, except where noted.<br />
-                                </p>
-                            </div>
                         </div>
                     </div>
                     <div class="work-block-right"></div>

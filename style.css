@@ -1052,42 +1052,79 @@ body.main .header {
     background-color: black;
 }
 
-.work-block-content-video-close {
-    background: url(images/work-video-close.png) 0 0 no-repeat;
-    width:68px;
-    height:62px;
-    position:absolute;
-    right:24px;
-    top:16px;
-    display:none;
-    cursor: pointer;
-    z-index:1;
-}
-
-.videoPlaceholder {
-    background-color:black;
-    width:981px;
-    height:550px;
-    cursor:pointer;
-}
-
 #ytplayer {
-    width:981px;
-    height:550px;
     position:absolute;
+    z-index:1;
+    overflow:scroll;
+    width:981px;
+    display:none;
+    background-color:black;
 }
 
-#ytapiplayer1 {
-    background:url(images/reelstill.jpg) 0 0 no-repeat;
+.work-item {
+    width:981px;
+    height:654px;
+    float:left;
+    display:inline-block;
+}
+
+.work-gallery-item {
     width:981px;
     height:550px;
-    position:absolute;
+    float:left;
+    display:inline-block;
+}
+
+.videos-slider-container {
+    overflow: hidden;
+}
+
+.work-gallery-container {
+    overflow:scroll;
+    width:981px;
+    height:550px;
 }
 
 .work-block-content-videos-slider {
-    width:981px;
+    width:2943px;
     height:550px;
     color:#ddd;
+    white-space: nowrap;
+}
+
+.work-still-container {
+    width:981px;
+    height:550px; /* 654 */
+    z-index:-2;
+}
+
+.work-still {
+    background-color:black;
+    cursor:pointer;
+    width:981px;
+    height:550px;
+}
+
+.work-slider-arrow-left,
+.work-slider-arrow-right {
+    cursor:pointer;
+    width:52px;
+    height:97px;
+    position:absolute;
+    margin-top: -157px;
+    z-index:1;
+}
+
+.work-slider-arrow-left {
+    background-image: url(images/work-arrow-left.png);
+    margin-left: 66px;
+    left:0;
+}
+
+.work-slider-arrow-right {
+    background-image: url(images/work-arrow-right.png);
+    margin-right: 66px;
+    right: 0;
 }
 
 .work-block-content-videos-info {
@@ -1096,6 +1133,9 @@ body.main .header {
     text-align:left;
     font-family: 'Helvetica', Arial, sans-serif;
     color:#474542;
+    1position:absolute;
+    1bottom:0;
+    background-color:#EEE8DD;
 }
 
 .work-block-content-videos-info h2 {
@@ -1113,9 +1153,28 @@ body.main .header {
     filter:alpha(opacity=80);
     padding: 4px 0;
     padding-left:40px;
-	font-weight:normal;
+    font-weight:normal;
     line-height:1.3em;
 }
+
+.work-block-content-video-close {
+    background: url(images/work-video-close.png) 0 0 no-repeat;
+    width:68px;
+    height:62px;
+    position:absolute;
+    right:24px;
+    top:16px;
+    display:none;
+    cursor: pointer;
+    z-index:2;
+}
+
+
+
+
+
+
+
 
 .block-gap-left {
     width:817px;

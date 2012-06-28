@@ -31,7 +31,6 @@ jQuery(document).ready(function()
 	// Capture the "hover" events
 	jQuery("#jquerynav li").hover(function() {
 		var elem = jQuery(this).find('div');
-		console.log(this);
 		elem.data("newYpos", elem.data("newYpos") + 1)
 			.stop()
 			.animate({
