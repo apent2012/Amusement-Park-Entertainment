@@ -76,7 +76,7 @@
 
             <div class="home-page block">
                 <div class="home-block-container"
-                  ><div class="home-block block"
+                  ><div class="home-block-logo"></div><div class="home-block block"
 
                     ><div class="home-block-cell home-block-cell1"
                       ><div
@@ -90,7 +90,6 @@
 
                     ><div class="home-block-cell home-block-cell2"
                       ><div
-                        ><div class="home-block-cell2-frame1 home-block-cell-frame"></div
                         ><div class="home-block-cell2-frame2 home-block-cell-frame"></div
                         ><div class="home-block-cell2-frame3 home-block-cell-frame"></div
                         ><div class="home-block-cell2-frame4 home-block-cell-frame"></div
@@ -100,23 +99,22 @@
                         ><div class="home-block-cell2-frame8 home-block-cell-frame"></div
                         ><div class="home-block-cell2-frame9 home-block-cell-frame"></div
                         ><div class="home-block-cell2-frame10 home-block-cell-frame"></div
+                        ><div class="home-block-cell2-frame1 home-block-cell-frame"></div
                       ></div
                     ></div
 
                     ><div class="home-block-cell home-block-cell3"
                       ><div
+                        ><div class="home-block-cell1-frame4 home-block-cell-frame"></div
+                        ><div class="home-block-cell1-frame5 home-block-cell-frame"></div
                         ><div class="home-block-cell1-frame1 home-block-cell-frame"></div
                         ><div class="home-block-cell1-frame2 home-block-cell-frame"></div
                         ><div class="home-block-cell1-frame3 home-block-cell-frame"></div
-                        ><div class="home-block-cell1-frame4 home-block-cell-frame"></div
-                        ><div class="home-block-cell1-frame5 home-block-cell-frame"></div
                       ></div
                     ></div
 
                     ><div class="home-block-cell home-block-cell4"
                       ><div
-                        ><div class="home-block-cell2-frame1 home-block-cell-frame"></div
-                        ><div class="home-block-cell2-frame2 home-block-cell-frame"></div
                         ><div class="home-block-cell2-frame3 home-block-cell-frame"></div
                         ><div class="home-block-cell2-frame4 home-block-cell-frame"></div
                         ><div class="home-block-cell2-frame5 home-block-cell-frame"></div
@@ -125,6 +123,8 @@
                         ><div class="home-block-cell2-frame8 home-block-cell-frame"></div
                         ><div class="home-block-cell2-frame9 home-block-cell-frame"></div
                         ><div class="home-block-cell2-frame10 home-block-cell-frame"></div
+                        ><div class="home-block-cell2-frame1 home-block-cell-frame"></div
+                        ><div class="home-block-cell2-frame2 home-block-cell-frame"></div
                       ></div
                     ></div
 
@@ -140,51 +140,51 @@
 
                     ><div class="home-block-cell home-block-cell6"
                       ><div
-                        ><div class="home-block-cell2-frame1 home-block-cell-frame"></div
-                        ><div class="home-block-cell2-frame2 home-block-cell-frame"></div
-                        ><div class="home-block-cell2-frame3 home-block-cell-frame"></div
-                        ><div class="home-block-cell2-frame4 home-block-cell-frame"></div
                         ><div class="home-block-cell2-frame5 home-block-cell-frame"></div
                         ><div class="home-block-cell2-frame6 home-block-cell-frame"></div
                         ><div class="home-block-cell2-frame7 home-block-cell-frame"></div
                         ><div class="home-block-cell2-frame8 home-block-cell-frame"></div
                         ><div class="home-block-cell2-frame9 home-block-cell-frame"></div
                         ><div class="home-block-cell2-frame10 home-block-cell-frame"></div
+                        ><div class="home-block-cell2-frame1 home-block-cell-frame"></div
+                        ><div class="home-block-cell2-frame2 home-block-cell-frame"></div
+                        ><div class="home-block-cell2-frame3 home-block-cell-frame"></div
+                        ><div class="home-block-cell2-frame4 home-block-cell-frame"></div
                       ></div
                     ></div
 
                     ><div class="home-block-cell home-block-cell7"
                       ><div
-                        ><div class="home-block-cell1-frame1 home-block-cell-frame"></div
-                        ><div class="home-block-cell1-frame2 home-block-cell-frame"></div
                         ><div class="home-block-cell1-frame3 home-block-cell-frame"></div
                         ><div class="home-block-cell1-frame4 home-block-cell-frame"></div
                         ><div class="home-block-cell1-frame5 home-block-cell-frame"></div
+                        ><div class="home-block-cell1-frame1 home-block-cell-frame"></div
+                        ><div class="home-block-cell1-frame2 home-block-cell-frame"></div
                       ></div
                     ></div
 
                     ><div class="home-block-cell home-block-cell8"
                       ><div
+                        ><div class="home-block-cell2-frame7 home-block-cell-frame"></div
+                        ><div class="home-block-cell2-frame8 home-block-cell-frame"></div
+                        ><div class="home-block-cell2-frame9 home-block-cell-frame"></div
+                        ><div class="home-block-cell2-frame10 home-block-cell-frame"></div
                         ><div class="home-block-cell2-frame1 home-block-cell-frame"></div
                         ><div class="home-block-cell2-frame2 home-block-cell-frame"></div
                         ><div class="home-block-cell2-frame3 home-block-cell-frame"></div
                         ><div class="home-block-cell2-frame4 home-block-cell-frame"></div
                         ><div class="home-block-cell2-frame5 home-block-cell-frame"></div
                         ><div class="home-block-cell2-frame6 home-block-cell-frame"></div
-                        ><div class="home-block-cell2-frame7 home-block-cell-frame"></div
-                        ><div class="home-block-cell2-frame8 home-block-cell-frame"></div
-                        ><div class="home-block-cell2-frame9 home-block-cell-frame"></div
-                        ><div class="home-block-cell2-frame10 home-block-cell-frame"></div
                       ></div
                     ></div
 
                     ><div class="home-block-cell home-block-cell9"
                       ><div
+                        ><div class="home-block-cell1-frame5 home-block-cell-frame"></div
                         ><div class="home-block-cell1-frame1 home-block-cell-frame"></div
                         ><div class="home-block-cell1-frame2 home-block-cell-frame"></div
                         ><div class="home-block-cell1-frame3 home-block-cell-frame"></div
                         ><div class="home-block-cell1-frame4 home-block-cell-frame"></div
-                        ><div class="home-block-cell1-frame5 home-block-cell-frame"></div
                       ></div
                     ></div
 
@@ -594,9 +594,14 @@ jessica@amusementparkent.com</a>
 
                                     <!-- Featured Work -->
 
-                                    <div class="work-item work-video" data-preview="images/reelstill.jpg" data-video-id="42184748">
+                                    <!-- Work items all need a preview image. Place the path to it in 
+                                          the `data-preview` attribute of the work item. 
+                                        To embed a Vimeo video, place its id in the `data-video-id` 
+                                          attribute of the work item. -->
+                                    <div class="work-item" data-preview="images/reelstill.jpg" 
+                                      data-video-id="42184748">
                                       <div class="work-still-container">
-                                        <div class="work-still videoPlaceholder">
+                                        <div class="work-still">
                                         </div>
                                       </div>
                                       <div class="work-block-content-videos-info">
@@ -607,7 +612,12 @@ All work featured was co-created and/or creative directed by members of the Amus
                                       </div>                                      
                                     </div>
 
-                                    <div class="work-item work-gallery" data-preview="images/work/jim-darling.jpg" data-images="images/work/jim-darling-1.jpg images/work/jim-darling-2.jpg images/work/jim-darling-3.jpg images/work/jim-darling-4.jpg images/work/jim-darling-5.jpg images/work/jim-darling-6.jpg">
+                                    <!-- For an image gallery, place the paths to each image in the series
+                                          into the `data-preview` attribute of the work item. 
+                                          Make sure the paths are separated by a single space. 
+                                          Make sure every image is the same size: 981x550 px -->
+                                    <div class="work-item" data-preview="images/work/jim-darling.jpg" 
+                                      data-images="images/work/jim-darling-1.jpg  images/work/jim-darling-2.jpg images/work/jim-darling-3.jpg images/work/jim-darling-4.jpg images/work/jim-darling-5.jpg images/work/jim-darling-6.jpg">
                                       <div class="work-still-container">
                                         <div class="work-still">
                                         </div>
@@ -620,9 +630,38 @@ Lorem ipsum ad veniam esse adipisicing sit do adipisicing Ut nostrud eiusmod sed
                                       </div>                                      
                                     </div>
 
-                                    <div class="work-item work-video" data-preview="images/work/krispy-kreme.jpg" data-video-id="44583147">
+                                    <div class="work-item" data-preview="images/work/krispy-kreme.jpg" 
+                                      data-video-id="44583147">
                                       <div class="work-still-container">
-                                        <div class="work-still videoPlaceholder">
+                                        <div class="work-still">
+                                        </div>
+                                      </div>
+                                      <div class="work-block-content-videos-info">
+                                          <h2>Amusement Park Entertainment Reel</h2>
+                                          <p>
+All work featured was co-created and/or creative directed by members of the Amusement Park<br /> Entertainment team during various stages of their careers, except where noted.<br />
+                                          </p>
+                                      </div>                                      
+                                    </div>
+
+                                    <div class="work-item" data-preview="images/work/krispy-kreme.jpg" 
+                                      data-video-id="44583147">
+                                      <div class="work-still-container">
+                                        <div class="work-still">
+                                        </div>
+                                      </div>
+                                      <div class="work-block-content-videos-info">
+                                          <h2>Amusement Park Entertainment Reel</h2>
+                                          <p>
+All work featured was co-created and/or creative directed by members of the Amusement Park<br /> Entertainment team during various stages of their careers, except where noted.<br />
+                                          </p>
+                                      </div>                                      
+                                    </div>
+
+                                    <div class="work-item" data-preview="images/work/krispy-kreme.jpg" 
+                                      data-video-id="44583147">
+                                      <div class="work-still-container">
+                                        <div class="work-still">
                                         </div>
                                       </div>
                                       <div class="work-block-content-videos-info">

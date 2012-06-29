@@ -165,9 +165,10 @@ $(document).ready(function() {
 
 
 
-    // The home page grid slider.
+    // The home page grid animations.
     //
     (function() {
+        /*
         var animateCell = function(sel, delay) {
             if (typeof delay === 'undefined')
                 delay = 3000;
@@ -201,7 +202,78 @@ $(document).ready(function() {
 
 
         };
+         */
+        
+        var setUpCellForAnimation = function(sel) {
+            var $cellToAnimate = $(sel);
 
+            var content = $cellToAnimate.html(); //.children('div:first-child')
+            $cellToAnimate.append(content);
+
+            $cellToAnimate.data('index', 0);
+        };
+
+        var setUpCellsForAnimation = function(sels) {
+            $.each(sels, function(i, val) {
+                setUpCellForAnimation(val);
+            });
+        };
+
+    //    var i = 0;
+        var advanceCell = function(sel) {
+            var $cellToAnimate = $(sel);
+
+            var i = $cellToAnimate.data('index');
+
+            var width = $cellToAnimate.width();
+            var frameCount = $cellToAnimate.children(':first-child').children().length;
+
+            var flashToStart = function() {
+                i = 0;
+                $cellToAnimate.data('index', i);
+                $cellToAnimate.scrollLeft('0');
+            };
+
+            $cellToAnimate.animate({ scrollLeft: ((1+i) * width)+'px' },
+                1000,
+                'easeInOutSine',
+                function() {
+                    // Animation complete.
+                    if ((1+i)%frameCount === 0)
+                        flashToStart();
+                    else {
+                        i++;
+                        $(this).data('index', i);
+                    }
+                });
+        };
+
+        var sels = [ '.home-block-cell1',
+            '.home-block-cell2',
+            '.home-block-cell3',
+            '.home-block-cell4',
+            '.home-block-cell5',
+            '.home-block-cell6',
+            '.home-block-cell7',
+            '.home-block-cell8',
+            '.home-block-cell9',
+            '.home-block-cell10'];
+
+        // Gets a random index betweet 0 and 9.
+        var randomIndex = function() {
+            return Math.floor(Math.random() * 10);
+        };
+
+        setUpCellsForAnimation(sels);
+
+        var stepRandomCell = function() {
+            var ri = randomIndex();
+            advanceCell(sels[ri]);
+        };
+
+        setInterval(stepRandomCell, 4000);
+
+    /*
         animateCell('.home-block-cell1', 2000);
         animateCell('.home-block-cell2', 1800);
         animateCell('.home-block-cell3', 2200);
@@ -212,6 +284,7 @@ $(document).ready(function() {
         animateCell('.home-block-cell8', 2000);
         animateCell('.home-block-cell9', 1600);
         animateCell('.home-block-cell10', 1900);
+     */
 
         /*
         (function() {
@@ -444,9 +517,9 @@ $(document).ready(function() {
             if (typeof images !== 'undefined') {
                 images = images.split(' ');
                 var numImages = images.length;
-                _l(typeof images);
-                _l(images);
-                _l(numImages);
+            //    _l(typeof images);
+            //    _l(images);
+            //    _l(numImages);
 
                 var markup = '<div class="work-gallery-container" style="width:'+(numImages * workItemWidth)+'px">';
 

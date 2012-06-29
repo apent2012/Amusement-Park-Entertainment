@@ -2,8 +2,7 @@
 * Author:      Marco Kuiper (http://www.marcofolio.net/)
 */
 
-jQuery(document).ready(function()
-{
+jQuery(document).ready(function() {
 	// Set the nescesarry data
 	jQuery("#jquerynav li div").each(function() {
 		// Returns "##px" and "##px"
@@ -35,13 +34,13 @@ jQuery(document).ready(function()
 			.stop()
 			.animate({
 				backgroundPosition: elem.data("originalXpos") + "px " + elem.data("newYpos") * 20 + "px"
-			}, 600, "easeOutCirc");
+			}, 400, "linear");
 	}, function() {
 		var elem = jQuery(this).find('div');
 		elem.data("newYpos", elem.data("newYpos") + 1)
 			.stop()
 			.animate({
 				backgroundPosition: elem.data("originalXpos") + "px " + elem.data("newYpos") * 20 + "px"
-			}, 400, "easeInCirc");
+			}, 400, "linear");
 	});
 });

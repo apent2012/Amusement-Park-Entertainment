@@ -354,6 +354,16 @@ body.main .header {
     overflow: hidden;
     position:relative;
 }
+
+.home-page .home-block-logo {
+    width:178px;
+    height:138px;
+    position:absolute;
+    background: url(images/emaillogo.png) 0 0 no-repeat;
+    margin-left: 407px;
+    margin-top: 85px;
+    z-index: 1;
+}
 /*
 .home-block .home-block-slider-container,
 .home-block .home-block-slider-container2 {
@@ -1133,9 +1143,8 @@ body.main .header {
     text-align:left;
     font-family: 'Helvetica', Arial, sans-serif;
     color:#474542;
-    1position:absolute;
-    1bottom:0;
     background-color:#EEE8DD;
+    white-space: normal;
 }
 
 .work-block-content-videos-info h2 {
