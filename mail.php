@@ -44,81 +44,78 @@ if ($success) {
 	$outputMsg = "Thank you for your email.";
 }
 
-?>
-
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+?><!DOCTYPE html>
+<html lang="en">
 <head>
-<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type"/>
+    <meta charset="utf-8">
+    <meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type"/>
 
-<title>Amusement Park Entertainment</title>
+    <title>Amusement Park Entertainment</title>
 
-<link rel="stylesheet" href="reset.css" type="text/css" media="screen"/>
-<link rel="stylesheet" href="style.css" type="text/css" media="screen"/>
-<link rel="stylesheet" href="fonts/futurastd.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="reset.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="fonts/futurastd.css" type="text/css" media="screen"/>
 
+    <style type="text/css">
+        h1 {
+            font-size:42px;
+            color:#737373;
+            margin-top:55px;
+            margin-bottom:24px;
+            text-transform:uppercase;
+        }
 
+        .banner {
+            width:100%;
+            height:202px;
+            background-color:#e51c20;
+        }
 
-<style type="text/css">
-h1 {
-    font-size:42px;
-    color:#737373;
-    margin-top:55px;
-    margin-bottom:24px;
-    text-transform:uppercase;
-}
+        .banner-logo {
+            background: url(images/emaillogo.png) 0 0 no-repeat;
+            width:178px;
+            height:138px;
+            display:inline-block;
+            margin-top:35px;
+        }
 
-.banner {
-    width:100%;
-    height:202px;
-    background-color:#e51c20;
-}
+        .email-body {
+            min-height:270px;
+            font-size:14px;
+            color:#474542;
+        }
 
-.banner-logo {
-    background: url(images/emaillogo.png) 0 0 no-repeat;
-    width:178px;
-    height:138px;
-    display:inline-block;
-    margin-top:35px;
-}
+        .header {
+            position:relative;
+            left:0;
+        }
 
-.email-body {
-    min-height:270px;
-    font-size:14px;
-    color:#474542;
-}
+        .header-content {
+            left:0;
+            display:inline-block;
+        }
 
-.header {
-    position:relative;
-    left:0;
-}
+        .footer {
+            z-index:0; 
+            bottom:0; 
+            height:212px;
+            position:relative;
+        }
 
-.header-content {
-    left:0;
-    display:inline-block;
-}
+        .footer-content {
+            left:0;
+            display:inline-block;
+        }
 
-.footer {
-    z-index:0; 
-    bottom:0; 
-    height:212px;
-    position:relative;
-}
+        .down-arrow {
+            background:url(images/circledown.png) 0 0 no-repeat;
+            width:50px;
+            height:48px;
+            display:inline-block;
+            margin-top:21px;
+        }
 
-.footer-content {
-    left:0;
-    display:inline-block;
-}
-
-.down-arrow {
-    background:url(images/circledown.png) 0 0 no-repeat;
-    width:50px;
-    height:48px;
-    display:inline-block;
-    margin-top:21px;
-}
-
-</style>
+    </style>
 
 </head>
 

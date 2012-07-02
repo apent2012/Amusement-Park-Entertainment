@@ -601,8 +601,89 @@ body.main .header {
 }
 
 .contact-block {
-    background: url(images/contact-block.jpg) 0 0 no-repeat;
     height:654px;
+}
+
+.contact-block .contactcell {
+    1border:1px solid blue;
+    width:327px;
+    height:327px;
+    position:absolute;
+}
+
+.contact-block .contact-block-redsq {
+    background-color:#e51c20;
+}
+
+.contact-block .contact-block-redsq2 {
+    background-color:#e51c20;
+    right:0;
+}
+
+.contact-block .contact-block-mapsq {
+    width:654px;
+    height:654px;
+    left:654px;
+    background: url(images/contact/contact-map.jpg) 0 0 no-repeat;
+    position:absolute;
+}
+
+.contact-block .contact-block-bkgcell1 {
+    top:327px;
+    background: url(images/contact/contact-sq1.jpg) 0 0 no-repeat;
+}
+
+.contact-block .contact-block-bkgcell2 {
+    top:327px;
+    background: url(images/contact/contact-sq3.jpg) 0 0 no-repeat;
+    right:0;
+}
+
+.contact-block .contact-block-titlecell {
+    background: url(images/contact/contact-sq2.jpg) 0 0 no-repeat;
+    left:327px;
+}
+
+.contact-block .contact-info {
+    bottom:0;
+    left:327px;
+    color:white;
+    text-align:left;
+    font-size:14px;
+    background-color:#e51c20;
+}
+
+.contact-block .contact-info p {
+    padding: 0 38px 0 38px;
+    line-height: 17px;
+}
+
+.contact-block .contact-info .contact-info-address {
+    padding-bottom:16px;
+}
+
+.contact-block .contact-info .contact-info-maplink {
+    font-size:11px;
+}
+
+.contact-block .contact-info h3 {
+    font-size:10px;
+    padding: 48px 38px 6px 38px;
+    margin-top: 5px;
+}
+
+.contact-block .contact-info .contact-info-phonenumber-header {
+    padding-top:41px;
+    padding-bottom:9px;
+}
+
+.contact-block .contact-info .contact-info-emaillink {
+    padding-top:35px;
+    font-size:11px;
+}
+
+.contact-block a {
+    color:white;
 }
 
 .team-body {
@@ -1065,7 +1146,7 @@ body.main .header {
 #ytplayer {
     position:absolute;
     z-index:1;
-    overflow:scroll;
+    overflow:hidden;
     width:981px;
     display:none;
     background-color:black;
@@ -1090,7 +1171,7 @@ body.main .header {
 }
 
 .work-gallery-container {
-    overflow:scroll;
+    overflow:hidden;
     width:981px;
     height:550px;
 }

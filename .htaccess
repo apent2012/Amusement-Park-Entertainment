@@ -405,7 +405,7 @@ Options -MultiViews
 # > BuildDiff
 
 # Development
-ErrorDocument 404 /ape/dev/404.html
+ErrorDocument 404 /ape/dev/404.php
 
 # Production
 # ErrorDocument 404 /404.html

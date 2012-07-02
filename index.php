@@ -81,10 +81,7 @@
                     ><div class="home-block-cell home-block-cell1"
                       ><div
                         ><div class="home-block-cell1-frame1 home-block-cell-frame"></div
-                        ><div class="home-block-cell1-frame2 home-block-cell-frame"></div
                         ><div class="home-block-cell1-frame3 home-block-cell-frame"></div
-                        ><div class="home-block-cell1-frame4 home-block-cell-frame"></div
-                        ><div class="home-block-cell1-frame5 home-block-cell-frame"></div
                       ></div
                     ></div
 
@@ -106,10 +103,7 @@
                     ><div class="home-block-cell home-block-cell3"
                       ><div
                         ><div class="home-block-cell1-frame4 home-block-cell-frame"></div
-                        ><div class="home-block-cell1-frame5 home-block-cell-frame"></div
                         ><div class="home-block-cell1-frame1 home-block-cell-frame"></div
-                        ><div class="home-block-cell1-frame2 home-block-cell-frame"></div
-                        ><div class="home-block-cell1-frame3 home-block-cell-frame"></div
                       ></div
                     ></div
 
@@ -131,9 +125,6 @@
                     ><div class="home-block-cell home-block-cell5"
                       ><div
                         ><div class="home-block-cell1-frame1 home-block-cell-frame"></div
-                        ><div class="home-block-cell1-frame2 home-block-cell-frame"></div
-                        ><div class="home-block-cell1-frame3 home-block-cell-frame"></div
-                        ><div class="home-block-cell1-frame4 home-block-cell-frame"></div
                         ><div class="home-block-cell1-frame5 home-block-cell-frame"></div
                       ></div
                     ></div
@@ -156,10 +147,7 @@
                     ><div class="home-block-cell home-block-cell7"
                       ><div
                         ><div class="home-block-cell1-frame3 home-block-cell-frame"></div
-                        ><div class="home-block-cell1-frame4 home-block-cell-frame"></div
-                        ><div class="home-block-cell1-frame5 home-block-cell-frame"></div
                         ><div class="home-block-cell1-frame1 home-block-cell-frame"></div
-                        ><div class="home-block-cell1-frame2 home-block-cell-frame"></div
                       ></div
                     ></div
 
@@ -182,9 +170,6 @@
                       ><div
                         ><div class="home-block-cell1-frame5 home-block-cell-frame"></div
                         ><div class="home-block-cell1-frame1 home-block-cell-frame"></div
-                        ><div class="home-block-cell1-frame2 home-block-cell-frame"></div
-                        ><div class="home-block-cell1-frame3 home-block-cell-frame"></div
-                        ><div class="home-block-cell1-frame4 home-block-cell-frame"></div
                       ></div
                     ></div
 
@@ -617,7 +602,7 @@ All work featured was co-created and/or creative directed by members of the Amus
                                           Make sure the paths are separated by a single space. 
                                           Make sure every image is the same size: 981x550 px -->
                                     <div class="work-item" data-preview="images/work/jim-darling.jpg" 
-                                      data-images="images/work/jim-darling-1.jpg  images/work/jim-darling-2.jpg images/work/jim-darling-3.jpg images/work/jim-darling-4.jpg images/work/jim-darling-5.jpg images/work/jim-darling-6.jpg">
+                                      data-images="images/work/jim-darling-1.jpg images/work/jim-darling-2.jpg images/work/jim-darling-3.jpg images/work/jim-darling-4.jpg images/work/jim-darling-5.jpg images/work/jim-darling-6.jpg">
                                       <div class="work-still-container">
                                         <div class="work-still">
                                         </div>
@@ -626,34 +611,6 @@ All work featured was co-created and/or creative directed by members of the Amus
                                           <h2>Jim Darling</h2>
                                           <p>
 Lorem ipsum ad veniam esse adipisicing sit do adipisicing Ut nostrud eiusmod sed adipisicing aliqua magna voluptate id incididunt pariatur eiusmod ea enim irure minim cillum consequat. 
-                                          </p>
-                                      </div>                                      
-                                    </div>
-
-                                    <div class="work-item" data-preview="images/work/krispy-kreme.jpg" 
-                                      data-video-id="44583147">
-                                      <div class="work-still-container">
-                                        <div class="work-still">
-                                        </div>
-                                      </div>
-                                      <div class="work-block-content-videos-info">
-                                          <h2>Amusement Park Entertainment Reel</h2>
-                                          <p>
-All work featured was co-created and/or creative directed by members of the Amusement Park<br /> Entertainment team during various stages of their careers, except where noted.<br />
-                                          </p>
-                                      </div>                                      
-                                    </div>
-
-                                    <div class="work-item" data-preview="images/work/krispy-kreme.jpg" 
-                                      data-video-id="44583147">
-                                      <div class="work-still-container">
-                                        <div class="work-still">
-                                        </div>
-                                      </div>
-                                      <div class="work-block-content-videos-info">
-                                          <h2>Amusement Park Entertainment Reel</h2>
-                                          <p>
-All work featured was co-created and/or creative directed by members of the Amusement Park<br /> Entertainment team during various stages of their careers, except where noted.<br />
                                           </p>
                                       </div>                                      
                                     </div>
@@ -695,7 +652,34 @@ CONSUMERS ON EVERY MEDIA PLATFORM.</h2>
                 </div>
             </div>
             <div class="contact-page block">
-                <div class="contact-block block"></div>
+                <div class="contact-block block">
+                  <div class="contact-block-redsq contactcell"></div>
+                  <div class="contact-block-titlecell contactcell"></div>
+                  <div class="contact-info futurastd contactcell">
+                    <h3>OUR ADDRESS</h3>
+                    <p class="contact-info-address">
+1913 SOUTH CENTINELA AVE.<br />
+SANTA MONICA, CA 90404
+                    </p>
+                    <p class="contact-info-maplink">
+<a href="https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=1913+Centinela+Ave,Santa+Monica,CA&aq=&sll=37.0625,-95.677068&sspn=43.799322,68.378906&vpsrc=0&ie=UTF8&hq=&hnear=1913+Centinela+Ave,+Santa+Monica,+California+90404&t=m&z=16&iwloc=A" target="_blank">view Google map</a>
+                    </p>
+                    <h3 class="contact-info-phonenumber-header">PHONE NUMBER</h3>
+                    <p>
++1 213 293 7370
+                    </p>
+                    <p class="contact-info-emaillink">
+<a href="mailto:info@amusementparkent.com">info@amusementparkent.com</a>
+                    </p>
+
+                  </div>
+                  <a href="https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=1913+Centinela+Ave,Santa+Monica,CA&aq=&sll=37.0625,-95.677068&sspn=43.799322,68.378906&vpsrc=0&ie=UTF8&hq=&hnear=1913+Centinela+Ave,+Santa+Monica,+California+90404&t=m&z=16&iwloc=A" target="_blank">
+                    <div class="contact-block-mapsq"></div>
+                  </a>
+                    <div class="contact-block-redsq2 contactcell"></div>
+                  <div class="contact-block-bkgcell1 contactcell"></div>
+                  <div class="contact-block-bkgcell2 contactcell"></div>
+                </div>
                 <div id="contact-body" class="contact-body page-body">
                     <div class="contact-body-content futurastd">
 
