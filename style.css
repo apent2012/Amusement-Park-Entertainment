@@ -346,7 +346,6 @@ body.main .header {
     width:3270px;
     position:relative;
     overflow:hidden;
-    1background: url(images/home-block.jpg) 0 0 no-repeat;
 }
 .home-page .home-block-container {
     width:1635px;
@@ -474,6 +473,62 @@ body.main .header {
 }
 .home-block-cell2-frame10 {
     background: url(images/slider/sq10.jpg) 0 0 no-repeat;
+}
+
+.home-block-cell2-frame11 {
+    background: url(images/slider/sq11.jpg) 0 0 no-repeat;
+}
+.home-block-cell2-frame12 {
+    background: url(images/slider/sq12.jpg) 0 0 no-repeat;
+}
+.home-block-cell2-frame13 {
+    background: url(images/slider/sq13.jpg) 0 0 no-repeat;
+}
+.home-block-cell2-frame14 {
+    background: url(images/slider/sq14.jpg) 0 0 no-repeat;
+}
+.home-block-cell2-frame15 {
+    background: url(images/slider/sq15.jpg) 0 0 no-repeat;
+}
+.home-block-cell2-frame16 {
+    background: url(images/slider/sq16.jpg) 0 0 no-repeat;
+}
+.home-block-cell2-frame17 {
+    background: url(images/slider/sq17.jpg) 0 0 no-repeat;
+}
+.home-block-cell2-frame18 {
+    background: url(images/slider/sq18.jpg) 0 0 no-repeat;
+}
+.home-block-cell2-frame19 {
+    background: url(images/slider/sq19.jpg) 0 0 no-repeat;
+}
+.home-block-cell2-frame20 {
+    background: url(images/slider/sq20.jpg) 0 0 no-repeat;
+}
+
+.home-block-cell2-frame21 {
+    background: url(images/slider/sq21.jpg) 0 0 no-repeat;
+}
+.home-block-cell2-frame22 {
+    background: url(images/slider/sq22.jpg) 0 0 no-repeat;
+}
+.home-block-cell2-frame25 {
+    background: url(images/slider/sq25.jpg) 0 0 no-repeat;
+}
+.home-block-cell2-frame26 {
+    background: url(images/slider/sq26.jpg) 0 0 no-repeat;
+}
+.home-block-cell2-frame27 {
+    background: url(images/slider/sq27.jpg) 0 0 no-repeat;
+}
+.home-block-cell2-frame28 {
+    background: url(images/slider/sq28.jpg) 0 0 no-repeat;
+}
+.home-block-cell2-frame30 {
+    background: url(images/slider/sq30.jpg) 0 0 no-repeat;
+}
+.home-block-cell2-frame31 {
+    background: url(images/slider/sq31.jpg) 0 0 no-repeat;
 }
 
 .home-block-cell:nth-child(odd) {
@@ -1320,6 +1375,10 @@ body.main .header {
 	width: 980px;
 	height: 140px;
 	text-align: left;
+}
+
+.home-body-news-content a {
+    text-decoration: none;
 }
 
 .home-body-news-content-title {

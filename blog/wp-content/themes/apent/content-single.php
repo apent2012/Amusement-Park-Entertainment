@@ -11,40 +11,45 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 	<header class="entry-header">
-		<?php
-					$featuredImage = get_featured_image(get_the_ID()); 
-					if ($featuredImage) {
-						?>
-			<div class="attachment">
-				<?php
-					$posttags = get_the_tags();
-					if (is_array($posttags)) {
-						$posttags = array_values($posttags);
-						if (isset($posttags[0])) {
-							$firstTag = $posttags[0];
-							$firstTagName = $firstTag->name;
-				?>
+		<div class="post-title-block futurastd">
+			<?php
+			$firstTagName = 'Untagged';
+			$posttags = get_the_tags();
+			if (is_array($posttags)) {
+				$posttags = array_values($posttags);
+				
+				if (isset($posttags[0])) {
+					$firstTag = $posttags[0];
+					$firstTagName = $firstTag->name;
+				}
+			}
+
+			?>
+			<div class="attachment-tag-container">
 				<div class="attachment-firstTag">
 					<div class="attachment-firstTag-text">
-					<?php echo $firstTagName; ?>
+						<?php echo $firstTagName; ?>
 					</div>
 				</div>
 				<?php $theDate = get_the_date('m/d'); ?>
 				<div class="attachment-date">
 					<div class="attachment-date-text">
-				<?php echo $theDate; ?>
+						<?php echo $theDate; ?>
 					</div>
 				</div>
-				<?php
-						}
-					}
-				?>
-				<?php echo get_featured_image(get_the_ID()); //echo_first_image(get_the_ID()); ?>
 			</div>
-						<?php
-					}
+			<h1 class="entry-title"><?php the_title(); ?></h1>
+		</div>
+		<?php
+		$featuredImage = get_featured_image(get_the_ID()); 
+		if ($featuredImage) {
+			?>
+			<div class="attachment">
+				<?php echo $featuredImage; ?>
+			</div>
+			<?php
+		}
 		?>
-		<h1 class="entry-title"><?php the_title(); ?></h1>
 
 		<?php if ( 'post' == get_post_type() ) : ?>
 		<?php /*

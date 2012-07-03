@@ -37,9 +37,7 @@
       <img src="images/loadercirclebg.png" />
       <img src="images/lr1.png" />
       <img src="images/about-block.jpg" />
-      <img src="images/home-block.jpg" />
       <img src="images/team-block.jpg" />
-      <img src="images/contact-block.jpg" />
       <img src="images/workbox1.jpg" />
       <img src="images/reelstill.jpg" />
       <img src="images/workbox3.jpg" />
@@ -51,6 +49,7 @@
       <img src="images/slider/sq1.gif" />
       <img src="images/slider/sq2.gif" />
       <img src="images/slider/sq3.gif" />
+
       <img src="images/slider/sq1.jpg" />
       <img src="images/slider/sq2.jpg" />
       <img src="images/slider/sq3.jpg" />
@@ -61,6 +60,26 @@
       <img src="images/slider/sq8.jpg" />
       <img src="images/slider/sq9.jpg" />
       <img src="images/slider/sq10.jpg" />
+
+      <img src="images/slider/sq11.jpg" />
+      <img src="images/slider/sq12.jpg" />
+      <img src="images/slider/sq13.jpg" />
+      <img src="images/slider/sq14.jpg" />
+      <img src="images/slider/sq15.jpg" />
+      <img src="images/slider/sq16.jpg" />
+      <img src="images/slider/sq17.jpg" />
+      <img src="images/slider/sq18.jpg" />
+      <img src="images/slider/sq19.jpg" />
+      <img src="images/slider/sq20.jpg" />
+
+      <img src="images/slider/sq21.jpg" />
+      <img src="images/slider/sq22.jpg" />
+      <img src="images/slider/sq25.jpg" />
+      <img src="images/slider/sq26.jpg" />
+      <img src="images/slider/sq27.jpg" />
+      <img src="images/slider/sq28.jpg" />
+      <img src="images/slider/sq30.jpg" />
+      <img src="images/slider/sq31.jpg" />
 
     </div>
 
@@ -88,15 +107,11 @@
                     ><div class="home-block-cell home-block-cell2"
                       ><div
                         ><div class="home-block-cell2-frame2 home-block-cell-frame"></div
-                        ><div class="home-block-cell2-frame3 home-block-cell-frame"></div
                         ><div class="home-block-cell2-frame4 home-block-cell-frame"></div
-                        ><div class="home-block-cell2-frame5 home-block-cell-frame"></div
-                        ><div class="home-block-cell2-frame6 home-block-cell-frame"></div
-                        ><div class="home-block-cell2-frame7 home-block-cell-frame"></div
                         ><div class="home-block-cell2-frame8 home-block-cell-frame"></div
-                        ><div class="home-block-cell2-frame9 home-block-cell-frame"></div
                         ><div class="home-block-cell2-frame10 home-block-cell-frame"></div
-                        ><div class="home-block-cell2-frame1 home-block-cell-frame"></div
+                        ><div class="home-block-cell2-frame11 home-block-cell-frame"></div
+                        ><div class="home-block-cell2-frame17 home-block-cell-frame"></div
                       ></div
                     ></div
 
@@ -110,15 +125,11 @@
                     ><div class="home-block-cell home-block-cell4"
                       ><div
                         ><div class="home-block-cell2-frame3 home-block-cell-frame"></div
-                        ><div class="home-block-cell2-frame4 home-block-cell-frame"></div
-                        ><div class="home-block-cell2-frame5 home-block-cell-frame"></div
-                        ><div class="home-block-cell2-frame6 home-block-cell-frame"></div
-                        ><div class="home-block-cell2-frame7 home-block-cell-frame"></div
-                        ><div class="home-block-cell2-frame8 home-block-cell-frame"></div
-                        ><div class="home-block-cell2-frame9 home-block-cell-frame"></div
-                        ><div class="home-block-cell2-frame10 home-block-cell-frame"></div
-                        ><div class="home-block-cell2-frame1 home-block-cell-frame"></div
-                        ><div class="home-block-cell2-frame2 home-block-cell-frame"></div
+                        ><div class="home-block-cell2-frame12 home-block-cell-frame"></div
+                        ><div class="home-block-cell2-frame13 home-block-cell-frame"></div
+                        ><div class="home-block-cell2-frame14 home-block-cell-frame"></div
+                        ><div class="home-block-cell2-frame15 home-block-cell-frame"></div
+                        ><div class="home-block-cell2-frame16 home-block-cell-frame"></div
                       ></div
                     ></div
 
@@ -132,15 +143,11 @@
                     ><div class="home-block-cell home-block-cell6"
                       ><div
                         ><div class="home-block-cell2-frame5 home-block-cell-frame"></div
-                        ><div class="home-block-cell2-frame6 home-block-cell-frame"></div
-                        ><div class="home-block-cell2-frame7 home-block-cell-frame"></div
-                        ><div class="home-block-cell2-frame8 home-block-cell-frame"></div
-                        ><div class="home-block-cell2-frame9 home-block-cell-frame"></div
-                        ><div class="home-block-cell2-frame10 home-block-cell-frame"></div
+                        ><div class="home-block-cell2-frame18 home-block-cell-frame"></div
+                        ><div class="home-block-cell2-frame19 home-block-cell-frame"></div
+                        ><div class="home-block-cell2-frame20 home-block-cell-frame"></div
+                        ><div class="home-block-cell2-frame22 home-block-cell-frame"></div
                         ><div class="home-block-cell2-frame1 home-block-cell-frame"></div
-                        ><div class="home-block-cell2-frame2 home-block-cell-frame"></div
-                        ><div class="home-block-cell2-frame3 home-block-cell-frame"></div
-                        ><div class="home-block-cell2-frame4 home-block-cell-frame"></div
                       ></div
                     ></div
 
@@ -154,15 +161,10 @@
                     ><div class="home-block-cell home-block-cell8"
                       ><div
                         ><div class="home-block-cell2-frame7 home-block-cell-frame"></div
-                        ><div class="home-block-cell2-frame8 home-block-cell-frame"></div
-                        ><div class="home-block-cell2-frame9 home-block-cell-frame"></div
-                        ><div class="home-block-cell2-frame10 home-block-cell-frame"></div
-                        ><div class="home-block-cell2-frame1 home-block-cell-frame"></div
-                        ><div class="home-block-cell2-frame2 home-block-cell-frame"></div
-                        ><div class="home-block-cell2-frame3 home-block-cell-frame"></div
-                        ><div class="home-block-cell2-frame4 home-block-cell-frame"></div
-                        ><div class="home-block-cell2-frame5 home-block-cell-frame"></div
-                        ><div class="home-block-cell2-frame6 home-block-cell-frame"></div
+                        ><div class="home-block-cell2-frame25 home-block-cell-frame"></div
+                        ><div class="home-block-cell2-frame26 home-block-cell-frame"></div
+                        ><div class="home-block-cell2-frame27 home-block-cell-frame"></div
+                        ><div class="home-block-cell2-frame28 home-block-cell-frame"></div
                       ></div
                     ></div
 
@@ -175,16 +177,11 @@
 
                     ><div class="home-block-cell home-block-cell10"
                       ><div
-                        ><div class="home-block-cell2-frame1 home-block-cell-frame"></div
-                        ><div class="home-block-cell2-frame2 home-block-cell-frame"></div
-                        ><div class="home-block-cell2-frame3 home-block-cell-frame"></div
-                        ><div class="home-block-cell2-frame4 home-block-cell-frame"></div
-                        ><div class="home-block-cell2-frame5 home-block-cell-frame"></div
+                        ><div class="home-block-cell2-frame30 home-block-cell-frame"></div
+                        ><div class="home-block-cell2-frame31 home-block-cell-frame"></div
                         ><div class="home-block-cell2-frame6 home-block-cell-frame"></div
-                        ><div class="home-block-cell2-frame7 home-block-cell-frame"></div
-                        ><div class="home-block-cell2-frame8 home-block-cell-frame"></div
                         ><div class="home-block-cell2-frame9 home-block-cell-frame"></div
-                        ><div class="home-block-cell2-frame10 home-block-cell-frame"></div
+                        ><div class="home-block-cell2-frame21 home-block-cell-frame"></div
                       ></div
                     ></div
 
@@ -203,10 +200,12 @@
                                 
                                 <div class="home-body-news-content-circleDown center">
                                 </div>
+                                <a href="http://www.facebook.com/AmusementParkEnt" target="_blank">
                                 <div class="home-body-news-content-tumblr futurastd">
                                    VISIT OUR<br />
                                    <span class="facebook-hilite">FACEBOOK</span>
                                 </div>
+                                </a>
 
                             </div>
                         </div>

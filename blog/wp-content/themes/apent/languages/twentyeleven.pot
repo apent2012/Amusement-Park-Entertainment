@@ -386,7 +386,8 @@ msgid "Your comment is awaiting moderation."
 msgstr ""
 
 #: functions.php:546
-msgid "Reply <span>&darr;</span>"
+# <span>&darr;</span>
+msgid "Reply"
 msgstr ""
 
 #: functions.php:564

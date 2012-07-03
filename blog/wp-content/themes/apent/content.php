@@ -15,48 +15,55 @@
 					<h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'twentyeleven' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 					<h3 class="entry-format"><?php _e( 'Featured', 'twentyeleven' ); ?></h3>
 				</hgroup>
-			<?php else : 
-					$featuredImage = get_featured_image(get_the_ID()); 
-					if ($featuredImage) {
-						?>
-			<div class="attachment">
-				<?php
+			<?php else : ?>
+				<div class="post-title-block futurastd">
+					<?php
+					$firstTagName = 'Untagged';
 					$posttags = get_the_tags();
 					if (is_array($posttags)) {
 						$posttags = array_values($posttags);
+						
 						if (isset($posttags[0])) {
 							$firstTag = $posttags[0];
 							$firstTagName = $firstTag->name;
-				?>
-				<div class="attachment-firstTag">
-					<div class="attachment-firstTag-text">
-					<?php echo $firstTagName; ?>
-					</div>
-				</div>
-				<?php $theDate = get_the_date('m/d'); ?>
-				<div class="attachment-date">
-					<div class="attachment-date-text">
-				<?php echo $theDate; ?>
-					</div>
-				</div>
-				<?php
 						}
 					}
-				?>
-				<?php echo get_featured_image(get_the_ID()); //echo_first_image(get_the_ID()); ?>
-			</div>
+
+					?>
+					<div class="attachment-tag-container">
+						<div class="attachment-firstTag">
+							<div class="attachment-firstTag-text">
+								<?php echo $firstTagName; ?>
+							</div>
+						</div>
+						<?php $theDate = get_the_date('m/d'); ?>
+						<div class="attachment-date">
+							<div class="attachment-date-text">
+								<?php echo $theDate; ?>
+							</div>
+						</div>
+					</div>
+
+					<h1 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'twentyeleven' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
+				</div>
+				<?php
+					$featuredImage = get_featured_image(get_the_ID()); 
+					if ($featuredImage) {
+						?>
+						<div class="attachment">
+							<?php echo $featuredImage; ?>
+						</div>
 						<?php
 					}
-			?>
-			<h1 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'twentyeleven' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
+				?>
 			<?php endif; ?>
 
 			<?php if ( 'post' == get_post_type() ) : ?>
-			<?php /*
-			<div class="entry-meta">
-				<?php twentyeleven_posted_on(); ?>
-			</div><!-- .entry-meta -->
-			*/ ?>
+				<?php /*
+				<div class="entry-meta">
+					<?php twentyeleven_posted_on(); ?>
+				</div><!-- .entry-meta -->
+				*/ ?>
 			<?php endif; ?>
 
 			<?php if ( comments_open() && ! post_password_required() ) : ?>
