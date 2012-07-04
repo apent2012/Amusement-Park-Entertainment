@@ -1281,6 +1281,7 @@ body.main .header {
     color:#474542;
     background-color:#EEE8DD;
     white-space: normal;
+    position:relative;
 }
 
 .work-block-content-videos-info h2 {
@@ -1314,8 +1315,48 @@ body.main .header {
     z-index:2;
 }
 
+.work-content-info-leftcol {
+    width:770px;
+    display:inline-block;
+    position:absolute;
+}
 
+.work-info-sharelinks {
+    font-family: 'Helvetica', Arial, sans-serif;
+    font-weight:bold;
+    font-size:10px;
+    display:inline-block;
+    position:absolute;
+    top:20px;
+    right:60px;
+    width:136px;
+    text-align:right;
+}
 
+.work-info-sharelinks-text {
+    vertical-align:121%;
+    display:inline-block;
+    padding-right:11px;
+}
+
+.work-info-sharelink {
+    width:32px;
+    height:32px;
+    display:inline-block;
+}
+
+.facebook-share {
+    background: url(images/facebook-share.png) 0 0 no-repeat;
+}
+
+.twitter-share {
+    background: url(images/twitter-share.png) 0 0 no-repeat;
+}
+
+.work-info-sharelinks-container {
+    border:1px solid;
+    display:inline-block;
+}
 
 
 

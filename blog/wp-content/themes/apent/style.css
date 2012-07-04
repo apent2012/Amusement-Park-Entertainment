@@ -837,6 +837,9 @@ a:hover {
 .entry-title a {
 	color: #dedddd;
 	text-decoration: none;
+	font-weight: normal;
+	font-size: 30px;
+	line-height: 29px;
 }
 .entry-title a:hover,
 .entry-title a:focus,
@@ -1236,6 +1239,9 @@ article.format-status .entry-content {
 .singular .entry-title,
 .singular .entry-header .entry-meta {
 	padding-right: 0;
+	font-weight: normal;
+	font-size: 30px;
+	line-height: 29px;
 }
 .singular .entry-header .entry-meta {
 	position: absolute;
@@ -2190,8 +2196,10 @@ section.ephemera .entry-title a span {
 	top: 0;
 }
 .commentlist > li:before {
-	content: url(images/comment-arrow.png);
-	left: -21px;
+/*	content: url(images/comment-arrow.png); */
+	content: url(../../../../images/reply-comment-arrow.png);
+	left: -7px;
+	top: 21px;
 	position: absolute;
 }
 .commentlist > li.pingback:before {
@@ -2243,7 +2251,8 @@ a.comment-reply-link > span {
 .commentlist > li.bypostauthor .comment-meta a:hover {
 }
 .commentlist > li.bypostauthor:before {
-	content: url(images/comment-arrow-bypostauthor.png);
+/*	content: url(images/comment-arrow-bypostauthor.png); */
+	content: url(../../../../images/reply-comment-arrow.png);
 }
 
 /* Post Author threaded comments */

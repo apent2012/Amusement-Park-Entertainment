@@ -589,10 +589,20 @@ jessica@amusementparkent.com</a>
                                         </div>
                                       </div>
                                       <div class="work-block-content-videos-info">
+                                        <div class="work-content-info-leftcol">
                                           <h2>Amusement Park Entertainment Reel</h2>
+                                          <p>
+Lorem ipsum irure commodo dolor voluptate dolore incididunt voluptate labore dolore sit dolor proident cillum laboris ullamco do enim aliquip laborum ad ex cillum dolore dolor sunt tempor labore id in laboris officia in sint ut ullamco minim in in officia nostrud est sed do id nostrud quis et aliqua                                             
+                                          </p>
                                           <p>
 All work featured was co-created and/or creative directed by members of the Amusement Park<br /> Entertainment team during various stages of their careers, except where noted.<br />
                                           </p>
+                                        </div>
+                                        <div class="work-info-sharelinks">
+                                          <div class="work-info-sharelinks-text">Share</div>
+                                          <a href="#facebook" target="_blank"><div class="work-info-sharelink facebook-share"></div></a>
+                                          <a href="#twitter" target="_blank"><div class="work-info-sharelink twitter-share"></div></a>
+                                        </div>
                                       </div>                                      
                                     </div>
 
@@ -607,10 +617,12 @@ All work featured was co-created and/or creative directed by members of the Amus
                                         </div>
                                       </div>
                                       <div class="work-block-content-videos-info">
+                                        <div class="work-content-info-leftcol">
                                           <h2>Jim Darling</h2>
                                           <p>
-Lorem ipsum ad veniam esse adipisicing sit do adipisicing Ut nostrud eiusmod sed adipisicing aliqua magna voluptate id incididunt pariatur eiusmod ea enim irure minim cillum consequat. 
+  Lorem ipsum ad veniam esse adipisicing sit do adipisicing Ut nostrud eiusmod sed adipisicing aliqua magna voluptate id incididunt pariatur eiusmod ea enim irure minim cillum consequat. 
                                           </p>
+                                        </div>                                      
                                       </div>                                      
                                     </div>
 
@@ -621,10 +633,12 @@ Lorem ipsum ad veniam esse adipisicing sit do adipisicing Ut nostrud eiusmod sed
                                         </div>
                                       </div>
                                       <div class="work-block-content-videos-info">
+                                        <div class="work-content-info-leftcol">
                                           <h2>Amusement Park Entertainment Reel</h2>
                                           <p>
-All work featured was co-created and/or creative directed by members of the Amusement Park<br /> Entertainment team during various stages of their careers, except where noted.<br />
+All work featured was co-created and/or creative directed by members of the Amusement ParkEntertainment team during various stages of their careers, except where noted.<br />
                                           </p>
+                                        </div>                                      
                                       </div>                                      
                                     </div>
 
