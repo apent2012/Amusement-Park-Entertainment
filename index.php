@@ -100,7 +100,6 @@
                     ><div class="home-block-cell home-block-cell1"
                       ><div
                         ><div class="home-block-cell1-frame1 home-block-cell-frame"></div
-                        ><div class="home-block-cell1-frame3 home-block-cell-frame"></div
                       ></div
                     ></div
 
@@ -118,7 +117,9 @@
                     ><div class="home-block-cell home-block-cell3"
                       ><div
                         ><div class="home-block-cell1-frame4 home-block-cell-frame"></div
-                        ><div class="home-block-cell1-frame1 home-block-cell-frame"></div
+                        ><div class="home-block-cell1-frame8 home-block-cell-frame"></div
+                        ><div class="home-block-cell1-frame9 home-block-cell-frame"></div
+                        ><div class="home-block-cell1-frame10 home-block-cell-frame"></div
                       ></div
                     ></div
 
@@ -136,7 +137,6 @@
                     ><div class="home-block-cell home-block-cell5"
                       ><div
                         ><div class="home-block-cell1-frame1 home-block-cell-frame"></div
-                        ><div class="home-block-cell1-frame5 home-block-cell-frame"></div
                       ></div
                     ></div
 
@@ -154,7 +154,7 @@
                     ><div class="home-block-cell home-block-cell7"
                       ><div
                         ><div class="home-block-cell1-frame3 home-block-cell-frame"></div
-                        ><div class="home-block-cell1-frame1 home-block-cell-frame"></div
+                        ><div class="home-block-cell1-frame7 home-block-cell-frame"></div
                       ></div
                     ></div
 
@@ -171,7 +171,7 @@
                     ><div class="home-block-cell home-block-cell9"
                       ><div
                         ><div class="home-block-cell1-frame5 home-block-cell-frame"></div
-                        ><div class="home-block-cell1-frame1 home-block-cell-frame"></div
+                        ><div class="home-block-cell1-frame6 home-block-cell-frame"></div
                       ></div
                     ></div
 
@@ -626,6 +626,54 @@ All work featured was co-created and/or creative directed by members of the Amus
                                       </div>                                      
                                     </div>
 
+                                    <div class="work-item" data-preview="images/work/rob-hepler.jpg" 
+                                      data-images="images/work/rob-hepler-1.jpg images/work/rob-hepler-2.jpg">
+                                      <div class="work-still-container">
+                                        <div class="work-still">
+                                        </div>
+                                      </div>
+                                      <div class="work-block-content-videos-info">
+                                        <div class="work-content-info-leftcol">
+                                          <h2>Jim Darling</h2>
+                                          <p>
+  Lorem ipsum ad veniam esse adipisicing sit do adipisicing Ut nostrud eiusmod sed adipisicing aliqua magna voluptate id incididunt pariatur eiusmod ea enim irure minim cillum consequat. 
+                                          </p>
+                                        </div>                                      
+                                      </div>                                      
+                                    </div>
+
+                                    <div class="work-item" data-preview="images/work/doug.jpg" 
+                                      data-images="">
+                                      <div class="work-still-container">
+                                        <div class="work-still">
+                                        </div>
+                                      </div>
+                                      <div class="work-block-content-videos-info">
+                                        <div class="work-content-info-leftcol">
+                                          <h2>Jim Darling</h2>
+                                          <p>
+  Lorem ipsum ad veniam esse adipisicing sit do adipisicing Ut nostrud eiusmod sed adipisicing aliqua magna voluptate id incididunt pariatur eiusmod ea enim irure minim cillum consequat. 
+                                          </p>
+                                        </div>                                      
+                                      </div>                                      
+                                    </div>
+
+                                    <div class="work-item" data-preview="images/work/nba-street.jpg" 
+                                      data-images="images/work/nba-street-1.jpg">
+                                      <div class="work-still-container">
+                                        <div class="work-still">
+                                        </div>
+                                      </div>
+                                      <div class="work-block-content-videos-info">
+                                        <div class="work-content-info-leftcol">
+                                          <h2>Jim Darling</h2>
+                                          <p>
+  Lorem ipsum ad veniam esse adipisicing sit do adipisicing Ut nostrud eiusmod sed adipisicing aliqua magna voluptate id incididunt pariatur eiusmod ea enim irure minim cillum consequat. 
+                                          </p>
+                                        </div>                                      
+                                      </div>                                      
+                                    </div>
+
                                     <div class="work-item" data-preview="images/work/krispy-kreme.jpg" 
                                       data-video-id="44583147">
                                       <div class="work-still-container">
@@ -639,9 +687,240 @@ All work featured was co-created and/or creative directed by members of the Amus
 All work featured was co-created and/or creative directed by members of the Amusement ParkEntertainment team during various stages of their careers, except where noted.<br />
                                           </p>
                                         </div>                                      
+                                      </div>
+                                    </div>
+
+                                    <div class="work-item" data-preview="images/work/gatorade-whats-g.jpg" 
+                                      data-video-id="42184748">
+                                      <div class="work-still-container">
+                                        <div class="work-still">
+                                        </div>
+                                      </div>
+                                      <div class="work-block-content-videos-info">
+                                        <div class="work-content-info-leftcol">
+                                          <h2>Amusement Park Entertainment Reel</h2>
+                                          <p>
+All work featured was co-created and/or creative directed by members of the Amusement ParkEntertainment team during various stages of their careers, except where noted.<br />
+                                          </p>
+                                        </div>                                      
+                                        <div class="work-info-sharelinks">
+                                          <div class="work-info-sharelinks-text">Share</div>
+                                          <a href="#facebook" target="_blank"><div class="work-info-sharelink facebook-share"></div></a>
+                                          <a href="#twitter" target="_blank"><div class="work-info-sharelink twitter-share"></div></a>
+                                        </div>
                                       </div>                                      
                                     </div>
 
+                                    <div class="work-item" data-preview="images/work/gatorade-evolve.jpg" 
+                                      data-video-id="42184748">
+                                      <div class="work-still-container">
+                                        <div class="work-still">
+                                        </div>
+                                      </div>
+                                      <div class="work-block-content-videos-info">
+                                        <div class="work-content-info-leftcol">
+                                          <h2>Amusement Park Entertainment Reel</h2>
+                                          <p>
+All work featured was co-created and/or creative directed by members of the Amusement ParkEntertainment team during various stages of their careers, except where noted.<br />
+                                          </p>
+                                        </div>                                      
+                                        <div class="work-info-sharelinks">
+                                          <div class="work-info-sharelinks-text">Share</div>
+                                          <a href="#facebook" target="_blank"><div class="work-info-sharelink facebook-share"></div></a>
+                                          <a href="#twitter" target="_blank"><div class="work-info-sharelink twitter-share"></div></a>
+                                        </div>
+                                      </div>                                      
+                                    </div>
+                                    
+                                    <div class="work-item" data-preview="images/work/gatorade-evolve-full.jpg" 
+                                      data-video-id="42184748">
+                                      <div class="work-still-container">
+                                        <div class="work-still">
+                                        </div>
+                                      </div>
+                                      <div class="work-block-content-videos-info">
+                                        <div class="work-content-info-leftcol">
+                                          <h2>Amusement Park Entertainment Reel</h2>
+                                          <p>
+All work featured was co-created and/or creative directed by members of the Amusement ParkEntertainment team during various stages of their careers, except where noted.<br />
+                                          </p>
+                                        </div>                                      
+                                        <div class="work-info-sharelinks">
+                                          <div class="work-info-sharelinks-text">Share</div>
+                                          <a href="#facebook" target="_blank"><div class="work-info-sharelink facebook-share"></div></a>
+                                          <a href="#twitter" target="_blank"><div class="work-info-sharelink twitter-share"></div></a>
+                                        </div>
+                                      </div>                                      
+                                    </div>
+                                    
+                                    <div class="work-item" data-preview="images/work/gatorade-replay.jpg" 
+                                      data-video-id="42184748">
+                                      <div class="work-still-container">
+                                        <div class="work-still">
+                                        </div>
+                                      </div>
+                                      <div class="work-block-content-videos-info">
+                                        <div class="work-content-info-leftcol">
+                                          <h2>Amusement Park Entertainment Reel</h2>
+                                          <p>
+All work featured was co-created and/or creative directed by members of the Amusement ParkEntertainment team during various stages of their careers, except where noted.<br />
+                                          </p>
+                                        </div>                                      
+                                        <div class="work-info-sharelinks">
+                                          <div class="work-info-sharelinks-text">Share</div>
+                                          <a href="#facebook" target="_blank"><div class="work-info-sharelink facebook-share"></div></a>
+                                          <a href="#twitter" target="_blank"><div class="work-info-sharelink twitter-share"></div></a>
+                                        </div>
+                                      </div>                                      
+                                    </div>
+                                    
+                                    <div class="work-item" data-preview="images/work/nike-rucker-park.jpg" 
+                                      data-video-id="42184748">
+                                      <div class="work-still-container">
+                                        <div class="work-still">
+                                        </div>
+                                      </div>
+                                      <div class="work-block-content-videos-info">
+                                        <div class="work-content-info-leftcol">
+                                          <h2>Amusement Park Entertainment Reel</h2>
+                                          <p>
+All work featured was co-created and/or creative directed by members of the Amusement ParkEntertainment team during various stages of their careers, except where noted.<br />
+                                          </p>
+                                        </div>                                      
+                                        <div class="work-info-sharelinks">
+                                          <div class="work-info-sharelinks-text">Share</div>
+                                          <a href="#facebook" target="_blank"><div class="work-info-sharelink facebook-share"></div></a>
+                                          <a href="#twitter" target="_blank"><div class="work-info-sharelink twitter-share"></div></a>
+                                        </div>
+                                      </div>                                      
+                                    </div>
+                                    
+                                    <div class="work-item" data-preview="images/work/nike-roswell-rayguns.jpg" 
+                                      data-video-id="42184748">
+                                      <div class="work-still-container">
+                                        <div class="work-still">
+                                        </div>
+                                      </div>
+                                      <div class="work-block-content-videos-info">
+                                        <div class="work-content-info-leftcol">
+                                          <h2>Amusement Park Entertainment Reel</h2>
+                                          <p>
+All work featured was co-created and/or creative directed by members of the Amusement ParkEntertainment team during various stages of their careers, except where noted.<br />
+                                          </p>
+                                        </div>                                      
+                                        <div class="work-info-sharelinks">
+                                          <div class="work-info-sharelinks-text">Share</div>
+                                          <a href="#facebook" target="_blank"><div class="work-info-sharelink facebook-share"></div></a>
+                                          <a href="#twitter" target="_blank"><div class="work-info-sharelink twitter-share"></div></a>
+                                        </div>
+                                      </div>                                      
+                                    </div>
+                                    
+                                    <div class="work-item" data-preview="images/work/ea-sports-nba-street-vol2.jpg" 
+                                      data-video-id="42184748">
+                                      <div class="work-still-container">
+                                        <div class="work-still">
+                                        </div>
+                                      </div>
+                                      <div class="work-block-content-videos-info">
+                                        <div class="work-content-info-leftcol">
+                                          <h2>Amusement Park Entertainment Reel</h2>
+                                          <p>
+All work featured was co-created and/or creative directed by members of the Amusement ParkEntertainment team during various stages of their careers, except where noted.<br />
+                                          </p>
+                                        </div>                                      
+                                        <div class="work-info-sharelinks">
+                                          <div class="work-info-sharelinks-text">Share</div>
+                                          <a href="#facebook" target="_blank"><div class="work-info-sharelink facebook-share"></div></a>
+                                          <a href="#twitter" target="_blank"><div class="work-info-sharelink twitter-share"></div></a>
+                                        </div>
+                                      </div>                                      
+                                    </div>
+                                    
+                                    <div class="work-item" data-preview="images/work/nike-book-of-dimes.jpg" 
+                                      data-video-id="42184748">
+                                      <div class="work-still-container">
+                                        <div class="work-still">
+                                        </div>
+                                      </div>
+                                      <div class="work-block-content-videos-info">
+                                        <div class="work-content-info-leftcol">
+                                          <h2>Amusement Park Entertainment Reel</h2>
+                                          <p>
+All work featured was co-created and/or creative directed by members of the Amusement ParkEntertainment team during various stages of their careers, except where noted.<br />
+                                          </p>
+                                        </div>                                      
+                                        <div class="work-info-sharelinks">
+                                          <div class="work-info-sharelinks-text">Share</div>
+                                          <a href="#facebook" target="_blank"><div class="work-info-sharelink facebook-share"></div></a>
+                                          <a href="#twitter" target="_blank"><div class="work-info-sharelink twitter-share"></div></a>
+                                        </div>
+                                      </div>                                      
+                                    </div>
+                                    
+                                    <div class="work-item" data-preview="images/work/chamber-of-fear.jpg" 
+                                      data-video-id="42184748">
+                                      <div class="work-still-container">
+                                        <div class="work-still">
+                                        </div>
+                                      </div>
+                                      <div class="work-block-content-videos-info">
+                                        <div class="work-content-info-leftcol">
+                                          <h2>Amusement Park Entertainment Reel</h2>
+                                          <p>
+All work featured was co-created and/or creative directed by members of the Amusement ParkEntertainment team during various stages of their careers, except where noted.<br />
+                                          </p>
+                                        </div>                                      
+                                        <div class="work-info-sharelinks">
+                                          <div class="work-info-sharelinks-text">Share</div>
+                                          <a href="#facebook" target="_blank"><div class="work-info-sharelink facebook-share"></div></a>
+                                          <a href="#twitter" target="_blank"><div class="work-info-sharelink twitter-share"></div></a>
+                                        </div>
+                                      </div>                                      
+                                    </div>
+                                    
+                                    <div class="work-item" data-preview="images/work/nike-battlegrounds.jpg" 
+                                      data-video-id="42184748">
+                                      <div class="work-still-container">
+                                        <div class="work-still">
+                                        </div>
+                                      </div>
+                                      <div class="work-block-content-videos-info">
+                                        <div class="work-content-info-leftcol">
+                                          <h2>Amusement Park Entertainment Reel</h2>
+                                          <p>
+All work featured was co-created and/or creative directed by members of the Amusement ParkEntertainment team during various stages of their careers, except where noted.<br />
+                                          </p>
+                                        </div>                                      
+                                        <div class="work-info-sharelinks">
+                                          <div class="work-info-sharelinks-text">Share</div>
+                                          <a href="#facebook" target="_blank"><div class="work-info-sharelink facebook-share"></div></a>
+                                          <a href="#twitter" target="_blank"><div class="work-info-sharelink twitter-share"></div></a>
+                                        </div>
+                                      </div>                                      
+                                    </div>
+                                    
+                                    <div class="work-item" data-preview="images/work/waka-flocka.jpg" 
+                                      data-video-id="42184748">
+                                      <div class="work-still-container">
+                                        <div class="work-still">
+                                        </div>
+                                      </div>
+                                      <div class="work-block-content-videos-info">
+                                        <div class="work-content-info-leftcol">
+                                          <h2>Amusement Park Entertainment Reel</h2>
+                                          <p>
+All work featured was co-created and/or creative directed by members of the Amusement ParkEntertainment team during various stages of their careers, except where noted.<br />
+                                          </p>
+                                        </div>                                      
+                                        <div class="work-info-sharelinks">
+                                          <div class="work-info-sharelinks-text">Share</div>
+                                          <a href="#facebook" target="_blank"><div class="work-info-sharelink facebook-share"></div></a>
+                                          <a href="#twitter" target="_blank"><div class="work-info-sharelink twitter-share"></div></a>
+                                        </div>
+                                      </div>                                      
+                                    </div>
+                                    
                                     <!-- End Featured Work -->
 
                                 </div>

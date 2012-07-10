@@ -248,11 +248,10 @@ $(document).ready(function() {
                 });
         };
 
-        var sels = [ '.home-block-cell1',
-            '.home-block-cell2',
+        // '.home-block-cell1', '.home-block-cell5',
+        var sels = [ '.home-block-cell2',
             '.home-block-cell3',
             '.home-block-cell4',
-            '.home-block-cell5',
             '.home-block-cell6',
             '.home-block-cell7',
             '.home-block-cell8',
@@ -261,7 +260,7 @@ $(document).ready(function() {
 
         // Gets a random index betweet 0 and 9.
         var randomIndex = function() {
-            return Math.floor(Math.random() * 10);
+            return Math.floor(Math.random() * sels.length);
         };
 
         setUpCellsForAnimation(sels);
@@ -271,7 +270,10 @@ $(document).ready(function() {
             advanceCell(sels[ri]);
         };
 
-        setInterval(stepRandomCell, 4000);
+    //    var interval = 4000;
+        var interval = 1000;
+
+        setInterval(stepRandomCell, interval);
 
     /*
         animateCell('.home-block-cell1', 2000);
