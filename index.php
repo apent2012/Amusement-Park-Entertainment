@@ -642,38 +642,6 @@ All work featured was co-created and/or creative directed by members of the Amus
                                       </div>                                      
                                     </div>
 
-                                    <div class="work-item" data-preview="images/work/doug.jpg" 
-                                      data-images="">
-                                      <div class="work-still-container">
-                                        <div class="work-still">
-                                        </div>
-                                      </div>
-                                      <div class="work-block-content-videos-info">
-                                        <div class="work-content-info-leftcol">
-                                          <h2>Jim Darling</h2>
-                                          <p>
-  Lorem ipsum ad veniam esse adipisicing sit do adipisicing Ut nostrud eiusmod sed adipisicing aliqua magna voluptate id incididunt pariatur eiusmod ea enim irure minim cillum consequat. 
-                                          </p>
-                                        </div>                                      
-                                      </div>                                      
-                                    </div>
-
-                                    <div class="work-item" data-preview="images/work/nba-street.jpg" 
-                                      data-images="images/work/nba-street-1.jpg">
-                                      <div class="work-still-container">
-                                        <div class="work-still">
-                                        </div>
-                                      </div>
-                                      <div class="work-block-content-videos-info">
-                                        <div class="work-content-info-leftcol">
-                                          <h2>Jim Darling</h2>
-                                          <p>
-  Lorem ipsum ad veniam esse adipisicing sit do adipisicing Ut nostrud eiusmod sed adipisicing aliqua magna voluptate id incididunt pariatur eiusmod ea enim irure minim cillum consequat. 
-                                          </p>
-                                        </div>                                      
-                                      </div>                                      
-                                    </div>
-
                                     <div class="work-item" data-preview="images/work/krispy-kreme.jpg" 
                                       data-video-id="44583147">
                                       <div class="work-still-container">

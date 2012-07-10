@@ -796,7 +796,7 @@ a:hover {
 }
 .hentry,
 .no-results {
-	border-bottom: 1px solid #ddd;
+/*	border-bottom: 1px solid #ddd; */
 	margin: 0 0 1.625em;
 	padding: 0 0 1.625em;
 	position: relative;
@@ -813,7 +813,7 @@ a:hover {
 
 .post-title-block {
 	width:755px;
-	height:349px;
+	height:196px;
 	background: url(../../../../images/post-title-bkg.jpg) 0 0 no-repeat;
 	position:relative;
 }
@@ -1824,10 +1824,11 @@ section.recent-posts .other-recent-posts li:after {
 .attachment {
 	position:relative;
     font-family: 'FuturaStdBookBold', Arial, sans-serif;
+    padding-bottom: 12px;
 }
 
 .single .attachment img {
-	margin-top: -3.7em;
+/*	margin-top: -3.7em; */
 }
 
 .attachment-placeholder {
