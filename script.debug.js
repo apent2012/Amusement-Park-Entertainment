@@ -270,8 +270,8 @@ $(document).ready(function() {
             advanceCell(sels[ri]);
         };
 
-    //    var interval = 4000;
-        var interval = 1000;
+        var interval = 4000;
+    //    var interval = 1000;
 
         setInterval(stepRandomCell, interval);
 
