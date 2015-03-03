@@ -1,17 +1,4 @@
 <?php
-@include("Mobile_Detect.php");
-$detect = new Mobile_Detect();
-if ($detect->isMobile() && isset($_COOKIE['mobile']))
-{
-$detect = "false";
-}
-elseif ($detect->isMobile())
-{
-header("Location:http://m.amusementparkent.com");
-}
-?>
-
-<?php
     require("library.inc");
 ?><!DOCTYPE html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
@@ -226,11 +213,11 @@ header("Location:http://m.amusementparkent.com");
                             <p class="home-body-ape-title">
                               <span>AMUSEMENT PARK ENTERTAINMENT IS A<br />
                                     STUDIO THAT SPECIALIZES IN INVENTIVE<br />
-                                    TRANSMEDIA STORYTELLING.</span>
+                                    TRANSMEDIA&nbsp;&nbsp;STORYTELLING.</span>
                             </p>
                             <p class="home-body-ape-subtitle">
                               <span>AMUSEMENT PARK ENTERTAINMENT WAS FORMED AS A COLLABORATIVE EFFORT BETWEEN GLOBAL HOLDING COMPANY IPG AND<br />
-                              AN EXTREMELY TALENTED GROUP OF ARTISTS, WRITERS, PRODUCERS AND TECH HEADS LEAD BY JIMMY SMITH.</span>
+                              AND EXTREMELY TALENTED GROUP OF ARTISTS, WRITERS, PRODUCERS AND TECH HEADS LEAD BY JIMMY SMITH.</span>
                             </p>
                         </div>
 
@@ -354,10 +341,29 @@ bobby@amusementparkent.com</a>
               </div>
           </div>
 
+
+          <div class="team-body-people-slider-person">
+              <div class="team-body-people-slider-person-redsq darkredsq futurastd">
+                  <h2>ROBERTO GRANDE</h2>
+                  <div class="team-body-people-slider-person-darkredsq-tri"></div>
+              </div>
+              <div class="team-body-people-slider-person-text">
+                  <h3>Partner and Director of Account Management</h3>
+                  <p>
+Roberto has more than 10 years of experience in technology transactions, digital distribution and mobile entertainment. As a former New York Partner of Law Firm Sonnenschein Nath & Rosenthal&rsquo;s Global Tech Transactions Practice, Roberto has experience working across all digital platforms with specific expertise in rights acquisition and monetizing mobile and digital formats.
+                  </p>
+                  <p class="team-body-people-slider-person-text-email">
+Say hello at <a href="mailto:roberto@amusementparkent.com">
+roberto@amusementparkent.com</a>
+                  </p>                            
+              </div>
+          </div>
+
+
         <div class="team-body-people-slider-person">
-            <div class="team-body-people-slider-person-redsq darkredsq futurastd">
+            <div class="team-body-people-slider-person-redsq redsq futurastd">
                 <h2>SMOKE</h2>
-                <div class="team-body-people-slider-person-darkredsq-tri"></div>
+                <div class="team-body-people-slider-person-redsq-tri"></div>
             </div>
             <div class="team-body-people-slider-person-text">
                 <h3>Manager Creative Services</h3>
@@ -373,10 +379,10 @@ smoke@amusementparkent.com</a>
 
 
         <div class="team-body-people-slider-person">
-            <div class="team-body-people-slider-person-redsq redsq futurastd">
-                <h2>JIM <br />DARLING</h2>
-                <div class="team-body-people-slider-person-redsq-tri"></div>
-            </div> 
+            <div class="team-body-people-slider-person-redsq darkredsq futurastd">
+                <h2>JIM DARLING</h2>
+                <div class="team-body-people-slider-person-darkredsq-tri"></div>
+            </div>
             <div class="team-body-people-slider-person-text">
                 <h3>Director of Visual Arts</h3>
                 <p>
@@ -390,10 +396,82 @@ darling@amusementparkent.com</a>
         </div>
 
 
+      <div class="team-body-people-slider-person">
+              <div class="team-body-people-slider-person-redsq redsq futurastd">
+                  <h2>DOUG<br /> ALVES</h2>
+                  <div class="team-body-people-slider-person-redsq-tri"></div>
+              </div>
+              <div class="team-body-people-slider-person-text">
+                  <h3>Associate Creative Director</h3>
+                  <p>
+Doug, a Brazilian-born artist, has some heavy weight commissions under his belt. With published work in over thirty books and magazines, Doug has lent his creative expertise to mega-brands such as: Adidas, Gatorade, and Adobe. Most recently, Doug was awarded as one of the top 10 illustrators in the world by <em>DPI Magazine</em>. Doug&rsquo;s work is full of passion and vibrancy and his intricately crafted pen and ink drawings, collages, and computer compositions play with the themes of nature and make believe.
+                  </p>
+                  <p class="team-body-people-slider-person-text-email">
+Say hello at <a href="mailto:doug@amusementparkent.com">
+doug@amusementparkent.com</a>
+                  </p>                            
+              </div>
+          </div>
+
+
+          <div class="team-body-people-slider-person">
+              <div class="team-body-people-slider-person-redsq darkredsq futurastd">
+                  <h2>ROB HEPPLER</h2>
+                  <div class="team-body-people-slider-person-darkredsq-tri"></div>
+              </div>
+              <div class="team-body-people-slider-person-text">
+                  <h3>Senior Writer</h3>
+                  <p>
+Former Hypebeast Blogger and currently blogging for TheHundreds.com, Rob is a pillar in the streetwear community. He founded the first street culture radio show, &ldquo;Weekly Drop.&rdquo; He's also the creator of the &ldquo;Lobster&rdquo; Nike SB Dunk and the Coraline Dunk. Rob made the jump to advertising after graduating from the prestigious WK12 Program at Wieden + Kennedy. Rob&rsquo;s favorite personal achievements include Baconorbeercan.com and his 13-year-old daughter, Sierra.
+                  </p>
+                  <p class="team-body-people-slider-person-text-email">
+Say hello at <a href="mailto:rob@amusementparkent.com">
+rob@amusementparkent.com</a>
+                  </p>                            
+              </div>
+          </div>
+
+
+        <div class="team-body-people-slider-person">
+            <div class="team-body-people-slider-person-redsq redsq futurastd">
+                <h2>JEROME <span style="font-size:30px;">DAUGHTREY</span></h2>
+                <div class="team-body-people-slider-person-redsq-tri"></div>
+            </div>
+            <div class="team-body-people-slider-person-text">
+                <h3>(aka Romey-Rome aka Ace-$) Writer</h3>
+                <p>
+Jerome is a linguistic enthusiast and student of life. As an up-and-coming writer, he follows a simple life-to-career philosophy: &ldquo;All you&rsquo;ll ever need is Hope & Hustle.&rdquo; Fueled by his passion to glorify Jesus Christ, he refuses to be outworked. <em>- Colossians 3:23</em>
+                </p>
+                <p class="team-body-people-slider-person-text-email">
+Say hello at <a href="mailto:jerome@amusementparkent.com">
+jerome@amusementparkent.com</a>
+                </p>                            
+            </div>
+        </div>
+
+
         <div class="team-body-people-slider-person">
             <div class="team-body-people-slider-person-redsq darkredsq futurastd">
-                <h2>POETRI</h2>
+                <h2>JON MARSHALL</h2>
                 <div class="team-body-people-slider-person-darkredsq-tri"></div>
+            </div>
+            <div class="team-body-people-slider-person-text">
+                <h3>Graphic Designer</h3>
+                <p>
+Jon is from Shelbyville, a small town in Kentucky. He attended Western Kentucky University where he also played football. He often refers to himself as a young John Nash (aka a beautiful mind). 
+                </p>
+                <p class="team-body-people-slider-person-text-email">
+Say hello at <a href="mailto:jon@amusementparkent.com">
+jon@amusementparkent.com</a>
+                </p>                            
+            </div>
+        </div>
+
+
+        <div class="team-body-people-slider-person">
+            <div class="team-body-people-slider-person-redsq redsq futurastd">
+                <h2>POETRI</h2>
+                <div class="team-body-people-slider-person-redsq-tri"></div>
             </div>
             <div class="team-body-people-slider-person-text">
                 <h3>Senior Writer</h3>
@@ -409,28 +487,27 @@ poetri@amusementparkent.com</a>
 
 
         <div class="team-body-people-slider-person">
-            <div class="team-body-people-slider-person-redsq redsq futurastd">
-                <h2>JON MARSHALL</h2>
-                <div class="team-body-people-slider-person-redsq-tri"></div>
+            <div class="team-body-people-slider-person-redsq darkredsq futurastd">
+                <h2>CHRISTINA OKUBO</h2>
+                <div class="team-body-people-slider-person-darkredsq-tri"></div>
             </div>
             <div class="team-body-people-slider-person-text">
-                <h3>Graphic Designer</h3>
+                <h3>Senior Creative Strategist</h3>
                 <p>
-Jon is from Shelbyville, a small town in Kentucky. He attended Western Kentucky University where he also played football. He often refers to himself as a young John Nash (aka a beautiful mind). 
+Christina is a creative strategist who specializes in working with fashion and retail brands. She&rsquo;s fused her unique experience through her work with American Apparel, Wieden + Kennedy (for clients such as Levi&rsquo;s, Target and Nike), as well as independent apparel and accessory brands. She loves art, design, architecture, traveling and snowboarding. She is bi-cultural, multilingual and is a published photographer.
                 </p>
                 <p class="team-body-people-slider-person-text-email">
-Say hello at <a href="mailto:jon@amusementparkent.com">
-jon@amusementparkent.com</a>
+Say hello at <a href="mailto:christina@amusementparkent.com">
+christina@amusementparkent.com</a>
                 </p>                            
             </div>
         </div>
 
 
-
         <div class="team-body-people-slider-person">
-            <div class="team-body-people-slider-person-redsq darkredsq futurastd">
+            <div class="team-body-people-slider-person-redsq redsq futurastd">
                 <h2>DEIRDRE SMITH</h2>
-                <div class="team-body-people-slider-person-darkredsq-tri"></div>
+                <div class="team-body-people-slider-person-redsq-tri"></div>
             </div>
             <div class="team-body-people-slider-person-text">
                 <h3>Writer</h3>
@@ -443,17 +520,17 @@ dee@amusementparkent.com</a>
                 </p>                            
             </div>
         </div>
-        
-     
+
+
         <div class="team-body-people-slider-person">
-            <div class="team-body-people-slider-person-redsq redsq futurastd">
+            <div class="team-body-people-slider-person-redsq darkredsq futurastd">
                 <h2>ESTHER<br> KIM</h2>
-                <div class="team-body-people-slider-person-redsq-tri"></div>
+                <div class="team-body-people-slider-person-darkredsq-tri"></div>
             </div>
             <div class="team-body-people-slider-person-text">
                 <h3>Interactive Designer</h3>
                 <p>
-From Dallas to Chicago to LA, Esther started her career in special effects and motion graphics but became enraptured by the erratic life of advertising. Since then, she&rsquo;s been riding the roller coaster from graphics, to motion, to potions and everything else she can get her inconspicuous self into.
+Esther came to L.A. from Dallas, TX. to work in the fields of special effects and motion graphics but became enraptured by the erratic life of advertising. Since then, she&rsquo;s been riding the roller coaster from graphics and motion to potions and everything else she can get her inconspicuous self into.
                 </p>
                 <p class="team-body-people-slider-person-text-email">
 Say hello at <a href="mailto:esther@amusementparkent.com">
@@ -461,15 +538,15 @@ esther@amusementparkent.com</a>
                 </p>                            
             </div>
         </div>
-        
-        
-           <div class="team-body-people-slider-person">
-            <div class="team-body-people-slider-person-redsq darkredsq futurastd">
+
+
+        <div class="team-body-people-slider-person">
+            <div class="team-body-people-slider-person-redsq redsq futurastd">
                 <h2>JESSICA WILLIS</h2>
-                <div class="team-body-people-slider-person-darkredsq-tri"></div>
+                <div class="team-body-people-slider-person-redsq-tri"></div>
             </div>
             <div class="team-body-people-slider-person-text">
-                <h3>Creative Assistant</h3>
+                <h3>The Intern</h3>
                 <p>
 Armed with two suitcases, a backpack, one tattered copy of <em>The Alchemist</em>, and no plan, Jessica embarked on a one-way flight across country to the City of Angels. After showing up at the doors of Amusement Park to introduce herself to the team, she somehow managed to bogart her way into working on a project - proof that, &ldquo;When you want something, all the universe conspires in helping you to achieve it.&rdquo;
                 </p>
@@ -479,64 +556,6 @@ jessica@amusementparkent.com</a>
                 </p>                            
             </div>
         </div>
-        
-          
-        <div class="team-body-people-slider-person">
-            <div class="team-body-people-slider-person-redsq redsq futurastd">
-                <h2>REGGIE TURNER</h2>
-                <div class="team-body-people-slider-person-redsq-tri"></div>
-            </div>              
-            <div class="team-body-people-slider-person-text">
-                  <h3>Director of Sports Marketing</h3>
-                  <p>
-A former High School (Westchester) and College (University of Utah) football player, Reggie Turner is able to leverage his personal experience as an athlete in his work as a sports marketing professional.
-Turner has consulted for numerous brands including Underarmor, Wachovia, ESPN, and Xenith, just to name a few. In 2007 Turner helped form Skybox Global, which quickly expanded to service the needs of a large clientele including major corporations nationwide and was recognized as one of the nation’s top marketing firms for athletes and entertainers.
-                  </p>
-                  <p class="team-body-people-slider-person-text-email">
-Say hello at <a href="mailto:reggie@amusementparkent.com">
-reggie@amusementparkent.com</a>
-                  </p>                            
-              </div>
-          </div>
-          
-                    
-        <div class="team-body-people-slider-person">
-            <div class="team-body-people-slider-person-redsq darkredsq futurastd">
-                <h2>DONOVAN <br>WARREN</h2>
-                <div class="team-body-people-slider-person-darkredsq-tri"></div>
-            </div>              
-            <div class="team-body-people-slider-person-text">
-                  <h3>Sports Marketing Associate</h3>
-                  <p>
-Donovan Warren, a former high school all american at Long Beach Poly and All Big Ten performer at the University of Michigan joins the Amusement Park family after having shorts stints with the Jets,Steelers,Lions,and Bears. Giving back to the community, in 2011 he formed Athletic Intervention Mentorship (A.I.M.), a non profit organization helping mentor kids with such dreams just as his growing up in Long Beach, California.
-                  </p>
-                  <p class="team-body-people-slider-person-text-email">
-Say hello at <a href="mailto:donovan@amusementparkent.com">
-donovan@amusementparkent.com</a>
-                  </p>                            
-              </div>
-          </div>
-
-        <div class="team-body-people-slider-person">
-            <div class="team-body-people-slider-person-redsq redsq futurastd">
-                <h2>EUGENE HACKETT</h2>
-                <div class="team-body-people-slider-person-redsq-tri"></div>
-            </div>              
-            <div class="team-body-people-slider-person-text">
-                  <h3>Director of Basketball Operations</h3>
-                  <p>
-Eugene is a former Collegiate basketball player (Kansas Wesleyan University) where he was an All-Conference performer. Eugene has strong ties in the basketball community through coaching, training and mentorship. In 2005 he started consulting for Top Prospects Inc (TPI) , a training and mentoring non-profit organization for student-athletes with the aspirations of making it to the next level. He also was also Co-Founder alongside ReginaldTurner of Skybox Global, a Marketing Firm in 2007 where he consulted for numerous Brands and Top Athletes in all sports. Eugene uses his personal experiences as a former athlete to create life-changing experiences for future clients.
-                  </p>
-                  <p class="team-body-people-slider-person-text-email">
-Say hello at <a href="mailto:eugene@amusementparkent.com">
-eugene@amusementparkent.com</a>
-                  </p>                            
-              </div>
-          </div>
-          
-
-
-        
         </div>
       </div>
     </div>
@@ -558,31 +577,7 @@ eugene@amusementparkent.com</a>
                                 <div class="work-block-content-videos-slider">
 
                                     <!-- Featured Work -->
- <!-- Work items all need a preview image. Place the path to it in 
-                                          the `data-preview` attribute of the work item. 
-                                        To embed a Vimeo video, place its id in the `data-video-id` 
-                                          attribute of the work item. -->
-                                    <div class="work-item" data-preview="images/intelstill.jpg" 
-                                      data-video-id="58048400">
-                                      <div class="work-still-container">
-                                        <div class="work-still">
-                                        </div>
-                                      </div>
-                                      <div class="work-block-content-videos-info">
-                                        <div class="work-content-info-leftcol">
-                                          <h2>Discovered - Inspired by Intel</h2>
-                                          <p>
-Do you have what it takes to be a superstar? Get schooled by Chris Evans on the secrets of the action hero. Get styled and learn how to work the runway with Chanel Iman. Rock the party with Redfoo of LMFAO.
-                                          </p>
-                                        </div>
-                                        <div class="work-info-sharelinks">
-                                          <div class="work-info-sharelinks-text">Share</div>
-                                          <a href="http://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fvimeo.com%2F58048400" target="_blank"><div class="work-info-sharelink facebook-share"></div></a>
-                                          <a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fvimeo.com%2F58048400" target="_blank"><div class="work-info-sharelink twitter-share"></div></a>
-                                        </div>
-                                      </div>                                      
-                                    </div>
-                                    
+
                                     <!-- Work items all need a preview image. Place the path to it in 
                                           the `data-preview` attribute of the work item. 
                                         To embed a Vimeo video, place its id in the `data-video-id` 
@@ -607,7 +602,6 @@ All work featured was co-created and/or creative directed by members of the Amus
                                         </div>
                                       </div>                                      
                                     </div>
-                             
 
                                     <!-- For an image gallery, place the paths to each image in the series
                                           into the `data-preview` attribute of the work item. 
@@ -657,14 +651,15 @@ CONSUMERS ON EVERY MEDIA PLATFORM.</h2>
                   <div class="contact-info futurastd contactcell">
                     <h3>OUR ADDRESS</h3>
                     <p class="contact-info-address">
-8226 W. 3rd Street, <br>
-Los Angeles, CA 90048. </p>
+1913 SOUTH CENTINELA AVE.<br />
+SANTA MONICA, CA 90404
+                    </p>
                     <p class="contact-info-maplink">
-<a href="https://www.google.com/maps/place/8226+W+3rd+St/@34.072276,-118.368934,17z/data=!3m1!4b1!4m2!3m1!1s0x80c2b936064770cb:0x3086afe7d76eb8fb" target="_blank">view Google map</a>
+<a href="https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=1913+Centinela+Ave,Santa+Monica,CA&aq=&sll=37.0625,-95.677068&sspn=43.799322,68.378906&vpsrc=0&ie=UTF8&hq=&hnear=1913+Centinela+Ave,+Santa+Monica,+California+90404&t=m&z=16&iwloc=A" target="_blank">view Google map</a>
                     </p>
                     <h3 class="contact-info-phonenumber-header">PHONE NUMBER</h3>
                     <p>
-+1 310 870 0866
++1 213 293 7370
                     </p>
                     <p class="contact-info-emaillink">
 <a href="mailto:info@amusementparkent.com">info@amusementparkent.com</a>
@@ -735,21 +730,23 @@ Los Angeles, CA 90048. </p>
             </div>
             <div class="footer-content-phone center">
                 <div class="footer-content-phone-castle center"></div>
-                <div class="footer-content-phone-number">tel. +1 310 870 0866</div>
+                <div class="footer-content-phone-number">tel. +1 213 293 7270</div>
             </div>
             <div class="footer-content-contact">
                 <p class="footer-content-contact-us">CONTACT US</p>
                 <p class="footer-content-contact-address">
-                    8226 W. 3rd Street, <br>
-                  Los Angeles, CA 90048. </p>
+                    1913 South Centinela Ave.<br />
+                    Santa Monica, CA 90404
+                </p>
                 <p>
-                    <span><a href="https://www.google.com/maps/place/8226+W+3rd+St/@34.072276,-118.368934,17z/data=!4m2!3m1!1s0x80c2b936064770cb:0x3086afe7d76eb8fb" target="_blank">view map</a></span>
+                    <span><a href="https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=1913+Centinela+Ave,Santa+Monica,CA&aq=&sll=37.0625,-95.677068&sspn=43.799322,68.378906&vpsrc=0&ie=UTF8&hq=&hnear=1913+Centinela+Ave,+Santa+Monica,+California+90404&t=m&z=16&iwloc=A" target="_blank">view map</a></span>
                 </p>
             </div>
         </div>
     </div>
 
     <!-- Start of StatCounter Code -->
+    <!--
     <script type="text/javascript">
     var sc_project=7989750; 
     var sc_invisible=1; 
@@ -762,9 +759,18 @@ Los Angeles, CA 90048. </p>
     target="_blank"><img class="statcounter"
     src="http://c.statcounter.com/7989750/0/fb7ac27c/1/"
     alt="custom counter"></a></div></noscript>
+  -->
     <!-- End of StatCounter Code -->
 
+    <!--
+<script>
+  var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+  s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
 
+  -->
 
     <script src="libs/jquery/jquery.js" type="text/javascript"></script>
     <script src="libs/imagesloaded/jquery.imagesloaded.min.js"></script>
@@ -778,7 +784,7 @@ Los Angeles, CA 90048. </p>
     <script src="libs/slider/basic-jquery-slider.min.js" type="text/javascript"></script>
   <script type="text/javascript" src="libs/nav-rollovers/jquery.bgpos.js"></script>
   <script type="text/javascript" src="libs/nav-rollovers/nav-rollovers.js"></script>
-    <script src="script.js" type="text/javascript"></script>
+  <script src="script.debug.js" type="text/javascript"></script>
 
 
 </body>
