@@ -374,26 +374,8 @@ smoke@amusementparkent.com</a>
 
         <div class="team-body-people-slider-person">
             <div class="team-body-people-slider-person-redsq redsq futurastd">
-                <h2>JIM <br />DARLING</h2>
-                <div class="team-body-people-slider-person-redsq-tri"></div>
-            </div> 
-            <div class="team-body-people-slider-person-text">
-                <h3>Director of Visual Arts</h3>
-                <p>
-Jim&rsquo;s a family man and artist in addition to being the Director of Visual Arts in the Amusement Park family. His gallery work ranges from intricate ink drawings to layered woodwork with illustrative painted skins. Outside, Jim expands his toolset by including found objects and materials. His subject matter lives between play and real. Large issues are often looked at in simplistic terms and are then juxtaposed by intense detail.
-                </p>
-                <p class="team-body-people-slider-person-text-email">
-Say hello at <a href="mailto:darling@amusementparkent.com">
-darling@amusementparkent.com</a>
-                </p>                            
-            </div>
-        </div>
-
-
-        <div class="team-body-people-slider-person">
-            <div class="team-body-people-slider-person-redsq darkredsq futurastd">
                 <h2>POETRI</h2>
-                <div class="team-body-people-slider-person-darkredsq-tri"></div>
+                <div class="team-body-people-slider-person-redsq-tri"></div>
             </div>
             <div class="team-body-people-slider-person-text">
                 <h3>Senior Writer</h3>
@@ -406,25 +388,6 @@ poetri@amusementparkent.com</a>
                 </p>                            
             </div>
         </div>
-
-
-        <div class="team-body-people-slider-person">
-            <div class="team-body-people-slider-person-redsq redsq futurastd">
-                <h2>JON MARSHALL</h2>
-                <div class="team-body-people-slider-person-redsq-tri"></div>
-            </div>
-            <div class="team-body-people-slider-person-text">
-                <h3>Graphic Designer</h3>
-                <p>
-Jon is from Shelbyville, a small town in Kentucky. He attended Western Kentucky University where he also played football. He often refers to himself as a young John Nash (aka a beautiful mind). 
-                </p>
-                <p class="team-body-people-slider-person-text-email">
-Say hello at <a href="mailto:jon@amusementparkent.com">
-jon@amusementparkent.com</a>
-                </p>                            
-            </div>
-        </div>
-
 
 
         <div class="team-body-people-slider-person">
@@ -480,65 +443,9 @@ jessica@amusementparkent.com</a>
             </div>
         </div>
         
-          
-        <div class="team-body-people-slider-person">
-            <div class="team-body-people-slider-person-redsq redsq futurastd">
-                <h2>REGGIE TURNER</h2>
-                <div class="team-body-people-slider-person-redsq-tri"></div>
-            </div>              
-            <div class="team-body-people-slider-person-text">
-                  <h3>Director of Sports Marketing</h3>
-                  <p>
-A former High School (Westchester) and College (University of Utah) football player, Reggie Turner is able to leverage his personal experience as an athlete in his work as a sports marketing professional.
-Turner has consulted for numerous brands including Underarmor, Wachovia, ESPN, and Xenith, just to name a few. In 2007 Turner helped form Skybox Global, which quickly expanded to service the needs of a large clientele including major corporations nationwide and was recognized as one of the nation’s top marketing firms for athletes and entertainers.
-                  </p>
-                  <p class="team-body-people-slider-person-text-email">
-Say hello at <a href="mailto:reggie@amusementparkent.com">
-reggie@amusementparkent.com</a>
-                  </p>                            
-              </div>
-          </div>
-          
-                    
-        <div class="team-body-people-slider-person">
-            <div class="team-body-people-slider-person-redsq darkredsq futurastd">
-                <h2>DONOVAN <br>WARREN</h2>
-                <div class="team-body-people-slider-person-darkredsq-tri"></div>
-            </div>              
-            <div class="team-body-people-slider-person-text">
-                  <h3>Sports Marketing Associate</h3>
-                  <p>
-Donovan Warren, a former high school all american at Long Beach Poly and All Big Ten performer at the University of Michigan joins the Amusement Park family after having shorts stints with the Jets,Steelers,Lions,and Bears. Giving back to the community, in 2011 he formed Athletic Intervention Mentorship (A.I.M.), a non profit organization helping mentor kids with such dreams just as his growing up in Long Beach, California.
-                  </p>
-                  <p class="team-body-people-slider-person-text-email">
-Say hello at <a href="mailto:donovan@amusementparkent.com">
-donovan@amusementparkent.com</a>
-                  </p>                            
-              </div>
-          </div>
-
-        <div class="team-body-people-slider-person">
-            <div class="team-body-people-slider-person-redsq redsq futurastd">
-                <h2>EUGENE HACKETT</h2>
-                <div class="team-body-people-slider-person-redsq-tri"></div>
-            </div>              
-            <div class="team-body-people-slider-person-text">
-                  <h3>Director of Basketball Operations</h3>
-                  <p>
-Eugene is a former Collegiate basketball player (Kansas Wesleyan University) where he was an All-Conference performer. Eugene has strong ties in the basketball community through coaching, training and mentorship. In 2005 he started consulting for Top Prospects Inc (TPI) , a training and mentoring non-profit organization for student-athletes with the aspirations of making it to the next level. He also was also Co-Founder alongside ReginaldTurner of Skybox Global, a Marketing Firm in 2007 where he consulted for numerous Brands and Top Athletes in all sports. Eugene uses his personal experiences as a former athlete to create life-changing experiences for future clients.
-                  </p>
-                  <p class="team-body-people-slider-person-text-email">
-Say hello at <a href="mailto:eugene@amusementparkent.com">
-eugene@amusementparkent.com</a>
-                  </p>                            
-              </div>
-          </div>
-          
-
+  
 
         
-        </div>
-      </div>
     </div>
   </div>
 </div>
